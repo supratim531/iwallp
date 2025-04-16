@@ -1,0 +1,45 @@
+.section {
+  margin: 2rem 0;
+
+  @media (min-width: 768px) {
+    margin: 4rem 0;
+  }
+}
+
+.sectionTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  & > h2 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  & > i::after {
+    content: "";
+    height: 1px;
+    width: 120px;
+    margin: 4px 10px;
+    background: #bbb;
+    display: inline-block;
+  }
+}
+
+.label {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--bg-primary-dark);
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "Investigation": [
+    {
+      "title": "Pre Marital Investigation"
+    },
+    {
+      "title": "Post Marital Investigation"
+    },
+    {
+      "title": "Missing Person Tracing"
+    },
+    {
+      "title": "Surveillance Services"
+    },
+    {
+      "title": "Cyber Crime Investigation"
+    },
+    {
+      "title": "Extortion Investigation"
+    },
+    {
+      "title": "Handwriting Verification"
+    },
+    {
+      "title": "Asset Verification"
+    },
+    {
+      "title": "Pre Employment Verification"
+    },
+    {
+      "title": "Undercover Operation"
+    },
+    {
+      "title": "Corporate Due-Diligence"
+    },
+    {
+      "title": "Forensic Expertise/Investigation"
+    },
+    {
+      "title": "Sting Operation Services"
+    }
+  ],
+  "Security": [
+    {
+      "title": "Security Services"
+    }
+  ]
+}

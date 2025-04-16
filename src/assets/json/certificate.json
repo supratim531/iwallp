@@ -1,0 +1,37 @@
+[
+  {
+    "id": "Certificate-1",
+    "title": "A Certificate",
+    "description": "Bar Council Certified 1",
+    "image": "certificate1.jpg",
+    "extra": "This certificate has been achieved by ABC"
+  },
+  {
+    "id": "Certificate-2",
+    "title": "B Certificate",
+    "description": "Bar Council Certified 2",
+    "image": "certificate2.jpg",
+    "extra": "This certificate has been achieved by def"
+  },
+  {
+    "id": "Certificate-3",
+    "title": "C Certificate",
+    "description": "Bar Council Certified 3",
+    "image": "certificate3.jpg",
+    "extra": "This certificate has been achieved by ABC"
+  },
+  {
+    "id": "Certificate-4",
+    "title": "D Certificate",
+    "description": "Bar Council Certified 4",
+    "image": "certificate4.jpg",
+    "extra": "This certificate has been achieved by ABC"
+  },
+  {
+    "id": "Certificate-5",
+    "title": "E Certificate",
+    "description": "Bar Council Certified 5",
+    "image": "certificate5.jpg",
+    "extra": "This certificate has been achieved by ABC"
+  }
+]
