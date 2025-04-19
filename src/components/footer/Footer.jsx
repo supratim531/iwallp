@@ -16,10 +16,10 @@ const Footer = () => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);
   const [isTermsConditions, setIsTermsConditions] = useState(false);
   return (
-    <footer className="bg-black relative w-[100%] h-[100%] overflow-hidden py-5 px-10">
+    <footer className="relative h-[100%] w-[100%] overflow-hidden bg-black px-10 py-5">
       <Container>
         <div className="map-container-2 flex w-full flex-col items-start gap-4 pt-8 lg:h-[280px] lg:flex-row">
-          <div className="flex flex-col w-full h-full gap-2 text-secondary">
+          <div className="flex h-full w-full flex-col gap-2 text-secondary">
             <h3
               onClick={(e) => {
                 e.stopPropagation();
@@ -27,13 +27,13 @@ const Footer = () => {
                 if (window) {
                   window.open(
                     `https://www.google.com/maps?q=${"Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor, Kolkata 700001"}`,
-                    "_blank"
+                    "_blank",
                   );
                 }
               }}
-              className="flex items-start gap-2 cursor-pointer"
+              className="flex cursor-pointer items-start gap-2"
             >
-              <i className="mt-1 fa-solid fa-location-dot"></i>
+              <i className="fa-solid fa-location-dot mt-1"></i>
               <span>
                 Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor, Kolkata 700001
               </span>
@@ -42,7 +42,7 @@ const Footer = () => {
             <iframe
               loading="lazy"
               title="my-gmap-frame"
-              className="w-full h-full"
+              className="h-full w-full"
               referrerPolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.180487303129!2d88.34892027405944!3d22.572351932981803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277a5baabca5f%3A0xbe43dc306dbe663b!2sMartin%20Burn%20House!5e0!3m2!1sen!2sin!4v1742936965216!5m2!1sen!2sin"
             >
@@ -51,7 +51,7 @@ const Footer = () => {
               </a>
             </iframe>
           </div>
-          <div className="flex flex-col w-full h-full gap-2 text-secondary">
+          <div className="flex h-full w-full flex-col gap-2 text-secondary">
             <h3
               onClick={(e) => {
                 e.stopPropagation();
@@ -59,20 +59,20 @@ const Footer = () => {
                 if (window) {
                   window.open(
                     `https://www.google.com/maps?q=${"22, Sukeas Lane, 5th Floor, Kolkata 700001"}`,
-                    "_blank"
+                    "_blank",
                   );
                 }
               }}
-              className="flex items-start gap-2 cursor-pointer"
+              className="flex cursor-pointer items-start gap-2"
             >
-              <i className="mt-1 fa-solid fa-location-dot"></i>
+              <i className="fa-solid fa-location-dot mt-1"></i>
               <span>22, Sukeas Lane, 5th Floor, Kolkata 700001</span>
             </h3>
 
             <iframe
               loading="lazy"
               title="my-gmap-frame"
-              className="w-full h-full"
+              className="h-full w-full"
               referrerPolicy="no-referrer-when-downgrade"
               src="https://maps.google.com/maps?q=Innerwork+Advisors+LLP%2C+5th+Floor%2C+22%2C+Sukeas+Ln%2C+Murgighata%2C+B.B.D.+Bagh%2C+Kolkata%2C+West+Bengal+700001&output=embed"
             >
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
         {/* ---------------------------------- */}
 
-        <div className="flex flex-wrap w-full py-8 text-white">
+        <div className="flex w-full flex-wrap py-8 text-white">
           <div className="w-full flex-auto md:w-[50%] lg:w-[25%]">
             <a href="#home">
               <img
@@ -102,7 +102,7 @@ const Footer = () => {
             <ul
               className={classNames(
                 css.socialIcon,
-                "mt-8 flex items-center justify-center gap-2 text-white md:mt-0 md:justify-start md:gap-6"
+                "mt-8 hidden items-center justify-center gap-2 text-white md:mt-0 md:justify-start md:gap-6",
               )}
             >
               <li>
@@ -111,7 +111,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#C9A267] hover:scale-110 transition-transform cursor-pointer">
+                  <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
                     <FaMobileAlt className="text-sm text-white" />
                   </i>
                 </a>
@@ -122,7 +122,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#C9A267] hover:scale-110 transition-transform cursor-pointer">
+                  <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
                     <FaEnvelope className="text-sm text-white" />
                   </i>
                 </a>
@@ -133,7 +133,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#C9A267] hover:scale-110 transition-transform cursor-pointer">
+                  <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
                     <FaPhoneAlt className="text-sm text-white" />
                   </i>
                 </a>
@@ -151,7 +151,7 @@ const Footer = () => {
                 <a href="#about">About Us</a>
               </li>
               <li>
-                <a href="#services">Our Services</a>
+                <a href="#service">Our Services</a>
               </li>
               <li>
                 <a href="#contact">Contact Us</a>
@@ -221,7 +221,7 @@ const Footer = () => {
               <ul
                 className={classNames(
                   css.socialIcon,
-                  "mt-8 flex items-center justify-center gap-2 text-white md:mt-0 md:justify-start md:gap-6"
+                  "mt-8 flex items-center justify-center gap-2 text-white md:mt-0 md:justify-start md:gap-6",
                 )}
               >
                 <li>
@@ -230,40 +230,40 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#C9A267] hover:scale-110 transition-transform cursor-pointer">
+                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
                       <FaTwitter className="text-sm text-white" />
                     </i>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://x.com/Innerworkllp"
+                    href="https://www.facebook.com/innerworkadvisorsllp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#C9A267] hover:scale-110 transition-transform cursor-pointer">
+                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
                       <FaFacebookF className="text-sm text-white" />
                     </i>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://x.com/Innerworkllp"
+                    href="https://www.instagram.com/innerworkadvisorsllp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#C9A267] hover:scale-110 transition-transform cursor-pointer">
+                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
                       <FaInstagram className="text-sm text-white" />
                     </i>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://x.com/Innerworkllp"
+                    href="https://www.linkedin.com/in/innerwork-advisors-llp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="bg-[#3b5998] rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#C9A267] hover:scale-110 transition-transform cursor-pointer">
+                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
                       <FaLinkedinIn className="text-sm text-white" />
                     </i>
                   </a>

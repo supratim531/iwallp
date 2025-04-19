@@ -1,10 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Brandlogo } from "../../assets";
 import { Dropdown, DropMenu } from "../shared";
 import { Book, BookOpen, File } from "react-feather";
 import { DropdownItem } from "../shared/Dropdown/Dropdown";
+import SidebarMaybe from "../SidebarMaybe/SidebarMaybe";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const sidebarMaybeRef = useRef(null);
+
+  const toggleSidebar = () => {
+    sidebarMaybeRef.current.toggle();
+  };
+
+  const [scrolled, setScrolled] = useState(false);
+  const navigation = [
+    // { link: "#home", text: "Home" },
+    { link: "#about", text: "About Us" },
+    { link: "#service", text: "Our Services" },
+    { link: "#contact", text: "Contact Us" },
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
@@ -17,45 +33,87 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const [scrolled, setScrolled] = useState(false);
-  const navigation = [
-    { link: "#home", text: "Home" },
-    { link: "#about", text: "About Us" },
-    { link: "#service", text: "Our Services" },
-    { link: "#contact", text: "Contact Us" },
-  ];
+
   return (
     <nav
-      className={`flex top-0 w-full font-mono font-bold justify-between items-center text-white bg-[#415781] shadow-md px-10 py-auto  z-50 transition-all duration-1000 ease-in-out ${
-        scrolled ? "fixed " : "relative"
+      className={`py-auto top-0 z-50 flex w-full items-center justify-between bg-[#415781] px-10 font-mono font-bold text-white shadow-md transition-all duration-150 ease-in-out ${
+        scrolled ? "fixed" : "fixed"
       }`}
     >
+      <SidebarMaybe ref={sidebarMaybeRef}>
+        <div className="flex h-full flex-col justify-between bg-primary-dark pb-24 pt-10">
+          <ul className="flex flex-col text-xl text-white [&>li]:h-16 [&>li]:text-center">
+            <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
+              <Link
+                to={"/"}
+                className="flex h-full w-full items-center justify-center"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
+              <a
+                href="#about"
+                className="flex h-full w-full items-center justify-center"
+              >
+                About Us
+              </a>
+            </li>
+            <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
+              <a
+                href="#service"
+                className="flex h-full w-full items-center justify-center"
+              >
+                Services
+              </a>
+            </li>
+            <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
+              <a
+                href="#contact"
+                className="flex h-full w-full items-center justify-center"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </SidebarMaybe>
+
       <section>
-        <a href="#home">
+        <Link to={"/"}>
           <img
-            src={Brandlogo}
             alt="Brand"
-            className="relative flex items-center justify-between w-40 px-2 py-3"
+            src={Brandlogo}
+            className="relative flex w-40 items-center justify-between px-2 py-3"
           />
-        </a>
+        </Link>
       </section>
 
-      <section className="flex text-xl gap-x-8 ">
-        <ul className="flex text-xl gap-x-8">
+      <section className="hidden gap-x-8 text-xl md:flex">
+        <ul className="flex gap-x-8 text-xl">
+          <li>
+            <Link
+              to={"/"}
+              className="!text-white transition duration-300 hover:!text-black"
+            >
+              Home
+            </Link>
+          </li>
+
           {navigation.map((nav) => (
             <li key={nav.text}>
               <a
-                className="!text-white hover:!text-black transition duration-300"
+                className="!text-white transition duration-300 hover:!text-black"
                 href={nav.link}
               >
                 {nav.text}
               </a>
             </li>
           ))}
-          <li>
+          {/* <li>
             <a
               href="#extra"
-              className="!text-white hover:!text-black transition duration-150"
+              className="!text-white transition duration-150 hover:!text-black"
             >
               <Dropdown
                 className="bg-black"
@@ -75,9 +133,13 @@ const Navbar = () => {
                 </DropdownItem>
               </Dropdown>
             </a>
-          </li>
+          </li> */}
         </ul>
       </section>
+
+      <button onClick={toggleSidebar} className="block md:hidden">
+        <i className="fa-solid fa-bars text-2xl"></i>
+      </button>
     </nav>
   );
 };

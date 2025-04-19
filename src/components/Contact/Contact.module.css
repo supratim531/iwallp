@@ -1,0 +1,30 @@
+.root {
+  background-size: 400%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  & > div:nth-child(1) {
+    & > section > div:nth-child(1) {
+      & > h2 {
+        color: #c9a267;
+      }
+      & > i,
+      & > p {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .root {
+    background-size: 200%;
+  }
+}
+
+@media (min-width: 768px) {
+  .root {
+    background-size: cover;
+  }
+}

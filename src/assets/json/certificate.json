@@ -1,37 +1,16 @@
 [
   {
     "id": "Certificate-1",
-    "title": "A Certificate",
-    "description": "Bar Council Certified 1",
+    "title": "Certificate of Membership",
+    "description": "The certificate recognises Innerwork Advisors LLP",
     "image": "certificate1.jpg",
-    "extra": "This certificate has been achieved by ABC"
+    "extra": "as a company member, denoting commitment to the integrity and trust of the private security industry valid up to December 2025"
   },
   {
     "id": "Certificate-2",
-    "title": "B Certificate",
-    "description": "Bar Council Certified 2",
+    "title": "Certificate of Membership",
+    "description": "The certificate recognises Sujit Chakraborty, Director of Innerwork Advisors LLP",
     "image": "certificate2.jpg",
-    "extra": "This certificate has been achieved by def"
-  },
-  {
-    "id": "Certificate-3",
-    "title": "C Certificate",
-    "description": "Bar Council Certified 3",
-    "image": "certificate3.jpg",
-    "extra": "This certificate has been achieved by ABC"
-  },
-  {
-    "id": "Certificate-4",
-    "title": "D Certificate",
-    "description": "Bar Council Certified 4",
-    "image": "certificate4.jpg",
-    "extra": "This certificate has been achieved by ABC"
-  },
-  {
-    "id": "Certificate-5",
-    "title": "E Certificate",
-    "description": "Bar Council Certified 5",
-    "image": "certificate5.jpg",
-    "extra": "This certificate has been achieved by ABC"
+    "extra": "denoting commitment to the integrity and trust of the profession of private investigation valid till 31st December 2025"
   }
 ]

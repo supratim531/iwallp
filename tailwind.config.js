@@ -9,6 +9,7 @@ module.exports = {
       lg: "992px",
       xl: "1200px",
       "2xl": "1400px",
+      "3xl": "1580px",
     },
     extend: {
       fontFamily: {
@@ -19,6 +20,7 @@ module.exports = {
         secondary: "#c9a267",
         "primary-dark": "#343a49",
         "primary-light": "#3e5481",
+
         // "primary-dark": "#213547",
         // "primary-light": "#415781",
       },

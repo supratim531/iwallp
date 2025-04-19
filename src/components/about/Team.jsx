@@ -45,14 +45,14 @@ const Team = () => {
   };
 
   return (
-    <section className="bg-[#415781] flex relative items-center justify-between text-center">
+    <section className="relative flex items-center justify-between bg-[#415781] text-center">
       <Container>
         <Section
           classname="relative flex flex-row items-center justify-between text-center"
           title={"Our Team"}
           label={"THE PILLARS"}
           description={
-            <p className="relative flex items-center justify-between max-w-xl mt-1 text-lg font-normal text-justify text-white">
+            <p className="relative mt-1 flex max-w-xl items-center justify-between text-justify text-lg font-normal text-white">
               For years, we have built a legacy of success based on integrity,
               dedication, and relentless advocacy. Our proven track record is a
               testament to our ability to navigate complex legal challenges and
@@ -61,39 +61,39 @@ const Team = () => {
           }
         ></Section>
 
-        <div className="relative flex items-center justify-center flex-grow text-justify lg:min-w-1/2">
+        <div className="lg:min-w-1/2 relative flex flex-grow items-center justify-center text-justify">
           {/* Pillar Team Cards */}
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {teamMembers
               .slice(
                 currentIndex,
-                Math.min(currentIndex + visibleCount, teamMembers.length)
+                Math.min(currentIndex + visibleCount, teamMembers.length),
               )
               .map((item, index) => (
                 <Container>
                   <div
                     key={index}
-                    className="bg-black text-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-between h-[380px] max-w-[300px]"
+                    className="flex h-[380px] max-w-[300px] flex-col items-center justify-between rounded-lg bg-black p-6 text-white shadow-lg"
                   >
                     <img
                       src={item.image}
                       alt={item.id}
-                      className="object-cover w-24 h-24 mb-4 rounded-full"
+                      className="mb-4 h-24 w-24 rounded-full object-cover"
                     />
-                    <h3 className="text-lg font-semibold text-center">
+                    <h3 className="text-center text-lg font-semibold">
                       {item.id}
                     </h3>
-                    <p className="text-md text-[#C9A267] font-semibold text-center">
+                    <p className="text-md text-center font-semibold text-[#C9A267]">
                       {item.title}
                     </p>
-                    <span className="mt-2 mb-2 text-center text-md ">
+                    <span className="text-md mb-2 mt-2 text-center">
                       {item.description}
                     </span>
 
                     {/* Know More Button */}
                     <button
-                      className="mt-1 mb-1 px-4 py-2 bg-[#C9A267] text-white font-semibold rounded-lg "
+                      className="mb-1 mt-1 rounded-lg bg-[#C9A267] px-4 py-2 font-semibold text-white"
                       onClick={() => {
                         setSelectedMember(item); // Set the selected team selectedMember
                         setIsModalOpen(true); // Open the modal
@@ -108,7 +108,7 @@ const Team = () => {
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}
-                className="absolute left-0 z-10 top-1/2 items-center text-white bg-[#C9A267] px-4 py-2 rounded-lg disabled:opacity-50 "
+                className="absolute left-0 top-1/2 z-10 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white disabled:opacity-50"
               >
                 <ArrowLeft size={30} />
               </button>
@@ -116,7 +116,7 @@ const Team = () => {
               <button
                 onClick={nextSlide}
                 disabled={currentIndex >= teamMembers.length - visibleCount}
-                className="absolute right-0 z-10 top-1/2 items-center text-white bg-[#C9A267] px-4 py-2 rounded-lg disabled:opacity-50 overflow:block"
+                className="overflow:block absolute right-0 top-1/2 z-10 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white disabled:opacity-50"
               >
                 <ArrowRight size={30} />
               </button>
@@ -140,20 +140,20 @@ const Team = () => {
               <img
                 src={selectedMember?.image}
                 alt={selectedMember?.id}
-                className="w-24 h-24 mx-auto mb-3 rounded-full"
+                className="mx-auto mb-3 h-24 w-24 rounded-full"
               />
               <p className="text-sm font-semibold text-black">
                 {selectedMember?.id}
               </p>
-              <p className="text-[#C9A267] text-sm font-semibold">
+              <p className="text-sm font-semibold text-[#C9A267]">
                 {selectedMember?.title}
               </p>
-              <p className="mt-2 text-sm text-justify text-gray-700">
+              <p className="mt-2 text-justify text-sm text-gray-700">
                 {selectedMember?.extra}
               </p>
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="self-center px-4 py-2 mt-3 mb-3 text-white bg-red-600 rounded-md"
+                className="mb-3 mt-3 self-center rounded-md bg-red-600 px-4 py-2 text-white"
               >
                 Close
               </button>

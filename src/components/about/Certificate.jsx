@@ -14,9 +14,6 @@ import { Section, Container, Modal } from "../shared";
 const imageMap = {
   "certificate1.jpg": certificate1,
   "certificate2.jpg": certificate2,
-  "certificate3.jpg": certificate3,
-  "certificate4.jpg": certificate4,
-  "certificate5.jpg": certificate5,
 };
 
 const Certificate = () => {
@@ -51,52 +48,52 @@ const Certificate = () => {
   };
 
   return (
-    <section className="bg-[#415781] flex relative items-center justify-between text-center">
+    <section className="relative flex items-center justify-between bg-[#415781] text-center">
       <Container>
         <Section
           classname="relative flex flex-row items-center justify-between text-center"
           title={"Our Achievements"}
           label={"CERTIFICATES"}
           description={
-            <p className="relative flex items-center justify-between max-w-lg mt-1 text-lg font-normal text-center text-white">
+            <p className="relative mt-1 flex max-w-lg items-center justify-between text-center text-lg font-normal text-white">
               This is our certificate section for reliabilty
             </p>
           }
         ></Section>
 
-        <div className="relative flex items-center justify-center text-justify lg:min-w-1/2">
+        <div className="lg:min-w-1/2 relative flex items-center justify-center text-justify">
           {/* Certificate Cards */}
           <div
             ref={scrollRef}
-            className="grid grid-cols-1 overflow-x-auto transition-transform duration-1000 ease-in-out scroll-smooth no-scrollbar"
+            className="no-scrollbar grid grid-cols-1 overflow-x-auto scroll-smooth transition-transform duration-1000 ease-in-out"
           >
             {certificate
               .slice(
                 currentIndex,
-                Math.min(currentIndex + visibleCount, certificate.length)
+                Math.min(currentIndex + visibleCount, certificate.length),
               )
               .map((item, index) => (
                 <Container>
                   <div
                     key={index}
-                    className="flex flex-col items-center justify-between px-4 py-4 mb-5 text-white bg-black rounded-lg shadow-lg lg:max-w-2xl md:max-w-md max-h-auto"
+                    className="max-h-auto mb-5 flex flex-col items-center justify-between rounded-lg bg-black px-4 py-4 text-white shadow-lg md:max-w-md lg:max-w-2xl"
                   >
                     <img
                       src={item.image}
                       alt={item.id}
-                      className="object-contain mb-4 min-h-auto min-w-auto "
+                      className="min-h-auto min-w-auto mb-4 object-contain"
                     />
 
-                    <h3 className="text-lg text-[#C9A267] font-semibold text-center">
+                    <h3 className="text-center text-lg font-semibold text-[#C9A267]">
                       {item.title}
                     </h3>
-                    <span className="mt-2 mb-2 text-center text-md ">
+                    <span className="text-md mb-2 mt-2 text-center">
                       {item.description}
                     </span>
 
                     {/* Know More Button */}
                     <button
-                      className="mt-1 mb-1 px-4 py-2 bg-[#C9A267] text-white font-semibold rounded-lg "
+                      className="mb-1 mt-1 rounded-lg bg-[#C9A267] px-4 py-2 font-semibold text-white"
                       onClick={() => {
                         setselectedCertificate(item); // Set the selected team selectedCertificate
                         setIsModalOpen(true); // Open the modal
@@ -111,7 +108,7 @@ const Certificate = () => {
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}
-                className="absolute left-0  top-1/2 items-center text-white bg-[#C9A267] px-4 py-2 rounded-lg disabled:opacity-50 ease-in-out duration-500 transition-transform"
+                className="absolute left-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white transition-transform duration-500 ease-in-out disabled:opacity-50"
               >
                 <ArrowLeft size={30} />
               </button>
@@ -119,7 +116,7 @@ const Certificate = () => {
               <button
                 onClick={nextSlide}
                 disabled={currentIndex >= certificate.length - visibleCount}
-                className="absolute right-0 top-1/2 items-center text-white bg-[#C9A267] px-4 py-2 rounded-lg disabled:opacity-50 overflow:block"
+                className="overflow:block absolute right-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white disabled:opacity-50"
               >
                 <ArrowRight size={30} />
               </button>
@@ -137,18 +134,18 @@ const Certificate = () => {
             onClose={() => setIsModalOpen(false)}
           >
             <div className="text-center">
-              <p className="text-[#C9A267] text-lg font-semibold">
+              <p className="text-lg font-semibold text-[#C9A267]">
                 {selectedCertificate?.title}
               </p>
-              <p className="font-semibold text-black text-md">
+              <p className="text-md font-semibold text-black">
                 {selectedCertificate?.description}
               </p>
-              <p className="mt-2 mb-2 text-sm text-center text-gray-700">
+              <p className="mb-2 mt-2 text-center text-sm text-gray-700">
                 {selectedCertificate?.extra}
               </p>
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="self-center px-4 py-2 mt-3 mb-3 text-white bg-red-600 rounded-md"
+                className="mb-3 mt-3 self-center rounded-md bg-red-600 px-4 py-2 text-white"
               >
                 Close
               </button>

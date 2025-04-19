@@ -1,21 +1,38 @@
 [
-    {
-      "name": "Miyah Myles",
-      "position": "Marketing",
-      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=707b9c33066bf8808c934c8ab394dff6",
-      "text": "I've worked with literally hundreds of HTML/CSS developers and I have to say the top spot goes to this guy. This guy is an amazing developer. He stresses on good, clean code and pays heed to the details. I love developers who respect each and every aspect of a thoroughly thought-out design and do their best to put it in code."
-    },
-    {
-      "name": "June Cha",
-      "position": "Software Engineer",
-      "photo": "https://randomuser.me/api/portraits/women/44.jpg",
-      "text": "This guy is an amazing frontend developer that delivered the task exactly how we needed it. Do yourself a favor and hire him; you will not be disappointed. He goes the extra mile to ensure you are happy with your project."
-    },
-    {
-      "name": "Iida Niskanen",
-      "position": "Data Entry",
-      "photo": "https://randomuser.me/api/portraits/women/68.jpg",
-      "text": "This guy is a hard worker. Communication was also very good with him, and he was very responsive all the time—something not easy to find in many freelancers. We'll definitely repeat with him."
-    }
-  ]
-  
+  {
+    "name": "MOHAMMAD NAUSHAD",
+    "position": "M/S Ehraam Traders",
+    "photo": "https://innerworkadvisorsllp.com/wp-content/uploads/2016/09/MOHAMMAD-NAUSHAD.webp",
+    "text": "Incredibly impressed by their dedication to uncovering the truth. A dependable ally in legal matters."
+  },
+  {
+    "name": "RAMESH AGARWAL (Director)",
+    "position": "Refinery 091",
+    "photo": "https://innerworkadvisorsllp.com/wp-content/uploads/2016/09/RAMESH-AGARWAL-2.webp",
+    "text": "Exceeded expectations with their thorough investigations and strategic legal counsel. A commendable team indeed."
+  },
+  {
+    "name": "RANJAN KUMAR BANERJEE",
+    "position": "Banerjee Agro Industries",
+    "photo": "https://innerworkadvisorsllp.com/wp-content/uploads/2016/09/RANJAN-KUMAR-BANERJEE-2.webp",
+    "text": "Exceptional team delivering personalized strategies. Grateful for their unwavering support during challenging times."
+  },
+  {
+    "name": "JAY S KAMDAR",
+    "position": "Sun Shakti Realtor LLP",
+    "photo": "https://innerworkadvisorsllp.com/wp-content/uploads/2016/09/JAY-S-KAMDAR-2.webp",
+    "text": "I highly recommend Innerwork Advisors. With their meticulous, well organized and caring approach, I always felt protected and in secure hands."
+  },
+  {
+    "name": "DR. RAHUL JAIN",
+    "position": "Belle Vue Clinic",
+    "photo": "https://innerworkadvisorsllp.com/wp-content/uploads/2016/09/DR.-RAHUL-JAIN-2.webp",
+    "text": "A seamless blend of legal expertise and detective skills. Trustworthy and efficient in every aspect."
+  },
+  {
+    "name": "ARUN KUMAR GOEL",
+    "position": "Goel Roadways",
+    "photo": "https://innerworkadvisorsllp.com/wp-content/uploads/2016/09/ARUN-KUMAR-GOEL-2.webp",
+    "text": "A reliable and dependable partner for executing complex investigations and negotiating legal complications effectively."
+  }
+]

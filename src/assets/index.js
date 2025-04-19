@@ -1,4 +1,12 @@
+export { default as PreloaderSmall } from "./gif/preloader-small.gif";
+
+export { default as SecurityImage } from "./image/security.png";
+export { default as ServiceHeroImage } from "./image/service-hero.png";
+export { default as InvestigationImage } from "./image/investigation.png";
+export { default as OurServicesImage } from "./image/our-services.png";
+
 export { default as Brandlogo } from "./logo/logo.png";
+export { default as ContactUsImage } from "./image/contact-us.png";
 export { default as Image1 } from "./caraousel/caraousel1.webp";
 export { default as Image2 } from "./caraousel/caraousel2.webp";
 export { default as Image3 } from "./caraousel/caraousel3.webp";
