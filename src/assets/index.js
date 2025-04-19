@@ -1,6 +1,8 @@
 export { default as PreloaderSmall } from "./gif/preloader-small.gif";
 
 export { default as SecurityImage } from "./image/security.png";
+export { default as SecurityServiceImage } from "./image/security-service.png";
+export { default as SecurityClippedImage } from "./image/security-clipped.png";
 export { default as ServiceHeroImage } from "./image/service-hero.png";
 export { default as InvestigationImage } from "./image/investigation.png";
 export { default as OurServicesImage } from "./image/our-services.png";

@@ -5,6 +5,7 @@ import { Book, BookOpen, File } from "react-feather";
 import { DropdownItem } from "../shared/Dropdown/Dropdown";
 import SidebarMaybe from "../SidebarMaybe/SidebarMaybe";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const sidebarMaybeRef = useRef(null);
@@ -15,10 +16,10 @@ const Navbar = () => {
 
   const [scrolled, setScrolled] = useState(false);
   const navigation = [
-    // { link: "#home", text: "Home" },
-    { link: "#about", text: "About Us" },
-    { link: "#service", text: "Our Services" },
-    { link: "#contact", text: "Contact Us" },
+    { link: "home", text: "Home" },
+    { link: "about", text: "About Us" },
+    { link: "service", text: "Our Services" },
+    { link: "contact", text: "Contact Us" },
   ];
 
   useEffect(() => {
@@ -80,34 +81,37 @@ const Navbar = () => {
       </SidebarMaybe>
 
       <section>
-        <Link to={"/"}>
+        <HashLink
+          smooth
+          to={"/#home"}
+          // onClick={() => {
+          //   const section = document.getElementById("home");
+          //   section?.scrollIntoView({ behavior: "smooth" });
+          // }}
+        >
           <img
             alt="Brand"
             src={Brandlogo}
             className="relative flex w-40 items-center justify-between px-2 py-3"
           />
-        </Link>
+        </HashLink>
       </section>
 
       <section className="hidden gap-x-8 text-xl md:flex">
         <ul className="flex gap-x-8 text-xl">
-          <li>
-            <Link
-              to={"/"}
-              className="!text-white transition duration-300 hover:!text-black"
-            >
-              Home
-            </Link>
-          </li>
-
           {navigation.map((nav) => (
             <li key={nav.text}>
-              <a
+              <HashLink
+                smooth
+                to={`/#${nav.link}`}
                 className="!text-white transition duration-300 hover:!text-black"
-                href={nav.link}
+                // onClick={() => {
+                //   const section = document.getElementById(nav.link);
+                //   section?.scrollIntoView({ behavior: "smooth" });
+                // }}
               >
                 {nav.text}
-              </a>
+              </HashLink>
             </li>
           ))}
           {/* <li>

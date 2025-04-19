@@ -12,6 +12,8 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { Container, Modal } from "../shared";
+import { HashLink } from "react-router-hash-link";
+
 const Footer = () => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);
   const [isTermsConditions, setIsTermsConditions] = useState(false);
@@ -86,13 +88,13 @@ const Footer = () => {
 
         <div className="flex w-full flex-wrap py-8 text-white">
           <div className="w-full flex-auto md:w-[50%] lg:w-[25%]">
-            <a href="#home">
+            <HashLink smooth to={"/#home"}>
               <img
                 src={Brandlogo}
                 alt="INNERWORK LEGAL SERVICES"
                 className="md:w-[80%]"
               />
-            </a>
+            </HashLink>
 
             <p className="mb-4 mt-5 text-white md:w-[80%]">
               Feel free to submit your query to Kolkata's most trusted provider
@@ -148,13 +150,19 @@ const Footer = () => {
 
             <ul className={css.quickLinks}>
               <li>
-                <a href="#about">About Us</a>
+                <HashLink smooth to={"/#about"}>
+                  About Us
+                </HashLink>
               </li>
               <li>
-                <a href="#service">Our Services</a>
+                <HashLink smooth to={"/#service"}>
+                  Our Services
+                </HashLink>
               </li>
               <li>
-                <a href="#contact">Contact Us</a>
+                <HashLink smooth to={"/#contact"}>
+                  Contact Us
+                </HashLink>
               </li>
             </ul>
           </div>

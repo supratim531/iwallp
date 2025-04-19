@@ -36,8 +36,8 @@ code {
 } */
 
 .slick-arrow::before {
-  color: red;
   font-size: 30px;
+  color: #c9a267;
 }
 
 .slick-prev {
@@ -52,7 +52,7 @@ code {
 
 @media (max-width: 600px) {
   .slick-arrow::before {
-    color: red;
     font-size: 20px;
+    color: #c9a267;
   }
 }

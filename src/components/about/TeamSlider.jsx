@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Certificate from "./Certificate";
+
 import { Section, Container, Modal } from "../shared";
 import { BMW, DKDPW, MAAW, SCW, pillar } from "../../assets";
 
-import { FaCode } from "react-icons/fa";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -87,7 +87,7 @@ const TeamSlider = () => {
               <div
                 id="slider-boxes"
                 key={index}
-                className="flex flex-col items-center justify-center rounded-xl border-b-[8px] border-red-400 bg-white"
+                className="flex flex-col items-center justify-center rounded-xl border-b-[8px] border-secondary bg-white"
               >
                 <div className="rounded-full p-6">
                   {item.image && (
