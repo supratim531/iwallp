@@ -13,6 +13,7 @@ import {
   // FaEnvelope,
   // FaPhoneAlt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const images = [Image1, Image2, Image3];
 
@@ -20,12 +21,14 @@ const services = [
   {
     icon: <FaSearch className="text-3xl text-secondary" />,
     title: "INVESTIGATION",
+    urlPath: "/investigation",
     description:
       "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
   },
   {
     icon: <FaShieldAlt className="text-3xl text-secondary" />,
     title: "PERSONAL SECURITY",
+    urlPath: "/security-services",
     description:
       "Protecting lives, securing assets, ensuring safety, providing peace of mind and confidence.",
   },
@@ -263,8 +266,8 @@ const Header = () => {
                 className="px-6 text-justify text-white last:border-none md:w-1/2 md:border-r md:border-slate-400"
               >
                 <div className="mb-4 flex justify-center">{service.icon}</div>
-                <h3 className="mb-2 text-center text-lg font-bold">
-                  {service.title}
+                <h3 className="mb-2 text-center text-lg font-bold duration-200 hover:text-secondary">
+                  <Link to={service.urlPath}>{service.title}</Link>
                 </h3>
                 <p className="text-center text-sm leading-relaxed">
                   {service.description}

@@ -31,3 +31,16 @@ export { default as certificate2 } from "./certificates/certificate2.jpg";
 export { default as certificate3 } from "./certificates/certificate3.jpg";
 export { default as certificate4 } from "./certificates/certificate4.jpg";
 export { default as certificate5 } from "./certificates/certificate5.jpg";
+
+export { default as GeneralImage } from "./image/investigations/general.png";
+export { default as AccidentalImage } from "./image/investigations/accidental.png";
+export { default as CivilImage } from "./image/investigations/civil.png";
+export { default as CommercialImage } from "./image/investigations/commercial.png";
+export { default as CriminalImage } from "./image/investigations/criminal.png";
+export { default as FinancialImage } from "./image/investigations/financial.png";
+export { default as FraudImage } from "./image/investigations/fraud.png";
+export { default as IndustrialImage } from "./image/investigations/industrial.png";
+export { default as InsuranceImage } from "./image/investigations/insurance.png";
+export { default as MaritalImage } from "./image/investigations/marital.png";
+
+export { investigations } from "./investigations";

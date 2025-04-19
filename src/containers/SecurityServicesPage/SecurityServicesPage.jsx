@@ -17,7 +17,7 @@ const SecurityServicesPage = () => {
         }}
         className="relative inset-0 flex h-[45vh] items-center justify-center !bg-left text-2xl text-white sm:h-[75vh] md:!bg-center lg:h-screen"
       >
-        <div>
+        <div className="text-center">
           <Link
             to={"/our-services"}
             className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
