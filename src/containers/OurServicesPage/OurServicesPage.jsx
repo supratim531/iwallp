@@ -15,6 +15,7 @@ const services = [
     description:
       "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
     bg: InvestigationImage,
+    url: "investigation",
     btnColor: "bg-primary-light text-white",
   },
   {
@@ -22,6 +23,7 @@ const services = [
     description:
       "From homes to businesses, we've got you secure. Trust us to keep your world safe and assured.",
     bg: SecurityImage,
+    url: "security-services",
     btnColor: "bg-primary-light text-white",
   },
 ];
@@ -75,11 +77,12 @@ const OurServicesPage = () => {
                       <p className="mb-6 text-sm md:text-base">
                         {service.description}
                       </p>
-                      <button
+                      <Link
+                        to={`/${service.url}`}
                         className={`rounded-sm px-6 py-4 ${service.btnColor} text-sm font-semibold transition hover:opacity-90`}
                       >
                         KNOW MORE
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 ))}
