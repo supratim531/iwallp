@@ -16,7 +16,7 @@ const ServiceNew = () => {
       className="w-full text-white"
     >
       <Container className="flex w-full flex-col md:flex-row">
-        <div className="flex flex-1 flex-col justify-center py-12 pt-[32rem] sm:pt-[28rem] md:pt-[22rem] lg:pt-72">
+        <div className="flex flex-1 flex-col justify-center py-12 pt-[30rem] sm:pt-[26rem] md:pt-[20rem] lg:pt-[16rem]">
           <span className="mb-2 text-sm text-secondary">Our Service</span>
           <h2 className="mb-6 text-3xl font-extrabold md:text-5xl">
             WHAT WE DO
@@ -29,7 +29,7 @@ const ServiceNew = () => {
           </p>
           <Link
             to={"/our-services"}
-            className="w-fit bg-white px-5 py-2 text-sm font-semibold text-black transition hover:bg-gray-200"
+            className="w-fit bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-gray-200"
           >
             KNOW MORE
           </Link>

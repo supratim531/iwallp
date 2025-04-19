@@ -9,6 +9,7 @@ import {
   OurServicesPage,
   SecurityServicesPage,
   NotFoundPage,
+  InvestigationPage,
 } from "../containers";
 
 const router = createBrowserRouter(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route index element={<HomePage />} />
       <Route path="security-services" element={<SecurityServicesPage />} />
       <Route path="our-services" element={<OurServicesPage />} />
+      <Route path="investigation" element={<InvestigationPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>,
   ),

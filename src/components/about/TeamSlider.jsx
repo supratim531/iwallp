@@ -107,7 +107,7 @@ const TeamSlider = () => {
                     {item.description}
                   </span>
                   <button
-                    className="rounded-xl bg-secondary px-8 py-3 font-semibold hover:bg-black hover:text-white"
+                    className="rounded-xl bg-secondary px-8 py-3 font-semibold text-white duration-200 hover:bg-black"
                     onClick={() => {
                       setIsModalOpen(true);
                       setSelectedMember(item);

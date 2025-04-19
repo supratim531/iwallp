@@ -14,7 +14,7 @@ const Testimonials = () => {
       setIndex((prevIndex) =>
         testimonials.length ? (prevIndex + 1) % testimonials.length : 0,
       );
-    }, 10000);
+    }, 10050);
 
     return () => clearInterval(interval);
   }, [testimonials.length]);
@@ -32,13 +32,13 @@ const Testimonials = () => {
           "With numerous successful outcomes and satisfied clients, we have established ourselves as a beacon of excellence in Kolkata's legal and investigative communities."
         }
       >
-        <div className="relative flex h-80 flex-col items-center justify-center overflow-hidden rounded-2xl bg-[#415681] px-14 text-center text-white lg:flex-auto">
+        <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-2xl bg-[#415681] px-14 text-center text-white lg:flex-auto">
           <div className="progress-bar mb-10 mt-2 h-1 w-full origin-left bg-white"></div>
           <div className="fas fa-quote-left fa-quote"></div>
           <div className="fas fa-quote-right fa-quote"></div>
           <p
             aria-live="polite"
-            className="mb-5 line-clamp-4 flex overflow-hidden text-ellipsis text-justify text-[16px] leading-[24px]"
+            className="mb-5 line-clamp-4 flex overflow-hidden text-ellipsis text-center text-[16px] leading-[24px]"
           >
             {text}
           </p>

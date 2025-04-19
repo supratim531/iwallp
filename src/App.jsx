@@ -3,13 +3,9 @@ import { Outlet } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 import Navbar from "./components/navbar/Navbar";
-import Header from "./components/header/Header";
-import Slider from "./components/about/Slider";
-import Services from "./components/services/ServicesNew";
-import Teams from "./components/about/Team";
-import TeamSlider from "./components/about/TeamSlider";
+
 import { Footer } from "./components";
-import { Testimonials } from "./components";
+import { ScrollToTop, WhatsAppPopup } from "./components";
 import { PreloaderSmall } from "./assets";
 import { RootProvider } from "./contexts/rootContext";
 
@@ -46,6 +42,8 @@ export const App = (props) => {
   return (
     <Configurations>
       <HelmetProvider>
+        <WhatsAppPopup />
+        <ScrollToTop />
         <Navbar />
         <Outlet />
         <Footer />
@@ -53,17 +51,3 @@ export const App = (props) => {
     </Configurations>
   );
 };
-
-// export default function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <Header />
-//       <Services />
-//       <TeamSlider />
-//       {/* <Slider /> */}
-//       <Testimonials />
-//       <Footer />
-//     </>
-//   );
-// }

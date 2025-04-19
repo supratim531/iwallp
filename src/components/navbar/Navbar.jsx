@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-auto top-0 z-50 flex w-full items-center justify-between bg-[#415781] px-10 font-mono font-bold text-white shadow-md transition-all duration-150 ease-in-out ${
+      className={`py-auto top-0 z-50 flex w-full items-center justify-between bg-[#415781] px-10 font-[Roboto] text-white shadow-md transition-all duration-150 ease-in-out ${
         scrolled ? "fixed" : "fixed"
       }`}
     >
@@ -45,36 +45,40 @@ const Navbar = () => {
         <div className="flex h-full flex-col justify-between bg-primary-dark pb-24 pt-10">
           <ul className="flex flex-col text-xl text-white [&>li]:h-16 [&>li]:text-center">
             <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
-              <Link
-                to={"/"}
+              <HashLink
+                smooth
+                to={`/#home`}
                 className="flex h-full w-full items-center justify-center"
               >
                 Home
-              </Link>
+              </HashLink>
             </li>
             <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
-              <a
-                href="#about"
+              <HashLink
+                smooth
+                to={`/#about`}
                 className="flex h-full w-full items-center justify-center"
               >
                 About Us
-              </a>
+              </HashLink>
             </li>
             <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
-              <a
-                href="#service"
+              <HashLink
+                smooth
+                to={`/#service`}
                 className="flex h-full w-full items-center justify-center"
               >
                 Services
-              </a>
+              </HashLink>
             </li>
             <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
-              <a
-                href="#contact"
+              <HashLink
+                smooth
+                to={`/#contact`}
                 className="flex h-full w-full items-center justify-center"
               >
                 Contact Us
-              </a>
+              </HashLink>
             </li>
           </ul>
         </div>
@@ -92,7 +96,7 @@ const Navbar = () => {
           <img
             alt="Brand"
             src={Brandlogo}
-            className="relative flex w-40 items-center justify-between px-2 py-3"
+            className="relative flex w-40 items-center justify-between py-3"
           />
         </HashLink>
       </section>
@@ -104,7 +108,7 @@ const Navbar = () => {
               <HashLink
                 smooth
                 to={`/#${nav.link}`}
-                className="!text-white transition duration-300 hover:!text-black"
+                className="!text-white transition duration-200 hover:!text-secondary"
                 // onClick={() => {
                 //   const section = document.getElementById(nav.link);
                 //   section?.scrollIntoView({ behavior: "smooth" });

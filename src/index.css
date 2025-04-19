@@ -36,7 +36,7 @@ code {
 } */
 
 .slick-arrow::before {
-  font-size: 30px;
+  font-size: 40px;
   color: #c9a267;
 }
 
@@ -48,11 +48,4 @@ code {
 .slick-next {
   right: 0px;
   z-index: 20;
-}
-
-@media (max-width: 600px) {
-  .slick-arrow::before {
-    font-size: 20px;
-    color: #c9a267;
-  }
 }

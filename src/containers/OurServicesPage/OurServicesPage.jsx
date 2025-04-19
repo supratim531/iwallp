@@ -38,10 +38,13 @@ const OurServicesPage = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="relative inset-0 flex h-screen items-center justify-center text-2xl text-white"
+        className="relative inset-0 flex h-[45vh] items-center justify-center text-2xl text-white sm:h-[75vh] lg:h-screen"
       >
         <div>
-          <Link className="text-secondary" to={"/"}>
+          <Link
+            to={"/"}
+            className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
+          >
             Home
           </Link>{" "}
           {"/"} <span>Our Services</span>
@@ -62,7 +65,7 @@ const OurServicesPage = () => {
                 {services.map((service, idx) => (
                   <div
                     key={idx}
-                    className="group relative min-h-[400px] flex-1 overflow-hidden rounded-lg"
+                    className="group relative flex min-h-[400px] flex-1 items-center justify-center overflow-hidden rounded-lg"
                     style={{
                       backgroundImage: `url(${service.bg})`,
                       backgroundSize: "cover",
@@ -70,7 +73,7 @@ const OurServicesPage = () => {
                     }}
                   >
                     <div className="absolute inset-0 bg-black/50 transition duration-300 group-hover:bg-black/60"></div>
-                    <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center text-white">
+                    <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center text-white">
                       <h3 className="mb-4 text-lg font-bold md:text-xl">
                         {service.title}
                       </h3>

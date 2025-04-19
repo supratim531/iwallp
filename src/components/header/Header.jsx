@@ -60,7 +60,7 @@ const Header = () => {
   return (
     // Desktop Version
     <header id="home" className="relative h-screen w-full">
-      <div className="relative mt-[4.3rem] flex flex-col items-center justify-center bg-gray-700 px-4 py-2 text-center xl:flex-row xl:justify-between">
+      <div className="relative mt-[4.3rem] flex flex-col items-center justify-center bg-primary-light px-4 py-2 text-center xl:flex-row xl:justify-between">
         <div className="relative flex border-2 border-black bg-[#C9A267] px-2 text-white">
           <div className="relative flex items-center justify-between p-2 text-sm">
             24x7 Emergency :{"  "}
@@ -254,7 +254,7 @@ const Header = () => {
       </button>
       {/*End -  Navigation Arrows */}
 
-      <section className="absolute bottom-[-30rem] left-[50%] z-10 w-[85%] translate-x-[-50%] bg-[#2d3440] py-12 min-[480px]:bottom-[-22rem] md:-bottom-72 md:w-[640px] xl:-bottom-44">
+      <section className="absolute bottom-[-36rem] left-[50%] z-10 w-[85%] translate-x-[-50%] bg-[#2d3440] py-12 min-[350px]:bottom-[-30rem] min-[400px]:bottom-[-28rem] min-[576px]:bottom-[-22rem] md:bottom-[-16rem] md:w-[640px] xl:-bottom-48">
         <div className="">
           <div className="flex flex-col items-center gap-4 md:flex-row md:gap-0">
             {services.map((service, index) => (

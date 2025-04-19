@@ -12,14 +12,17 @@ const SecurityServicesPage = () => {
         style={{
           backgroundImage: `url(${SecurityServiceImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "left",
           backgroundRepeat: "no-repeat",
         }}
-        className="relative inset-0 flex h-screen items-center justify-center text-2xl text-white"
+        className="relative inset-0 flex h-[45vh] items-center justify-center !bg-left text-2xl text-white sm:h-[75vh] md:!bg-center lg:h-screen"
       >
         <div>
-          <Link className="text-secondary" to={"/"}>
-            Home
+          <Link
+            to={"/our-services"}
+            className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
+          >
+            Services
           </Link>{" "}
           {"/"} <span>Security Services</span>
         </div>
@@ -43,6 +46,7 @@ const SecurityServicesPage = () => {
               Comprehensive Security and Protection Solutions by Innerwork
               Advisors LLP
             </h2>
+
             <p className="mb-6">
               At Innerwork Advisors LLP, we provide a robust suite of integrated
               security and protection services, meticulously designed to
@@ -51,9 +55,11 @@ const SecurityServicesPage = () => {
               expertise, vigilance, and state-of-the-art solutions tailored to
               the unique requirements of each client across India.
             </p>
+
             <h3 className="mb-4 text-2xl font-semibold">
               Our Core Service Offerings:
             </h3>
+
             <ol className="list-decimal space-y-6 pl-6">
               <li>
                 <strong>Manned Security & Personnel:</strong>

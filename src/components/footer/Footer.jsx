@@ -18,7 +18,7 @@ const Footer = () => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);
   const [isTermsConditions, setIsTermsConditions] = useState(false);
   return (
-    <footer className="relative h-[100%] w-[100%] overflow-hidden bg-black px-10 py-5">
+    <footer className="relative h-[100%] w-[100%] overflow-hidden bg-primary-dark px-10 py-5">
       <Container>
         <div className="map-container-2 flex w-full flex-col items-start gap-4 pt-8 lg:h-[280px] lg:flex-row">
           <div className="flex h-full w-full flex-col gap-2 text-secondary">

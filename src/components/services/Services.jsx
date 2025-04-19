@@ -5,6 +5,7 @@ import { useInView } from "framer-motion";
 import { servicesData } from "../../assets";
 
 const sections = ["Investigation", "Security"];
+
 export default function Services() {
   const [activeSection, setActiveSection] = useState("Investigation");
   const [selectedService, setSelectedService] = useState(null);
@@ -21,12 +22,12 @@ export default function Services() {
   return (
     <div className="p-6">
       {/* Section Tabs */}
-      <div className="flex justify-center space-x-4 mb-8">
+      <div className="mb-8 flex justify-center space-x-4">
         {sections.map((section) => (
           <button
             key={section}
             onClick={() => setActiveSection(section)}
-            className={`px-6 py-2 rounded-full text-white font-semibold transition ${
+            className={`rounded-full px-6 py-2 font-semibold text-white transition ${
               activeSection === section ? "bg-black" : "bg-gray-500"
             }`}
           >
@@ -38,7 +39,7 @@ export default function Services() {
       {/* Services Cards with Background Images */}
       <div
         ref={ref}
-        className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6"
+        className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"
       >
         {servicesData[activeSection].map((service, index) => (
           <motion.div
@@ -46,9 +47,7 @@ export default function Services() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            className="relative bg-[#415781] rounded-lg overflow-hidden cursor-pointer 
-           hover:scale-105 hover:shadow-2xl hover:shadow-[#C9A267]/30
-           transition-transform duration-300"
+            className="relative cursor-pointer overflow-hidden rounded-lg bg-[#415781] transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#C9A267]/30"
           >
             {/* Background Image */}
             <div
@@ -62,11 +61,11 @@ export default function Services() {
               }}
             >
               {/* Overlay (Text + Button Centered) */}
-              <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white">
                 <h3 className="text-xl font-semibold">{service.title}</h3>
                 <button
                   onClick={() => setSelectedService(service)}
-                  className="mt-2 bg-[#C9A267] text-white font-bold px-4 py-2 rounded-lg"
+                  className="mt-2 rounded-lg bg-[#C9A267] px-4 py-2 font-bold text-white"
                 >
                   Learn More
                 </button>
@@ -88,17 +87,16 @@ export default function Services() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-white p-6 rounded-lg max-w-2xl w-[600px] overflow-y-auto max-h-[90vh]"
+            className="max-h-[90vh] w-[600px] max-w-2xl overflow-y-auto rounded-lg bg-white p-6"
           >
             <h2 className="text-2xl font-bold">{selectedService.title}</h2>
 
             {/* Dynamic Content Based on Service Title */}
-            <p className="text-gray-600 mt-2">
+            <p className="mt-2 text-gray-600">
               {selectedService.title === "Security Services" && (
                 <>
-                  ses, and organizations. With extensive
-                  expertise, we ensure that your safety and protection remain
-                  uncompromised.
+                  ses, and organizations. With extensive expertise, we ensure
+                  that your safety and protection remain uncompromised.
                   <br />
                   <br />
                   <strong>Personal Security Services</strong>
@@ -111,15 +109,16 @@ export default function Services() {
                       <strong>Family Protection Services:</strong> Ensuring
                       safety for families with discreet security measures.
                     </li>
-                    <li><strong>
-                    Our Premier Security Services: Safeguarding Lives and Assets
-                    with Precision and Care
-                  </strong>
-                  <br />
-                  <br />
-                  At Interwork Advisors LLP, our skilled security professionals
-                  specialize in providing top-notch security services for
-                  individuals, busines
+                    <li>
+                      <strong>
+                        Our Premier Security Services: Safeguarding Lives and
+                        Assets with Precision and Care
+                      </strong>
+                      <br />
+                      <br />
+                      At Interwork Advisors LLP, our skilled security
+                      professionals specialize in providing top-notch security
+                      services for individuals, busines
                       <strong>Event Security:</strong> Planning and executing
                       security for events of any scale.
                     </li>
@@ -1051,9 +1050,9 @@ export default function Services() {
                 Handling IP conflicts through filing and defending oppositions,
                 cancellations, and rectification proceedings.
                 <br />
-                <br />✔ <strong>Strategic Advisory:</strong> Developing business
-                strategies involving intellectual property rights and data
-                privacy laws to help businesses maximize value and mitigate
+                <br />✔ <strong>Strategic Advisory:</strong> Developing
+                business strategies involving intellectual property rights and
+                data privacy laws to help businesses maximize value and mitigate
                 risks.
                 <br />
                 <br />
@@ -1094,8 +1093,8 @@ export default function Services() {
                 <br />
                 Our investigative efforts yield one of two outcomes:
                 <br />
-                <br />✔ <strong>Misconceptions Cleared:</strong> Your doubts are
-                resolved, and any concerns turn out to be mere
+                <br />✔ <strong>Misconceptions Cleared:</strong> Your doubts
+                are resolved, and any concerns turn out to be mere
                 misunderstandings.
                 <br />
                 <br />✔ <strong>Valid Concerns Identified:</strong> If
@@ -1161,13 +1160,13 @@ export default function Services() {
                 their family, empowering you to make crucial decisions about
                 your future.
                 <br />
-                <br />✔ <strong>Suspicion of Infidelity:</strong> If you suspect
-                unfaithfulness, our discreet investigations can uncover the
-                truth.
+                <br />✔ <strong>Suspicion of Infidelity:</strong> If you
+                suspect unfaithfulness, our discreet investigations can uncover
+                the truth.
                 <br />
-                <br />✔ <strong>Unethical or Hidden Activities:</strong> We help
-                verify any underhanded actions by your spouse or in-laws that
-                may impact your marriage.
+                <br />✔ <strong>Unethical or Hidden Activities:</strong> We
+                help verify any underhanded actions by your spouse or in-laws
+                that may impact your marriage.
                 <br />
                 <br />
                 Innerwork Advisors LLP ensures absolute confidentiality in all
@@ -1458,8 +1457,9 @@ export default function Services() {
                 ensuring that your privacy is safeguarded throughout the
                 process.
                 <br />
-                <br />✔ <strong>Uncover the Truth</strong> – We employ effective
-                methodologies to uncover facts and gather compelling evidence.
+                <br />✔ <strong>Uncover the Truth</strong> – We employ
+                effective methodologies to uncover facts and gather compelling
+                evidence.
                 <br />
                 <br />✔ <strong>Legal Evidence Collection</strong> – We provide
                 concrete proof that can be presented in court.
@@ -1554,8 +1554,8 @@ export default function Services() {
                 swiftly identify genuine authors of documents and detect any
                 fraudulent handwriting behaviors.
                 <br />
-                <br />✔ <strong>Forensic Analysis</strong> – We utilize advanced
-                forensic intelligence to ensure accurate results.
+                <br />✔ <strong>Forensic Analysis</strong> – We utilize
+                advanced forensic intelligence to ensure accurate results.
                 <br />
                 <br />✔ <strong>Prompt Investigation</strong> – Quick and
                 efficient handwriting comparisons to address client concerns.
@@ -2066,7 +2066,7 @@ export default function Services() {
 
             <button
               onClick={() => setSelectedService(null)}
-              className="mt-4 bg-[#C9A267] text-white px-4 py-2 rounded"
+              className="mt-4 rounded bg-[#C9A267] px-4 py-2 text-white"
             >
               Close
             </button>

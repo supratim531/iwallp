@@ -5,3 +5,5 @@ export { default as Services } from "./services/ServicesNew";
 export { default as Contact } from "./Contact/Contact";
 export { default as Footer } from "./footer/Footer";
 export { default as Testimonials } from "./extra/Testimonials";
+export { default as WhatsAppPopup } from "./WhatsAppPopup/WhatsAppPopup";
+export { default as ScrollToTop } from "./ScrollToTop/ScrollToTop";

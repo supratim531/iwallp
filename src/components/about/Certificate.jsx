@@ -76,7 +76,7 @@ const Certificate = () => {
                 <Container>
                   <div
                     key={index}
-                    className="max-h-auto mb-5 flex flex-col items-center justify-between rounded-lg bg-black px-4 py-4 text-white shadow-lg md:max-w-md lg:max-w-2xl"
+                    className="max-h-auto mb-8 flex flex-col items-center justify-between rounded-lg bg-black px-4 py-4 text-white shadow-lg md:mb-16 md:max-w-md lg:max-w-2xl"
                   >
                     <img
                       src={item.image}
