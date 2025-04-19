@@ -292,7 +292,7 @@ const Footer = () => {
                 Acceptance of conditions of the agreement
               </strong>
               <br />
-              www.innerworklegalservices.com provides private investigation
+              www.innerworkadvisorsllp.com provides private investigation
               service to the clients based on their request against the
               conditions of this agreement, and by clicking on the “I accept”
               form signifies, your acceptance of all the conditions of this
@@ -305,11 +305,10 @@ const Footer = () => {
               </strong>
               <br />
               Clients hereby declare that no contractual or legal liability
-              arises against www.innerworklegalservices.com by hiring our
-              services and sharing their personal information, the use of which
-              is at the sole risk of the client. No notice or advice from any
-              client to www.innerworklegalservices.com will create any liability
-              whatsoever.
+              arises against www.innerworkadvisorsllp.com by hiring our services
+              and sharing their personal information, the use of which is at the
+              sole risk of the client. No notice or advice from any client to
+              www.innerworkadvisorsllp.com will create any liability whatsoever.
             </p>
           </div>
         </Modal>

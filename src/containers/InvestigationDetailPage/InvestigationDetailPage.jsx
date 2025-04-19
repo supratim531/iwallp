@@ -51,10 +51,10 @@ export default function InvestigationDetail() {
 
         <Section
           label={investigation.name}
-          classname="relative flex items-center justify-between text-center"
+          classname="relative flex items-center justify-between text-center [&>div>p]:text-center"
         >
           <h1 className="mb-4 text-3xl font-bold">{investigation.heading}</h1>
-          <h2 className="mb-2 text-xl font-semibold text-gray-700">
+          <h2 className="mb-2 text-center text-xl font-semibold text-gray-700">
             {investigation.title}
           </h2>
           <p className="leading-relaxed text-gray-600">

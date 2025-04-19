@@ -60,36 +60,34 @@ const OurServicesPage = () => {
           }
         >
           <div className="w-full bg-white py-10">
-            <div className="container mx-auto px-4">
-              <div className="flex flex-col gap-6 md:flex-row">
-                {services.map((service, idx) => (
-                  <div
-                    key={idx}
-                    className="group relative flex min-h-[400px] flex-1 items-center justify-center overflow-hidden rounded-lg"
-                    style={{
-                      backgroundImage: `url(${service.bg})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  >
-                    <div className="absolute inset-0 bg-black/50 transition duration-300 group-hover:bg-black/60"></div>
-                    <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center text-white">
-                      <h3 className="mb-4 text-lg font-bold md:text-xl">
-                        {service.title}
-                      </h3>
-                      <p className="mb-6 text-sm md:text-base">
-                        {service.description}
-                      </p>
-                      <Link
-                        to={`/${service.url}`}
-                        className={`rounded-sm px-6 py-4 ${service.btnColor} text-sm font-semibold transition hover:opacity-90`}
-                      >
-                        KNOW MORE
-                      </Link>
-                    </div>
+            <div className="flex flex-col gap-6 md:flex-row">
+              {services.map((service, idx) => (
+                <div
+                  key={idx}
+                  className="group relative flex min-h-[400px] flex-1 items-center justify-center overflow-hidden rounded-lg"
+                  style={{
+                    backgroundImage: `url(${service.bg})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
+                  <div className="absolute inset-0 bg-black/50 transition duration-300 group-hover:bg-black/60"></div>
+                  <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center text-white">
+                    <h3 className="mb-4 text-lg font-bold md:text-xl">
+                      {service.title}
+                    </h3>
+                    <p className="mb-6 text-sm md:text-base">
+                      {service.description}
+                    </p>
+                    <Link
+                      to={`/${service.url}`}
+                      className={`rounded-sm px-6 py-4 ${service.btnColor} text-sm font-semibold transition hover:opacity-90`}
+                    >
+                      KNOW MORE
+                    </Link>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </Section>
