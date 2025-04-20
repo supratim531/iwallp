@@ -63,7 +63,7 @@ const Header = () => {
   return (
     // Desktop Version
     <header id="home" className="relative h-screen w-full">
-      <div className="relative mt-[4.6rem] flex flex-col items-center justify-center bg-primary-dark px-4 py-2 text-center xl:flex-row xl:justify-between">
+      <div className="relative mt-[5.2rem] flex flex-col items-center justify-center bg-primary-dark px-4 py-2 text-center xl:flex-row xl:justify-between">
         <div className="relative flex border-2 border-black bg-[#C9A267] px-2 text-white">
           <div className="relative flex items-center justify-between p-2 text-sm">
             24x7 Emergency :{"  "}
