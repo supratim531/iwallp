@@ -61,7 +61,7 @@ const InvestigationPage = () => {
               >
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-[#343a4980] p-4 text-center font-roboto font-medium text-white transition-all hover:bg-[#343a49e0] md:text-lg">
                   <h3 className="text-xl font-semibold">
-                    {investigation.title}
+                    {investigation.name}
                   </h3>
                   <Link
                     to={`/investigation/${investigation.urlPath}`}

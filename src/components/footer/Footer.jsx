@@ -18,7 +18,7 @@ const Footer = () => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);
   const [isTermsConditions, setIsTermsConditions] = useState(false);
   return (
-    <footer className="relative h-[100%] w-[100%] overflow-hidden bg-primary-dark px-10 py-5">
+    <footer className="relative h-[100%] w-[100%] overflow-hidden bg-primary-light px-10 py-5">
       <Container>
         <div className="map-container-2 flex w-full flex-col items-start gap-4 pt-8 lg:h-[280px] lg:flex-row">
           <div className="flex h-full w-full flex-col gap-2 text-secondary">
@@ -238,7 +238,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
+                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-primary-dark transition-transform hover:scale-110 hover:bg-[#C9A267]">
                       <FaTwitter className="text-sm text-white" />
                     </i>
                   </a>
@@ -249,7 +249,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
+                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-primary-dark transition-transform hover:scale-110 hover:bg-[#C9A267]">
                       <FaFacebookF className="text-sm text-white" />
                     </i>
                   </a>
@@ -260,7 +260,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
+                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-primary-dark transition-transform hover:scale-110 hover:bg-[#C9A267]">
                       <FaInstagram className="text-sm text-white" />
                     </i>
                   </a>
@@ -271,7 +271,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[#3b5998] transition-transform hover:scale-110 hover:bg-[#C9A267]">
+                    <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-primary-dark transition-transform hover:scale-110 hover:bg-[#C9A267]">
                       <FaLinkedinIn className="text-sm text-white" />
                     </i>
                   </a>
