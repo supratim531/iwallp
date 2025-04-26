@@ -1,13 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import {
-  certificate1,
-  certificate2,
-  certificate3,
-  certificate4,
-  certificate5,
-  certificates,
-} from "../../assets";
+import { certificate1, certificate2, certificates } from "../../assets";
 import { ArrowRight, ArrowLeft } from "react-feather";
 import { Section, Container, Modal } from "../shared";
 
@@ -108,7 +101,7 @@ const Certificate = () => {
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}
-                className="absolute left-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white transition-transform duration-500 ease-in-out disabled:opacity-50"
+                className="absolute left-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white transition-transform duration-500 ease-in-out disabled:opacity-50 md:hidden"
               >
                 <ArrowLeft size={30} />
               </button>

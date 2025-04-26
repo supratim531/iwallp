@@ -9,9 +9,6 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
-  // FaMobileAlt,
-  // FaEnvelope,
-  // FaPhoneAlt,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -105,7 +102,7 @@ const Header = () => {
         {images.map((img, index) => (
           <div
             key={index}
-            className={`relative inset-0 h-full w-full transition-opacity duration-1000 ease-in-out ${
+            className={`relative inset-0 h-full w-full transition-opacity duration-[3000] ease-in-out ${
               index === currentIndex ? "block" : "hidden"
             }`}
           >
