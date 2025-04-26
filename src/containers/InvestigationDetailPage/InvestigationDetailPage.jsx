@@ -27,7 +27,7 @@ export default function InvestigationDetail() {
           backgroundPosition: "left",
           backgroundRepeat: "no-repeat",
         }}
-        className="relative inset-0 flex h-[45vh] items-center justify-center !bg-left text-2xl text-white sm:h-[75vh] md:!bg-center lg:h-screen"
+        className="relative inset-0 flex h-[45vh] items-center justify-center !bg-left text-2xl text-white sm:h-[75vh] md:!bg-center lg:h-[50vh]"
       >
         <div className="text-center">
           <Link
@@ -40,7 +40,7 @@ export default function InvestigationDetail() {
         </div>
       </div>
 
-      <Container className="py-8 md:py-16">
+      <Container className="pb-8 md:pb-16">
         <div className="mt-8 flex h-[50vh] items-center justify-center shadow-md md:mt-16">
           <img
             className="h-full w-full object-cover"

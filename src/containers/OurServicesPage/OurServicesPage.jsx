@@ -38,7 +38,7 @@ const OurServicesPage = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="relative inset-0 flex h-[45vh] items-center justify-center text-2xl text-white sm:h-[75vh] lg:h-screen"
+        className="relative inset-0 flex h-[45vh] items-center justify-center text-2xl text-white sm:h-[75vh] lg:h-[50vh]"
       >
         <div className="text-center">
           <Link
