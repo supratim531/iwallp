@@ -89,13 +89,6 @@ const SecurityServicesPage = () => {
                     protection details or situations demanding superior
                     hand-to-hand readiness.
                   </li>
-                  <li>
-                    <strong>Dog Squad (K9 Unit):</strong> Our expertly trained
-                    K9 units provide exceptional detection capabilities
-                    (explosives, narcotics) and serve as a powerful deterrent,
-                    ideal for perimeter security, event screening, and patrol
-                    duties.
-                  </li>
                 </ul>
               </li>
 

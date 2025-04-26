@@ -8,7 +8,10 @@ const HomePage = (props) => {
       <Header />
       <Services />
 
+      <TeamSlider />
+      <Contact />
       <iframe
+        title="CRM Review Automation"
         class="lc_reviews_widget"
         src="https://reputationhub.site/reputation/widgets/review_widget/5A4qaPFdNsj88rnRxKHo?widgetId=68029f1083bb48e9bcb0ed58"
         frameborder="0"
@@ -18,9 +21,6 @@ const HomePage = (props) => {
           width: "100%",
         }}
       ></iframe>
-
-      <TeamSlider />
-      <Contact />
       <Testimonials />
 
       {/* <Hero />

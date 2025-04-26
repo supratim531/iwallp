@@ -28,9 +28,6 @@ export { default as member } from "./json/member.json";
 export { default as certificates } from "./json/certificate.json";
 export { default as certificate1 } from "./certificates/certificate1.jpg";
 export { default as certificate2 } from "./certificates/certificate2.jpg";
-export { default as certificate3 } from "./certificates/certificate3.jpg";
-export { default as certificate4 } from "./certificates/certificate4.jpg";
-export { default as certificate5 } from "./certificates/certificate5.jpg";
 
 export { default as GeneralImage } from "./image/investigations/general.png";
 export { default as AccidentalImage } from "./image/investigations/accidental.png";

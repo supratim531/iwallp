@@ -98,7 +98,7 @@ const Footer = () => {
 
             <p className="mb-4 mt-5 text-white md:w-[80%]">
               Feel free to submit your query to Kolkata's most trusted provider
-              of legal services, private investigation and man power provider
+              of investigation, security services and manpower provider
               solutions in Kolkata.
             </p>
             <ul

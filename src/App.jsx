@@ -19,7 +19,7 @@ const Configurations = (props) => {
     // Hide preloader after 3s
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
 
     // Cleanup timer
     return () => clearTimeout(timer);
@@ -28,7 +28,7 @@ const Configurations = (props) => {
   return loading ? (
     <div className="flex h-screen items-center justify-center bg-white">
       <img
-        className="w-72"
+        className="w-96"
         src={PreloaderSmall}
         alt="Innerwork Legal Service"
       />
