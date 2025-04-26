@@ -88,10 +88,10 @@ const Header = () => {
           <div className="relative flex items-center justify-between p-2 text-sm">
             Email Id :{"  "}
             <a
-              href="mailto:innerworkadvisorsllp@gmail.com"
+              href="mailto:info@innerworkadvisorsllp.com"
               className="flex flex-col px-1 text-sm font-semibold"
             >
-              innerworkadvisorsllp@gmail.com
+              info@innerworkadvisorsllp.com
             </a>
           </div>
         </div>
