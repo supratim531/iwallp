@@ -26,7 +26,7 @@ code {
   display: flex !important;
 }
 
-.slick-track {
+/* .slick-track {
   height: 680px;
   gap: 1rem !important;
   display: flex !important;
@@ -42,6 +42,24 @@ code {
       flex: 1;
     }
   }
+} */
+
+.slick-track {
+  height: 680px;
+  gap: 1rem !important;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.slick-track > div {
+  flex: 1;
+  height: 680px;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.slick-track > div > div {
+  flex: 1;
 }
 
 /* .slick-slide div {
