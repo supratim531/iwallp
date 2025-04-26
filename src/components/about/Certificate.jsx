@@ -101,7 +101,7 @@ const Certificate = () => {
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}
-                className="absolute left-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white transition-transform duration-500 ease-in-out disabled:opacity-50 md:hidden"
+                className="absolute left-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white transition-transform duration-500 ease-in-out disabled:opacity-50"
               >
                 <ArrowLeft size={30} />
               </button>

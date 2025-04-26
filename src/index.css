@@ -27,8 +27,21 @@ code {
 }
 
 .slick-track {
+  height: 680px;
   gap: 1rem !important;
   display: flex !important;
+  align-items: stretch !important;
+
+  & > div {
+    flex: 1;
+    height: 680px;
+    display: flex !important;
+    align-items: stretch !important;
+
+    & > div {
+      flex: 1;
+    }
+  }
 }
 
 /* .slick-slide div {
