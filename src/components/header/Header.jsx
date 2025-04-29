@@ -3,7 +3,7 @@ import { Image1, Image2, Image3 } from "../../assets";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Content } from "../../assets";
 import Container from "../shared/Container/Container";
-import { FaSearch, FaShieldAlt } from "react-icons/fa";
+
 import {
   FaTwitter,
   FaFacebookF,
@@ -14,22 +14,7 @@ import { Link } from "react-router-dom";
 
 const images = [Image1, Image2, Image3];
 
-const services = [
-  {
-    icon: <FaSearch className="text-3xl text-secondary" />,
-    title: "INVESTIGATION",
-    urlPath: "/investigation",
-    description:
-      "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
-  },
-  {
-    icon: <FaShieldAlt className="text-3xl text-secondary" />,
-    title: "PERSONAL SECURITY",
-    urlPath: "/security-services",
-    description:
-      "Protecting lives, securing assets, ensuring safety, providing peace of mind and confidence.",
-  },
-];
+
 
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,7 +22,7 @@ const Header = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 
@@ -59,7 +44,7 @@ const Header = () => {
 
   return (
     // Desktop Version
-    <header id="home" className="relative h-screen w-full">
+    <header id="home" className="relative w-full h-screen">
       <div className="relative mt-[5.2rem] flex flex-col items-center justify-center bg-primary-dark px-4 py-2 text-center xl:flex-row xl:justify-between">
         <div className="relative flex border-2 border-black bg-[#C9A267] px-2 text-white">
           <div className="relative flex items-center justify-between p-2 text-sm">
@@ -69,13 +54,6 @@ const Header = () => {
               className="flex-col px-1 text-sm font-semibold"
             >
               9073672051
-            </a>
-            {"  "}|{"  "}
-            <a
-              href="tel:9073932051"
-              className="flex-col px-1 text-sm font-semibold"
-            >
-              9073932051
             </a>
           </div>
         </div>
@@ -98,7 +76,7 @@ const Header = () => {
       </div>
 
       {/* Image Container */}
-      <div className="relative inset-0 flex h-screen items-center justify-center">
+      <div className="relative inset-0 flex items-center justify-center h-screen">
         {images.map((img, index) => (
           <div
             key={index}
@@ -110,12 +88,12 @@ const Header = () => {
               key={index}
               src={img}
               alt={`Slide ${index + 1}`}
-              className="h-full w-full object-cover"
+              className="object-cover w-full h-full"
             />
 
             {/* Overlay container*/}
             <Container>
-              <div className="absolute left-0 top-0 w-full px-4 py-3">
+              <div className="absolute top-0 left-0 w-full px-4 py-3">
                 {/* Social media icons */}
                 <ul className="relative z-10 flex flex-row space-x-4">
                   <li>
@@ -125,7 +103,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-[3px] transition-transform hover:scale-110">
-                        <FaFacebookF className="text-md text-white" />
+                        <FaFacebookF className="text-white text-md" />
                       </i>
                     </a>
                   </li>
@@ -136,7 +114,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-[3px] transition-transform hover:scale-110">
-                        <FaTwitter className="text-md text-white" />
+                        <FaTwitter className="text-white text-md" />
                       </i>
                     </a>
                   </li>
@@ -147,7 +125,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-[3px] transition-transform hover:scale-110">
-                        <FaInstagram className="text-md text-white" />
+                        <FaInstagram className="text-white text-md" />
                       </i>
                     </a>
                   </li>
@@ -158,7 +136,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-[3px] transition-transform hover:scale-110">
-                        <FaLinkedinIn className="text-md text-white" />
+                        <FaLinkedinIn className="text-white text-md" />
                       </i>
                     </a>
                   </li>
@@ -166,7 +144,7 @@ const Header = () => {
               </div>
 
               {/*END - Social media icons */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-opacity-50 px-3 py-2 text-center text-white">
+              <div className="absolute inset-0 flex flex-col items-center justify-center px-3 py-2 text-center text-white bg-opacity-50">
                 {/* Headings on Images with slicing*/}
                 <span className="mb-4 text-4xl md:text-4xl">
                   <strong>
@@ -195,7 +173,7 @@ const Header = () => {
                 </span>
 
                 {/* Description with slicing */}
-                <span className="relative mb-2 items-center justify-between text-center text-lg">
+                <span className="relative items-center justify-between mb-2 text-lg text-center">
                   <em>
                     {Content[index]?.description
                       .split(" ")
@@ -204,14 +182,14 @@ const Header = () => {
                   </em>
                 </span>
 
-                <span className="relative mb-6 items-center justify-between text-center text-lg">
+                <span className="relative items-center justify-between mb-6 text-lg text-center">
                   <em>
                     {Content[index]?.description.split(" ").slice(10).join(" ")}
                   </em>
                 </span>
 
                 {/* CTA Buttons */}
-                <div className="z-20 mb-8 flex flex-wrap gap-4 px-6 py-3">
+                <div className="z-20 flex flex-wrap gap-4 px-6 py-3 mb-8">
                   {/* Know More Button */}
                   <button
                     className="w-full !rounded-lg !border-2 !border-black !bg-primary-light px-6 py-3 !text-lg !font-semibold text-white !shadow-md transition-all duration-300 hover:!bg-primary-dark sm:w-auto"
@@ -239,7 +217,7 @@ const Header = () => {
 
       {/* Navigation Arrows - left*/}
       <button
-        className="absolute left-6 top-1/2 rounded-full bg-white bg-opacity-50 p-3 text-black transition-all duration-100 hover:bg-opacity-70"
+        className="absolute p-3 text-black transition-all duration-100 bg-white bg-opacity-50 rounded-full left-6 top-1/2 hover:bg-opacity-70"
         onClick={prevSlide}
       >
         <FaChevronLeft size={30} />
@@ -247,33 +225,12 @@ const Header = () => {
 
       {/* Navigation Arrows - Right*/}
       <button
-        className="absolute right-6 top-1/2 rounded-full bg-white bg-opacity-50 p-3 text-black transition-all duration-100 hover:bg-opacity-70"
+        className="absolute p-3 text-black transition-all duration-100 bg-white bg-opacity-50 rounded-full right-6 top-1/2 hover:bg-opacity-70"
         onClick={nextSlide}
       >
         <FaChevronRight size={30} />
       </button>
       {/*End -  Navigation Arrows */}
-
-      <section className="absolute bottom-[-36rem] left-[50%] z-10 w-[85%] translate-x-[-50%] bg-[#2d3440] py-12 min-[350px]:bottom-[-30rem] min-[400px]:bottom-[-28rem] min-[576px]:bottom-[-22rem] md:bottom-[-16rem] md:w-[640px] xl:-bottom-48">
-        <div className="">
-          <div className="flex flex-col items-center gap-4 md:flex-row md:gap-0">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="px-6 text-justify text-white last:border-none md:w-1/2 md:border-r md:border-slate-400"
-              >
-                <div className="mb-4 flex justify-center">{service.icon}</div>
-                <h3 className="mb-2 text-center text-lg font-bold duration-200 hover:text-secondary">
-                  <Link to={service.urlPath}>{service.title}</Link>
-                </h3>
-                <p className="text-center text-sm leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </header>
   );
 };

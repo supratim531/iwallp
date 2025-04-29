@@ -38,6 +38,7 @@ const Footer = () => {
               <i className="fa-solid fa-location-dot mt-1"></i>
               <span>
                 Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor, Kolkata 700001
+                ( Working Office )
               </span>
             </h3>
 
@@ -68,7 +69,9 @@ const Footer = () => {
               className="flex cursor-pointer items-start gap-2"
             >
               <i className="fa-solid fa-location-dot mt-1"></i>
-              <span>22, Sukeas Lane, 5th Floor, Kolkata 700001</span>
+              <span>
+                22, Sukeas Lane, 5th Floor, Kolkata 700001 ( Registered Office )
+              </span>
             </h3>
 
             <iframe
@@ -200,7 +203,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                 >
                   Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor, Kolkata
-                  700001
+                  700001 (Working Office)
                 </a>
               </div>
               <div className="relative flex items-center justify-between gap-4">
@@ -210,7 +213,8 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  22, Sukeas Lane, 5th Floor, Kolkata 700001
+                  22, Sukeas Lane, 5th Floor, Kolkata 700001 (Registered Office
+                  )
                 </a>
               </div>
 
