@@ -62,10 +62,8 @@ const ServiceNew = () => {
             WHAT WE DO
           </h2>
           <p className="mb-6 max-w-lg text-sm leading-relaxed text-gray-200 md:text-base">
-            When your rights are at stake, you need a legal team that will fight
-            tirelessly on your behalf. Our firm specializes in protecting the
-            rights of our clients, ensuring that they receive fair treatment and
-            due process under the law.
+            When your <strong>personal safety or peace of mind is at risk</strong>, you need a <strong>trusted security and investigative team</strong> that will work relentlessly on your behalf. Our firm specializes in protecting the personal safety
+            of our clients, ensuring the delivery of <strong>clarity, confidence and discreet support</strong> when you need the most.
           </p>
           <Link
             to={"/our-services"}
