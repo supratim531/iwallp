@@ -15,7 +15,7 @@ const SecurityServicesPage = () => {
           backgroundPosition: "left",
           backgroundRepeat: "no-repeat",
         }}
-        className="relative inset-0 flex h-[45vh] items-center justify-center !bg-left text-2xl text-white sm:h-[45vh] md:!bg-center lg:h-[50vh]"
+        className="relative inset-0 flex h-[45vh] items-center justify-center !bg-left text-2xl text-white sm:h-[45vh] md:!bg-center lg:h-[60vh]"
       >
         <div className="text-center">
           <Link
@@ -38,8 +38,8 @@ const SecurityServicesPage = () => {
         </div>
 
         <Section
-          classname="relative flex items-center justify-between text-center"
           label={"SECURITY SERVICES"}
+          // classname="relative flex items-center justify-between text-center"
         >
           <div>
             <h2 className="mb-6 text-3xl font-bold">
@@ -53,7 +53,7 @@ const SecurityServicesPage = () => {
               safeguard your personnel, assets, and operational integrity. Our
               commitment is to deliver unparalleled peace of mind through
               expertise, vigilance, and state-of-the-art solutions tailored to
-              the unique requirements of each client across India.
+              the unique requirements of each client across West Bengal.
             </p>
 
             <h3 className="mb-4 text-2xl font-semibold">

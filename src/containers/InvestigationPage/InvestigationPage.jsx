@@ -23,7 +23,7 @@ const InvestigationPage = () => {
           backgroundPosition: "left",
           backgroundRepeat: "no-repeat",
         }}
-        className="relative inset-0 flex h-[45vh] items-center justify-center !bg-left text-2xl text-white sm:h-[45vh] md:!bg-center lg:h-[50vh]"
+        className="relative inset-0 flex h-[45vh] items-center justify-center !bg-left text-2xl text-white sm:h-[45vh] md:!bg-center lg:h-[60vh]"
       >
         <div className="text-center">
           <Link

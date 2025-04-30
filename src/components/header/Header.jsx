@@ -1,30 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Image1, Image2, Image3 } from "../../assets";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { Content } from "../../assets";
 import Container from "../shared/Container/Container";
 
+import { Content, Image1, Image2, Image3 } from "../../assets";
 import {
   FaTwitter,
   FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const images = [Image1, Image2, Image3];
 
-
-
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, []);
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -35,17 +24,26 @@ const Header = () => {
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
+
   const contactCTA = () => {
+    window.location.href = "#footer";
+  };
+
+  const bookCTA = () => {
     window.location.href = "#contact";
   };
-  // const bookCTA = () => {
-  //   window.location.href = "#book";
-  // };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     // Desktop Version
-    <header id="home" className="relative w-full h-screen">
-      <div className="relative mt-[5.2rem] flex flex-col items-center justify-center bg-primary-dark px-4 py-2 text-center xl:flex-row xl:justify-between">
+    <header id="home" className="relative h-screen w-full">
+      {/* <div className="relative mt-[5.2rem] flex flex-col items-center justify-center bg-primary-dark px-4 py-2 text-center xl:flex-row xl:justify-between">
         <div className="relative flex border-2 border-black bg-[#C9A267] px-2 text-white">
           <div className="relative flex items-center justify-between p-2 text-sm">
             24x7 Emergency :{"  "}
@@ -73,10 +71,10 @@ const Header = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Image Container */}
-      <div className="relative inset-0 flex items-center justify-center h-screen">
+      <div className="relative inset-0 flex h-screen items-center justify-center">
         {images.map((img, index) => (
           <div
             key={index}
@@ -88,12 +86,12 @@ const Header = () => {
               key={index}
               src={img}
               alt={`Slide ${index + 1}`}
-              className="object-cover w-full h-full"
+              className="h-full w-full object-cover"
             />
 
             {/* Overlay container*/}
             <Container>
-              <div className="absolute top-0 left-0 w-full px-4 py-3">
+              <div className="absolute left-0 top-0 w-full px-4 py-3">
                 {/* Social media icons */}
                 <ul className="relative z-10 flex flex-row space-x-4">
                   <li>
@@ -103,7 +101,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-[3px] transition-transform hover:scale-110">
-                        <FaFacebookF className="text-white text-md" />
+                        <FaFacebookF className="text-md text-white" />
                       </i>
                     </a>
                   </li>
@@ -114,7 +112,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-[3px] transition-transform hover:scale-110">
-                        <FaTwitter className="text-white text-md" />
+                        <FaTwitter className="text-md text-white" />
                       </i>
                     </a>
                   </li>
@@ -125,7 +123,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-[3px] transition-transform hover:scale-110">
-                        <FaInstagram className="text-white text-md" />
+                        <FaInstagram className="text-md text-white" />
                       </i>
                     </a>
                   </li>
@@ -136,7 +134,7 @@ const Header = () => {
                       rel="noopener noreferrer"
                     >
                       <i className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border-[3px] transition-transform hover:scale-110">
-                        <FaLinkedinIn className="text-white text-md" />
+                        <FaLinkedinIn className="text-md text-white" />
                       </i>
                     </a>
                   </li>
@@ -144,9 +142,9 @@ const Header = () => {
               </div>
 
               {/*END - Social media icons */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center px-3 py-2 text-center text-white bg-opacity-50">
+              <div className="absolute inset-0 flex flex-col items-center justify-end bg-opacity-50 px-3 py-2 text-center text-white">
                 {/* Headings on Images with slicing*/}
-                <span className="mb-4 text-4xl md:text-4xl">
+                <span className="mb-4 text-2xl md:text-4xl">
                   <strong>
                     {Content[index].title.length === 33
                       ? Content[index].title.substring(
@@ -160,7 +158,7 @@ const Header = () => {
                   </strong>
                 </span>
 
-                <span className="mb-4 text-4xl md:text-4xl">
+                <span className="mb-4 text-2xl md:text-4xl">
                   <strong>
                     {Content[index].title.length === 33
                       ? Content[index].title.substring(
@@ -173,7 +171,7 @@ const Header = () => {
                 </span>
 
                 {/* Description with slicing */}
-                <span className="relative items-center justify-between mb-2 text-lg text-center">
+                <span className="relative mb-2 items-center justify-between text-center text-lg">
                   <em>
                     {Content[index]?.description
                       .split(" ")
@@ -182,18 +180,18 @@ const Header = () => {
                   </em>
                 </span>
 
-                <span className="relative items-center justify-between mb-6 text-lg text-center">
+                <span className="relative mb-6 items-center justify-between text-center text-lg">
                   <em>
                     {Content[index]?.description.split(" ").slice(10).join(" ")}
                   </em>
                 </span>
 
                 {/* CTA Buttons */}
-                <div className="z-20 flex flex-wrap gap-4 px-6 py-3 mb-8">
+                <div className="z-20 mb-8 flex flex-wrap gap-4 px-6 py-3">
                   {/* Know More Button */}
                   <button
                     className="w-full !rounded-lg !border-2 !border-black !bg-primary-light px-6 py-3 !text-lg !font-semibold text-white !shadow-md transition-all duration-300 hover:!bg-primary-dark sm:w-auto"
-                    onClick={contactCTA}
+                    onClick={bookCTA}
                   >
                     Book Consultation
                   </button>
@@ -217,7 +215,7 @@ const Header = () => {
 
       {/* Navigation Arrows - left*/}
       <button
-        className="absolute p-3 text-black transition-all duration-100 bg-white bg-opacity-50 rounded-full left-6 top-1/2 hover:bg-opacity-70"
+        className="absolute left-6 top-1/2 rounded-full bg-white bg-opacity-50 p-3 text-black transition-all duration-100 hover:bg-opacity-70"
         onClick={prevSlide}
       >
         <FaChevronLeft size={30} />
@@ -225,7 +223,7 @@ const Header = () => {
 
       {/* Navigation Arrows - Right*/}
       <button
-        className="absolute p-3 text-black transition-all duration-100 bg-white bg-opacity-50 rounded-full right-6 top-1/2 hover:bg-opacity-70"
+        className="absolute right-6 top-1/2 rounded-full bg-white bg-opacity-50 p-3 text-black transition-all duration-100 hover:bg-opacity-70"
         onClick={nextSlide}
       >
         <FaChevronRight size={30} />

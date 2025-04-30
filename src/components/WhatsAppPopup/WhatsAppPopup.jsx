@@ -3,7 +3,7 @@ import React from "react";
 const WhatsAppPopup = () => {
   return (
     <div
-      className="group fixed bottom-0 right-2 z-30 inline-flex cursor-pointer p-4"
+      className="group fixed bottom-4 right-4 z-30 inline-flex cursor-pointer"
       onClick={() =>
         window.open(
           "https://wa.me/919073672051?text=I%20want%20to%20know%20more%20details%20about%20Innerwork%20Advisors%20LLP ",

@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { BMW, DKDPW, MAAW, SCW, pillar } from "../../assets";
 import { ArrowRight, ArrowLeft } from "react-feather";
 import { Section, Container, Modal } from "../shared";
 import Certificate from "./Certificate";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import { BMW, DKDPW, MAAW, SCW, pillar, TeamImage } from "../../assets";
 
 const imageMap = {
   "Mr-Bibaswas-Mukherjee-500x500.webp": BMW,
@@ -48,7 +49,7 @@ const Team = () => {
     <section className="relative flex items-center justify-between bg-[#415781] text-center">
       <Container>
         <Section
-          classname="relative flex flex-row items-center justify-between text-center"
+          className="relative flex flex-row items-center justify-between text-center"
           title={"Our Team"}
           label={"THE PILLARS"}
           description={
@@ -104,7 +105,7 @@ const Team = () => {
                   </div>
                 </Container>
               ))}
-            <div classname="relative flex items-center justify-between">
+            <div className="relative flex items-center justify-between">
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}

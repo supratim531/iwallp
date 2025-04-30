@@ -38,7 +38,7 @@ const OurServicesPage = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="relative inset-0 flex h-[45vh] items-center justify-center text-2xl text-white sm:h-[45vh] lg:h-[50vh]"
+        className="relative inset-0 flex h-[45vh] items-center justify-center text-2xl text-white sm:h-[45vh] lg:h-[60vh]"
       >
         <div className="text-center">
           <Link
@@ -53,7 +53,7 @@ const OurServicesPage = () => {
 
       <Container>
         <Section
-          classname="relative flex items-center justify-between text-center"
+          className="relative flex flex-col items-center justify-between text-center"
           label={"Our Services"}
           description={
             "Innerwork Advisors LLP is a leading provider of legal services, private investigation and man power provider solutions in Kolkata. At our law and detective firm, we offer a comprehensive range of services tailored to meet the diverse needs of our clients. Our legal services comprises criminal, civil litigation, family law, corporate legal matters and other issues, where our experienced team provides expert guidance and representation."
@@ -64,7 +64,8 @@ const OurServicesPage = () => {
               {services.map((service, idx) => (
                 <div
                   key={idx}
-                  className="group relative flex min-h-[400px] flex-1 items-center justify-center overflow-hidden rounded-lg"
+                  className="group relative flex min-h-[400px] flex-1 overflow-hidden rounded-lg"
+                  // className="group relative flex min-h-[400px] flex-1 items-center justify-center overflow-hidden rounded-lg"
                   style={{
                     backgroundImage: `url(${service.bg})`,
                     backgroundSize: "cover",

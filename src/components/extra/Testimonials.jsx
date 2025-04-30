@@ -25,7 +25,7 @@ const Testimonials = () => {
   return (
     <Container>
       <Section
-        classname="relative flex items-center justify-between text-center"
+        className="relative flex flex-col items-center justify-between text-center"
         title={"What they say"}
         label={"TESTIMONIALS"}
         description={

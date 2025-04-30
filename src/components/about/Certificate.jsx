@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import { certificate1, certificate2, certificates } from "../../assets";
 import { ArrowRight, ArrowLeft } from "react-feather";
 import { Section, Container, Modal } from "../shared";
+
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const imageMap = {
   "certificate1.jpg": certificate1,
@@ -44,7 +45,7 @@ const Certificate = () => {
     <section className="relative flex items-center justify-between bg-[#415781] text-center">
       <Container>
         <Section
-          classname="relative flex flex-row items-center justify-between text-center"
+          className="relative flex items-center justify-center text-center"
           title={"Our Achievements"}
           label={"CERTIFICATES"}
           description={
@@ -66,7 +67,7 @@ const Certificate = () => {
                 Math.min(currentIndex + visibleCount, certificate.length),
               )
               .map((item, index) => (
-                <Container>
+                <Container key={index}>
                   <div
                     key={index}
                     className="max-h-auto mb-8 flex flex-col items-center justify-between rounded-lg bg-black px-4 py-4 text-white shadow-lg md:mb-16 md:max-w-md lg:max-w-2xl"

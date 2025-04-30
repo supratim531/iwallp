@@ -18,10 +18,13 @@ const Footer = () => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);
   const [isTermsConditions, setIsTermsConditions] = useState(false);
   return (
-    <footer className="relative h-[100%] w-[100%] overflow-hidden bg-primary-light px-10 py-5">
+    <footer
+      id="footer"
+      className="relative h-[100%] w-[100%] overflow-hidden bg-primary-light px-10 py-5"
+    >
       <Container>
         <div className="map-container-2 flex w-full flex-col items-start gap-4 pt-8 lg:h-[280px] lg:flex-row">
-          <div className="flex h-full w-full flex-col gap-2 text-secondary">
+          <div className="flex h-full w-full flex-col gap-2 text-secondary lg:w-[50%]">
             <h3
               onClick={(e) => {
                 e.stopPropagation();
@@ -36,7 +39,7 @@ const Footer = () => {
               className="flex cursor-pointer items-start gap-2"
             >
               <i className="fa-solid fa-location-dot mt-1"></i>
-              <span>
+              <span className="lg:truncate">
                 Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor, Kolkata 700001
                 ( Working Office )
               </span>
@@ -54,7 +57,7 @@ const Footer = () => {
               </a>
             </iframe>
           </div>
-          <div className="flex h-full w-full flex-col gap-2 text-secondary">
+          <div className="flex h-full w-full flex-col gap-2 text-secondary lg:w-[50%]">
             <h3
               onClick={(e) => {
                 e.stopPropagation();
@@ -69,7 +72,7 @@ const Footer = () => {
               className="flex cursor-pointer items-start gap-2"
             >
               <i className="fa-solid fa-location-dot mt-1"></i>
-              <span>
+              <span className="lg:truncate">
                 22, Sukeas Lane, 5th Floor, Kolkata 700001 ( Registered Office )
               </span>
             </h3>

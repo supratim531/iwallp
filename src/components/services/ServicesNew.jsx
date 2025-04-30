@@ -3,6 +3,7 @@ import { Container } from "../shared";
 import { OurServicesImage } from "../../assets";
 import { Link } from "react-router-dom";
 import { FaSearch, FaShieldAlt } from "react-icons/fa";
+
 const services = [
   {
     icon: <FaSearch className="text-3xl text-secondary" />,
@@ -32,8 +33,30 @@ const ServiceNew = () => {
       }}
       className="w-full text-white"
     >
-      <Container className="flex w-full flex-col md:flex-row">
-        <div className="flex flex-1 flex-col justify-center py-12 pt-[30rem] sm:pt-[26rem] md:pt-[20rem] lg:pt-[16rem]">
+      <Container className="flex w-full flex-col-reverse">
+        <div className="flex items-center justify-center">
+          <div className="w-[85%] bg-[#2d3440] py-12 md:w-[640px]">
+            <div className="flex flex-col items-center gap-4 md:flex-row md:gap-0">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="px-6 text-justify text-white last:border-none md:w-1/2 md:border-r md:border-slate-400"
+                >
+                  <div className="mb-4 flex justify-center">{service.icon}</div>
+                  <h3 className="mb-2 text-center text-lg font-bold duration-200 hover:text-secondary">
+                    <Link to={service.urlPath}>{service.title}</Link>
+                  </h3>
+                  <p className="text-center text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="flex flex-1 flex-col justify-center py-12 pt-[30rem] sm:pt-[26rem] md:pt-[20rem] lg:pt-[16rem]"> */}
+        <div className="flex flex-1 flex-col justify-center py-12">
           <span className="mb-2 text-sm text-secondary">Our Service</span>
           <h2 className="mb-6 text-3xl font-extrabold md:text-5xl">
             WHAT WE DO
@@ -50,7 +73,7 @@ const ServiceNew = () => {
           >
             KNOW MORE
           </Link>
-          <section className="absolute bottom-[-36rem] left-[50%] z-10 w-[85%] translate-x-[-50%] bg-[#2d3440] py-12 min-[350px]:bottom-[-30rem] min-[400px]:bottom-[-28rem] min-[576px]:bottom-[-22rem] md:bottom-[-16rem] md:w-[640px] xl:-bottom-48">
+          {/* <section className="absolute bottom-[-36rem] left-[50%] z-10 w-[85%] translate-x-[-50%] bg-[#2d3440] py-12 min-[350px]:bottom-[-30rem] min-[400px]:bottom-[-28rem] min-[576px]:bottom-[-22rem] md:bottom-[-16rem] md:w-[640px] xl:-bottom-48">
             <div className="">
               <div className="flex flex-col items-center gap-4 md:flex-row md:gap-0">
                 {services.map((service, index) => (
@@ -71,7 +94,7 @@ const ServiceNew = () => {
                 ))}
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
 
         {/* Right: Background Image */}

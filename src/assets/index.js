@@ -5,7 +5,8 @@ export { default as SecurityServiceImage } from "./image/security-service.png";
 export { default as SecurityClippedImage } from "./image/security-clipped.png";
 export { default as ServiceHeroImage } from "./image/service-hero.png";
 export { default as InvestigationImage } from "./image/investigation.png";
-export { default as OurServicesImage } from "./image/our-services.png";
+export { default as OurServicesImage } from "./image/our-services.webp";
+export { default as TeamImage } from "./image/team.webp";
 
 export { default as Brandlogo } from "./logo/logo.png";
 export { default as ContactUsImage } from "./image/contact-us.png";

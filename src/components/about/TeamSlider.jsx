@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Certificate from "./Certificate";
+import { Link } from "react-router-dom";
 
 import { Section, Container, Modal } from "../shared";
-import { BMW, DKDPW, MAAW, SCW, pillar } from "../../assets";
+import { FaSearch, FaShieldAlt } from "react-icons/fa";
+import { BMW, DKDPW, MAAW, SCW, pillar, TeamImage } from "../../assets";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,6 +16,23 @@ const imageMap = {
   "Mr-Asim-Ali-500x500.webp": MAAW,
   "Mr-Sujit-Chakraborty-500x500.webp": SCW,
 };
+
+const services = [
+  {
+    icon: <FaSearch className="text-3xl text-secondary" />,
+    title: "INVESTIGATION",
+    urlPath: "/investigation",
+    description:
+      "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
+  },
+  {
+    icon: <FaShieldAlt className="text-3xl text-secondary" />,
+    title: "PERSONAL SECURITY",
+    urlPath: "/security-services",
+    description:
+      "Protecting lives, securing assets, ensuring safety, providing peace of mind and confidence.",
+  },
+];
 
 const TeamSlider = () => {
   const [teamMembers, setTeamMembers] = useState([]);
@@ -67,16 +86,26 @@ const TeamSlider = () => {
   return (
     <Container id="about">
       <Section
-        classname="relative flex flex-row items-center justify-between text-center"
+        className="relative flex flex-col items-center justify-between text-center"
+        title={"Team"}
+        label={"OUR TEAM"}
+      >
+        <div>
+          <img src={TeamImage} alt="our-team.webp" />
+        </div>
+      </Section>
+
+      <Section
+        className="relative flex flex-row items-center justify-between text-center"
         title={"Our Team"}
         label={"THE PILLARS"}
         description={
-          <p className="relative mt-1 flex text-center text-lg font-normal">
+          <div className="relative mt-1 flex text-center text-lg font-normal">
             For years, we have built a legacy of success based on integrity,
             dedication, and relentless advocacy. Our proven track record is a
             testament to our ability to navigate complex legal challenges and
             achieve favourable results for our clients.
-          </p>
+          </div>
         }
       ></Section>
 
