@@ -42,7 +42,9 @@ const Navbar = () => {
     <header>
       <div className="fixed top-0 z-[110] flex h-[48px] w-full items-center justify-between bg-primary-dark px-4 text-center">
         <div className="block lg:hidden">
-          <i className="fa-solid fa-phone text-secondary"></i>
+          <a href="tel:9073672051">
+            <i className="fa-solid fa-phone text-secondary"></i>
+          </a>
         </div>
         <div className="relative hidden border-2 border-black bg-[#C9A267] px-2 text-white lg:flex">
           <div className="relative flex items-center justify-between p-2 text-sm">
@@ -61,7 +63,9 @@ const Navbar = () => {
         </h1>
 
         <div className="block lg:hidden">
-          <i className="fa-solid fa-envelope text-secondary"></i>
+          <a href="mailto:info@innerworkadvisorsllp.com">
+            <i className="fa-solid fa-envelope text-secondary"></i>
+          </a>
         </div>
         <div className="relative hidden border-2 border-black bg-[#C9A267] px-2 text-lg text-white lg:flex">
           <div className="relative flex items-center justify-between p-2 text-sm">

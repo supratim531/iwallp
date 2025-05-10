@@ -10,7 +10,7 @@ const Contact = (props) => {
     <article
       className={css.root}
       style={{
-        backgroundImage: `url(${ContactUsImage})`,
+        backgroundImage: `url(https://innerworkadvisorsllp.com/images/contact-us.png)`,
       }}
     >
       <Container>
