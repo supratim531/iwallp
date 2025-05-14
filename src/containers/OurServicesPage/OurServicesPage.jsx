@@ -43,7 +43,7 @@ const OurServicesPage = () => {
         <div className="text-center">
           <Link
             to={"/"}
-            className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
+            className="underline duration-200 text-secondary underline-offset-4 hover:text-primary-dark"
           >
             Home
           </Link>{" "}
@@ -56,10 +56,10 @@ const OurServicesPage = () => {
           className="relative flex flex-col items-center justify-between text-center"
           label={"Our Services"}
           description={
-            "Innerwork Advisors LLP is a leading provider of legal services, private investigation and man power provider solutions in Kolkata. At our law and detective firm, we offer a comprehensive range of services tailored to meet the diverse needs of our clients. Our legal services comprises criminal, civil litigation, family law, corporate legal matters and other issues, where our experienced team provides expert guidance and representation."
+            "Innerwork Advisors LLP is a leading provider of security services, private investigation and man power provider solutions in Kolkata. At our security and investigative firm, we offer a comprehensive range of services tailored to meet the diverse needs of our clients. Our firm specializes in protecting the personal safety of our clients, ensuring the delivery ofclarity, confidence and discreet support when you need the most."
           }
         >
-          <div className="w-full bg-white py-10">
+          <div className="w-full py-10 bg-white">
             <div className="flex flex-col gap-6 md:flex-row">
               {services.map((service, idx) => (
                 <div
@@ -72,7 +72,7 @@ const OurServicesPage = () => {
                     backgroundPosition: "center",
                   }}
                 >
-                  <div className="absolute inset-0 bg-black/50 transition duration-300 group-hover:bg-black/60"></div>
+                  <div className="absolute inset-0 transition duration-300 bg-black/50 group-hover:bg-black/60"></div>
                   <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center text-white">
                     <h3 className="mb-4 text-lg font-bold md:text-xl">
                       {service.title}
