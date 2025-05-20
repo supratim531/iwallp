@@ -10,6 +10,7 @@ import { PreloaderSmall } from "./assets";
 import { RootProvider } from "./contexts/rootContext";
 
 import "./App.css";
+import JsonLdSchema from "./components/JsonLdSchema";
 
 const Configurations = (props) => {
   const { children } = props;
@@ -34,7 +35,10 @@ const Configurations = (props) => {
       />
     </div>
   ) : (
-    <RootProvider value={{}}>{children}</RootProvider>
+    <RootProvider value={{}}>
+      <JsonLdSchema />
+      {children}
+    </RootProvider>
   );
 };
 
