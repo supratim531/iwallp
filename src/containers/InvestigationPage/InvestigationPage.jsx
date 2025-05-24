@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async";
 import { Container } from "../../components/shared";
 
 import { investigations } from "../../assets";
@@ -16,6 +16,15 @@ const InvestigationPage = () => {
 
   return (
     <section>
+      <Helmet>
+        <title>
+          Private Investigation Services - Innerwork Advisors LLP, Kolkata
+        </title>
+        <meta
+          name="description"
+          content="Hire our expert private investigators in Kolkata with Innerwork Advisors LLP. We specialize in surveillance, background checks, asset tracing & confidential inquiries."
+        />
+      </Helmet>
       <div
         style={{
           backgroundImage: `url(https://innerworkadvisorsllp.com/images/service-hero.png)`,
@@ -27,7 +36,7 @@ const InvestigationPage = () => {
       >
         <div className="text-center">
           <Link
-            to={"/our-services"}
+            to={"/our-services-kolkata"}
             className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
           >
             Services
@@ -64,7 +73,7 @@ const InvestigationPage = () => {
                     {investigation.name}
                   </h3>
                   <Link
-                    to={`/investigation/${investigation.urlPath}`}
+                    to={`/private-investigation-kolkata/${investigation.urlPath}`}
                     className="mt-2 rounded-lg bg-[#C9A267] px-4 py-2 font-bold text-white"
                   >
                     Learn More

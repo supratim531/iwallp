@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import { Section, Container } from "../../components/shared";
 
@@ -20,6 +21,10 @@ export default function InvestigationDetail() {
 
   return (
     <section>
+      <Helmet>
+        <title>{investigation.metaTitle}</title>
+        <meta name="description" content={investigation.metaDesc} />
+      </Helmet>
       <div
         style={{
           backgroundImage: `url(https://innerworkadvisorsllp.com/images/service-hero.png)`,
@@ -31,7 +36,7 @@ export default function InvestigationDetail() {
       >
         <div className="text-center">
           <Link
-            to={"/investigation"}
+            to={"/private-investigation-kolkata"}
             className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
           >
             Investigation
@@ -62,7 +67,7 @@ export default function InvestigationDetail() {
           </p>
           <div className="flex items-center justify-center">
             <Link
-              to={"/investigation"}
+              to={"/private-investigation-kolkata"}
               className="self-center rounded-md bg-secondary px-4 py-2 text-white"
             >
               Back

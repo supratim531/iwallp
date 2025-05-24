@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Helmet } from "react-helmet-async";
 import { Section, Container } from "../../components/shared";
 
 const SecurityServicesPage = () => {
   return (
     <section>
+      <Helmet>
+        <title>Security Service Agency - Innerwork Advisors LLP, Kolkata</title>
+        <meta
+          name="description"
+          content="Innerwork Advisors LLP is a trusted security service agency in Kolkata. We provide trained personnel for residential, corporate, and event security solutions."
+        />
+      </Helmet>
       <div
         style={{
           backgroundImage: `url(https://innerworkadvisorsllp.com/images/security-service.png)`,
@@ -17,7 +24,7 @@ const SecurityServicesPage = () => {
       >
         <div className="text-center">
           <Link
-            to={"/our-services"}
+            to={"/our-services-kolkata"}
             className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
           >
             Services
@@ -224,6 +231,14 @@ const SecurityServicesPage = () => {
                 today to discuss your requirements.
               </p>
             </div>
+          </div>
+          <div className="mt-5 flex items-center justify-center">
+            <Link
+              to={"/our-services-kolkata"}
+              className="self-center rounded-md bg-secondary px-4 py-2 text-white"
+            >
+              Back
+            </Link>
           </div>
         </Section>
       </Container>

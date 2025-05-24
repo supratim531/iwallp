@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Section, Container } from "../../components/shared";
+import { Helmet } from "react-helmet-async";
 
 const services = [
   {
@@ -9,7 +10,7 @@ const services = [
     description:
       "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
     bg: "https://innerworkadvisorsllp.com/images/investigation.png",
-    url: "investigation",
+    url: "private-investigation-kolkata",
     btnColor: "bg-primary-light text-white",
   },
   {
@@ -17,7 +18,7 @@ const services = [
     description:
       "From homes to businesses, we've got you secure. Trust us to keep your world safe and assured.",
     bg: "https://innerworkadvisorsllp.com/images/security.png",
-    url: "security-services",
+    url: "security-guard-services-kolkata",
     btnColor: "bg-primary-light text-white",
   },
 ];
@@ -25,6 +26,17 @@ const services = [
 const OurServicesPage = () => {
   return (
     <section>
+      <Helmet>
+        <title>
+          Our Services - Innerwork Advisors LLP - Best Private Investigator in
+          Kolkata
+        </title>
+        <meta
+          name="description"
+          content="Explore expert investigative & security services by Innerwork Advisors LLP. Trusted in Kolkata for surveillance, background checks, asset tracing & more"
+        />
+      </Helmet>
+
       <div
         style={{
           backgroundImage: `url(https://innerworkadvisorsllp.com/images/service-hero.png)`,

@@ -7,14 +7,14 @@ const services = [
   {
     icon: <FaSearch className="text-3xl text-secondary" />,
     title: "INVESTIGATION",
-    urlPath: "/investigation",
+    urlPath: "/private-investigation-kolkata",
     description:
       "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
   },
   {
     icon: <FaShieldAlt className="text-3xl text-secondary" />,
     title: "PERSONAL SECURITY",
-    urlPath: "/security-services",
+    urlPath: "/security-guard-services-kolkata",
     description:
       "Protecting lives, securing assets, ensuring safety, providing peace of mind and confidence.",
   },
@@ -70,33 +70,11 @@ const ServiceNew = () => {
             you need the most.
           </p>
           <Link
-            to={"/our-services"}
+            to={"/our-services-kolkata"}
             className="w-fit bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-gray-200"
           >
             KNOW MORE
           </Link>
-          {/* <section className="absolute bottom-[-36rem] left-[50%] z-10 w-[85%] translate-x-[-50%] bg-[#2d3440] py-12 min-[350px]:bottom-[-30rem] min-[400px]:bottom-[-28rem] min-[576px]:bottom-[-22rem] md:bottom-[-16rem] md:w-[640px] xl:-bottom-48">
-            <div className="">
-              <div className="flex flex-col items-center gap-4 md:flex-row md:gap-0">
-                {services.map((service, index) => (
-                  <div
-                    key={index}
-                    className="px-6 text-justify text-white last:border-none md:w-1/2 md:border-r md:border-slate-400"
-                  >
-                    <div className="mb-4 flex justify-center">
-                      {service.icon}
-                    </div>
-                    <h3 className="mb-2 text-center text-lg font-bold duration-200 hover:text-secondary">
-                      <Link to={service.urlPath}>{service.title}</Link>
-                    </h3>
-                    <p className="text-center text-sm leading-relaxed">
-                      {service.description}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section> */}
         </div>
       </Container>
     </section>

@@ -25,14 +25,14 @@ const services = [
   {
     icon: <FaSearch className="text-3xl text-secondary" />,
     title: "INVESTIGATION",
-    urlPath: "/investigation",
+    urlPath: "/private-investigation-kolkata",
     description:
       "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
   },
   {
     icon: <FaShieldAlt className="text-3xl text-secondary" />,
     title: "PERSONAL SECURITY",
-    urlPath: "/security-services",
+    urlPath: "/security-guard-services-kolkata",
     description:
       "Protecting lives, securing assets, ensuring safety, providing peace of mind and confidence.",
   },
