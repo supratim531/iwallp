@@ -97,6 +97,14 @@ const OurServicesPage = () => {
               ))}
             </div>
           </div>
+          <div className="mt-5 flex items-center justify-center">
+            <Link
+              to={"/#service"}
+              className="self-center rounded-md bg-secondary px-4 py-2 text-white"
+            >
+              Back
+            </Link>
+          </div>
         </Section>
       </Container>
     </section>
