@@ -1,0 +1,35 @@
+.section {
+  margin: 2rem 0;
+
+  @media (min-width: 768px) {
+    margin: 4rem 0;
+  }
+}
+
+.sectionTitle {
+  margin-bottom: 2rem;
+
+  & > h2 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--bg-secondary);
+    /* letter-spacing: 1.5px; */
+    /* color: color-mix(in srgb, var(--bg-secondary), transparent 0%); */
+  }
+}
+
+.description {
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  /* font-family: Gentium Basic; */
+
+  color: #737373;
+}

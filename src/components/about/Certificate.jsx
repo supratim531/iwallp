@@ -1,13 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
-import { certificate1, certificate2, certificates } from "../../assets";
 import { ArrowRight, ArrowLeft } from "react-feather";
-import { Section, Container, Modal } from "../shared";
+
+import { Modal, Section, Container } from "../shared";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import { certificate1, certificate2, certificates } from "../../assets";
 
 const imageMap = {
-  "certificate1.jpg": certificate1,
-  "certificate2.jpg": certificate2,
+  "certificate1.jpg":
+    "https://innerworkadvisorsllp.com/images/certificates/certificate1.jpg",
+  "certificate2.jpg":
+    "https://innerworkadvisorsllp.com/images/certificates/certificate2.jpg",
 };
 
 const Certificate = () => {
@@ -73,8 +76,8 @@ const Certificate = () => {
                     className="max-h-auto mb-8 flex flex-col items-center justify-between rounded-lg bg-black px-4 py-4 text-white shadow-lg md:mb-16 md:max-w-md lg:max-w-2xl"
                   >
                     <img
-                      src={item.image}
                       alt={item.id}
+                      src={item.image}
                       className="min-h-auto min-w-auto mb-4 object-contain"
                     />
 
@@ -102,7 +105,7 @@ const Certificate = () => {
               <button
                 onClick={prevSlide}
                 disabled={currentIndex === 0}
-                className="absolute left-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white transition-transform duration-500 ease-in-out disabled:opacity-50"
+                className="absolute left-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-1.5 py-0.5 text-white transition-transform duration-500 ease-in-out disabled:opacity-50 md:px-4 md:py-2"
               >
                 <ArrowLeft size={30} />
               </button>
@@ -110,7 +113,7 @@ const Certificate = () => {
               <button
                 onClick={nextSlide}
                 disabled={currentIndex >= certificate.length - visibleCount}
-                className="overflow:block absolute right-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-4 py-2 text-white disabled:opacity-50"
+                className="overflow:block absolute right-0 top-1/2 items-center rounded-lg bg-[#C9A267] px-1.5 py-0.5 text-white disabled:opacity-50 md:px-4 md:py-2"
               >
                 <ArrowRight size={30} />
               </button>

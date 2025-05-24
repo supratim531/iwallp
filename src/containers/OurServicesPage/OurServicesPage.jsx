@@ -3,18 +3,12 @@ import { Link } from "react-router-dom";
 
 import { Section, Container } from "../../components/shared";
 
-import {
-  SecurityImage,
-  ServiceHeroImage,
-  InvestigationImage,
-} from "../../assets";
-
 const services = [
   {
     title: "INVESTIGATION",
     description:
       "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
-    bg: InvestigationImage,
+    bg: "https://innerworkadvisorsllp.com/images/investigation.png",
     url: "investigation",
     btnColor: "bg-primary-light text-white",
   },
@@ -22,7 +16,7 @@ const services = [
     title: "SECURITY",
     description:
       "From homes to businesses, we've got you secure. Trust us to keep your world safe and assured.",
-    bg: SecurityImage,
+    bg: "https://innerworkadvisorsllp.com/images/security.png",
     url: "security-services",
     btnColor: "bg-primary-light text-white",
   },
@@ -33,7 +27,7 @@ const OurServicesPage = () => {
     <section>
       <div
         style={{
-          backgroundImage: `url(${ServiceHeroImage})`,
+          backgroundImage: `url(https://innerworkadvisorsllp.com/images/service-hero.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

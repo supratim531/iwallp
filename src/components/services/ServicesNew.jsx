@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "../shared";
-import { OurServicesImage } from "../../assets";
 import { Link } from "react-router-dom";
 import { FaSearch, FaShieldAlt } from "react-icons/fa";
 
@@ -26,7 +25,7 @@ const ServiceNew = () => {
     <section
       id="service"
       style={{
-        backgroundImage: `url(${OurServicesImage})`,
+        backgroundImage: `url(https://innerworkadvisorsllp.com/images/our-services.webp)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -56,14 +55,19 @@ const ServiceNew = () => {
         </div>
 
         {/* <div className="flex flex-1 flex-col justify-center py-12 pt-[30rem] sm:pt-[26rem] md:pt-[20rem] lg:pt-[16rem]"> */}
-        <div className="flex flex-1 flex-col justify-center py-12">
+        <div className="flex flex-1 flex-col justify-center py-12 md:py-16">
           <span className="mb-2 text-sm text-secondary">Our Service</span>
           <h2 className="mb-6 text-3xl font-extrabold md:text-5xl">
             WHAT WE DO
           </h2>
           <p className="mb-6 max-w-lg text-sm leading-relaxed text-gray-200 md:text-base">
-            When your <strong>personal safety or peace of mind is at risk</strong>, you need a <strong>trusted security and investigative team</strong> that will work relentlessly on your behalf. Our firm specializes in protecting the personal safety
-            of our clients, ensuring the delivery of <strong>clarity, confidence and discreet support</strong> when you need the most.
+            When your{" "}
+            <strong>personal safety or peace of mind is at risk</strong>, you
+            need a <strong>trusted security and investigative team</strong> that
+            will work relentlessly on your behalf. Our firm specializes in
+            protecting the personal safety of our clients, ensuring the delivery
+            of <strong>clarity, confidence and discreet support</strong> when
+            you need the most.
           </p>
           <Link
             to={"/our-services"}
@@ -94,14 +98,6 @@ const ServiceNew = () => {
             </div>
           </section> */}
         </div>
-
-        {/* Right: Background Image */}
-        <div
-          className="bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${OurServicesImage})`,
-          }}
-        ></div>
       </Container>
     </section>
   );

@@ -167,7 +167,7 @@ const Footer = () => {
               </li>
               <li>
                 <HashLink smooth to={"/#contact"}>
-                  Contact Us
+                  Book Consultation
                 </HashLink>
               </li>
             </ul>

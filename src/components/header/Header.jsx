@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Container from "../shared/Container/Container";
 
-import { Content, Image1, Image2, Image3 } from "../../assets";
+import { content } from "../../assets";
 import {
   FaTwitter,
   FaFacebookF,
@@ -10,7 +10,11 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-const images = [Image1, Image2, Image3];
+const images = [
+  "https://innerworkadvisorsllp.com/images/carousels/carousel1.webp",
+  "https://innerworkadvisorsllp.com/images/carousels/carousel2.webp",
+  "https://innerworkadvisorsllp.com/images/carousels/carousel3.webp",
+];
 
 const Header = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -146,26 +150,26 @@ const Header = () => {
                 {/* Headings on Images with slicing*/}
                 <span className="mb-4 text-2xl md:text-4xl">
                   <strong>
-                    {Content[index].title.length === 33
-                      ? Content[index].title.substring(
+                    {content[index].title.length === 33
+                      ? content[index].title.substring(
                           0,
-                          Math.floor(Content[index].title.length / 2),
+                          Math.floor(content[index].title.length / 2),
                         )
-                      : Content[index].title.substring(
+                      : content[index].title.substring(
                           0,
-                          Math.floor(Content[index].title.length / 2 + 1.5),
+                          Math.floor(content[index].title.length / 2 + 1.5),
                         )}
                   </strong>
                 </span>
 
                 <span className="mb-4 text-2xl md:text-4xl">
                   <strong>
-                    {Content[index].title.length === 33
-                      ? Content[index].title.substring(
-                          Math.floor(Content[index].title.length / 2),
+                    {content[index].title.length === 33
+                      ? content[index].title.substring(
+                          Math.floor(content[index].title.length / 2),
                         )
-                      : Content[index].title.substring(
-                          Math.floor(Content[index].title.length / 2 + 1.5),
+                      : content[index].title.substring(
+                          Math.floor(content[index].title.length / 2 + 1.5),
                         )}
                   </strong>
                 </span>
@@ -173,7 +177,7 @@ const Header = () => {
                 {/* Description with slicing */}
                 <span className="relative mb-2 items-center justify-between text-center text-lg">
                   <em>
-                    {Content[index]?.description
+                    {content[index]?.description
                       .split(" ")
                       .slice(0, 10)
                       .join(" ")}
@@ -182,7 +186,7 @@ const Header = () => {
 
                 <span className="relative mb-6 items-center justify-between text-center text-lg">
                   <em>
-                    {Content[index]?.description.split(" ").slice(10).join(" ")}
+                    {content[index]?.description.split(" ").slice(10).join(" ")}
                   </em>
                 </span>
 

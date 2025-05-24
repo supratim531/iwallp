@@ -3,7 +3,6 @@ import React from "react";
 import { Section, Container } from "../shared";
 
 import css from "./Contact.module.css";
-import { ContactUsImage } from "../../assets";
 
 const Contact = (props) => {
   return (

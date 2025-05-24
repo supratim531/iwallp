@@ -2,7 +2,13 @@ import React, { useState, useEffect } from "react";
 
 import { Modal } from "../../components/shared";
 import TeamSlider from "../../components/about/TeamSlider";
-import { Header, Contact, Services, Testimonials } from "../../components";
+import {
+  Header,
+  Contact,
+  Services,
+  Testimonials,
+  MissionVisionValues,
+} from "../../components";
 
 const HomePage = (props) => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);
@@ -16,6 +22,7 @@ const HomePage = (props) => {
   return (
     <main>
       <Header />
+      <MissionVisionValues />
       <Services />
       <TeamSlider />
       <Contact />

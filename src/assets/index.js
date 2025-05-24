@@ -13,7 +13,7 @@ export { default as ContactUsImage } from "./image/contact-us.png";
 export { default as Image1 } from "./caraousel/caraousel1.webp";
 export { default as Image2 } from "./caraousel/caraousel2.webp";
 export { default as Image3 } from "./caraousel/caraousel3.webp";
-export { default as Content } from "./json/content.json";
+export { default as content } from "./json/content.json";
 export { default as TestimonialData } from "./json/testimonialData.json";
 export { default as BMP } from "./slider/BIBASWAN MUKHERJEE.png";
 export { default as DKDPP } from "./slider/DEEPAK KUMAR DUTTA.png";

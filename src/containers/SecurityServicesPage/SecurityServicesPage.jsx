@@ -3,14 +3,12 @@ import { Link } from "react-router-dom";
 
 import { Section, Container } from "../../components/shared";
 
-import { SecurityClippedImage, SecurityServiceImage } from "../../assets";
-
 const SecurityServicesPage = () => {
   return (
     <section>
       <div
         style={{
-          backgroundImage: `url(${SecurityServiceImage})`,
+          backgroundImage: `url(https://innerworkadvisorsllp.com/images/security-service.png)`,
           backgroundSize: "cover",
           backgroundPosition: "left",
           backgroundRepeat: "no-repeat",
@@ -32,7 +30,7 @@ const SecurityServicesPage = () => {
         <div className="mt-8 flex items-center justify-center shadow-md md:mt-16">
           <img
             className="object-fit h-full w-full"
-            src={SecurityClippedImage}
+            src={"https://innerworkadvisorsllp.com/images/security-clipped.png"}
             alt=""
           />
         </div>

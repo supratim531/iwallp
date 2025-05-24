@@ -22,7 +22,7 @@ const Navbar = () => {
     { link: "home", text: "Home" },
     { link: "service", text: "Our Services" },
     { link: "about", text: "About Us" },
-    { link: "contact", text: "Contact Us" },
+    { link: "footer", text: "Contact Us" },
   ];
 
   useEffect(() => {
@@ -113,7 +113,7 @@ const Navbar = () => {
             <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
               <HashLink
                 smooth
-                to={`/#contact`}
+                to={`/#footer`}
                 className="flex h-full w-full items-center justify-center"
               >
                 Contact Us
