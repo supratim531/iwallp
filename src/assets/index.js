@@ -1,13 +1,4 @@
 export { default as PreloaderSmall } from "./gif/preloader-small.gif";
-
-export { default as SecurityImage } from "./image/security.png";
-export { default as SecurityServiceImage } from "./image/security-service.png";
-export { default as SecurityClippedImage } from "./image/security-clipped.png";
-export { default as ServiceHeroImage } from "./image/service-hero.png";
-export { default as InvestigationImage } from "./image/investigation.png";
-export { default as OurServicesImage } from "./image/our-services.webp";
-export { default as TeamImage } from "./image/team.webp";
-
 export { default as Brandlogo } from "./logo/logo.png";
 export { default as ContactUsImage } from "./image/contact-us.png";
 export { default as Image1 } from "./caraousel/caraousel1.webp";
@@ -29,30 +20,5 @@ export { default as member } from "./json/member.json";
 export { default as certificates } from "./json/certificate.json";
 export { default as certificate1 } from "./certificates/certificate1.jpg";
 export { default as certificate2 } from "./certificates/certificate2.jpg";
-
-export { default as GeneralImage } from "./image/investigations/general.png";
-export { default as AccidentalImage } from "./image/investigations/accidental.png";
-export { default as CivilImage } from "./image/investigations/civil.png";
-export { default as CommercialImage } from "./image/investigations/commercial.png";
-export { default as CriminalImage } from "./image/investigations/criminal.png";
-export { default as FinancialImage } from "./image/investigations/financial.png";
-export { default as FraudImage } from "./image/investigations/fraud.png";
-export { default as IndustrialImage } from "./image/investigations/industrial.png";
-export { default as InsuranceImage } from "./image/investigations/insurance.png";
-export { default as MaritalImage } from "./image/investigations/marital.png";
-export { default as MissingPersonsImage } from "./image/investigations/missing-persons.png";
-export { default as MissingHeirsImage } from "./image/investigations/missing-heirs.png";
-export { default as PatentViolationsImage } from "./image/investigations/patent-violations.png";
-export { default as TrademarkViolationImage } from "./image/investigations/trademark-violation.png";
-export { default as PersonalInjuryImage } from "./image/investigations/personal-injury.png";
-export { default as ProductLiabilityImage } from "./image/investigations/product-liability.png";
-export { default as ProfessionalNegligenceImage } from "./image/investigations/professional-negligence.png";
-export { default as WorkplaceViolenceImage } from "./image/investigations/workplace-violence.png";
-export { default as WorkersCompensationImage } from "./image/investigations/workers-compensation.png";
-export { default as ElderAbuseImage } from "./image/investigations/elder-abuse.png";
-export { default as ChildRetrievalImage } from "./image/investigations/child-retrieval.png";
-export { default as InternetFraudImage } from "./image/investigations/internet-fraud.png";
-export { default as IdentityTheftImage } from "./image/investigations/identity-theft.png";
-export { default as WhiteCollarCrimeImage } from "./image/investigations/white-collar-crime.png";
 
 export { investigations } from "./investigations";

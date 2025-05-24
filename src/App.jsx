@@ -2,15 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
-import Navbar from "./components/navbar/Navbar";
-
-import { Footer } from "./components";
-import { ScrollToTop, WhatsAppPopup } from "./components";
-import { PreloaderSmall } from "./assets";
 import { RootProvider } from "./contexts/rootContext";
 
+import {
+  Navbar,
+  Footer,
+  ScrollToTop,
+  WhatsAppPopup,
+  JsonLdSchema,
+} from "./components";
+
 import "./App.css";
-import JsonLdSchema from "./components/JsonLdSchema";
 
 const Configurations = (props) => {
   const { children } = props;
@@ -30,8 +32,8 @@ const Configurations = (props) => {
     <div className="flex h-screen items-center justify-center bg-white">
       <img
         className="w-96"
-        src={PreloaderSmall}
         alt="Innerwork Legal Service"
+        src={"https://innerworkadvisorsllp.com/images/gif/preloader-small.gif"}
       />
     </div>
   ) : (

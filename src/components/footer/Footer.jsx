@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import { Brandlogo } from "../../assets";
 import classNames from "classnames";
+import { HashLink } from "react-router-hash-link";
+
+import { Container, Modal } from "../shared";
+
 import css from "./Footer.module.css";
 import {
   FaTwitter,
@@ -11,8 +14,6 @@ import {
   FaEnvelope,
   FaPhoneAlt,
 } from "react-icons/fa";
-import { Container, Modal } from "../shared";
-import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);
@@ -96,7 +97,7 @@ const Footer = () => {
           <div className="w-full flex-auto md:w-[50%] lg:w-[25%]">
             <HashLink smooth to={"/#home"}>
               <img
-                src={Brandlogo}
+                src={"https://innerworkadvisorsllp.com/images/logo/logo.png"}
                 alt="INNERWORK LEGAL SERVICES"
                 className="md:w-[80%]"
               />

@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 
-import { Modal } from "../../components/shared";
-import TeamSlider from "../../components/about/TeamSlider";
 import {
   Header,
   Contact,
   Services,
+  TeamSlider,
   Testimonials,
   MissionVisionValues,
 } from "../../components";
+
+import { Modal } from "../../components/shared";
 
 const HomePage = (props) => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);

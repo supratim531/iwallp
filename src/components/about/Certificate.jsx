@@ -3,8 +3,8 @@ import { ArrowRight, ArrowLeft } from "react-feather";
 
 import { Modal, Section, Container } from "../shared";
 
+import { certificates } from "../../assets";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { certificate1, certificate2, certificates } from "../../assets";
 
 const imageMap = {
   "certificate1.jpg":
@@ -119,7 +119,6 @@ const Certificate = () => {
               </button>
             </div>
           </div>
-
           {/*END - Certificate Cards */}
         </div>
 

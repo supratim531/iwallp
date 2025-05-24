@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 
 import { Section, Container } from "../../components/shared";
 
-import { investigations, ServiceHeroImage } from "../../assets";
+import { investigations } from "../../assets";
 
 export default function InvestigationDetail() {
   const { type } = useParams();
@@ -22,7 +22,7 @@ export default function InvestigationDetail() {
     <section>
       <div
         style={{
-          backgroundImage: `url(${ServiceHeroImage})`,
+          backgroundImage: `url(https://innerworkadvisorsllp.com/images/service-hero.png)`,
           backgroundSize: "cover",
           backgroundPosition: "left",
           backgroundRepeat: "no-repeat",

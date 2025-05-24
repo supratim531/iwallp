@@ -5,10 +5,10 @@ import { HashLink } from "react-router-hash-link";
 import { Dropdown, DropMenu, Container } from "../shared";
 
 import SidebarMaybe from "../SidebarMaybe/SidebarMaybe";
+
 import { DropdownItem } from "../shared/Dropdown/Dropdown";
 
 import css from "./Navbar.module.css";
-import { Brandlogo } from "../../assets";
 
 const Navbar = () => {
   const sidebarMaybeRef = useRef(null);
@@ -139,7 +139,7 @@ const Navbar = () => {
             >
               <img
                 alt="Brand"
-                src={Brandlogo}
+                src={"https://innerworkadvisorsllp.com/images/logo/logo.png"}
                 className="relative flex w-40 items-center justify-between py-3"
               />
             </HashLink>
@@ -162,30 +162,31 @@ const Navbar = () => {
                   </HashLink>
                 </li>
               ))}
+
               {/* <li>
-            <a
-              href="#extra"
-              className="!text-white transition duration-150 hover:!text-black"
-            >
-              <Dropdown
-                className="bg-black"
-                trigger={<DropMenu>More Info</DropMenu>}
-              >
-                <DropdownItem>
-                  <Book size={20} />
-                  Our Blogs
-                </DropdownItem>
-                <DropdownItem>
-                  <BookOpen size={20} />
-                  Our Legal Insights
-                </DropdownItem>
-                <DropdownItem>
-                  <File size={20} />
-                  Our Case Studies
-                </DropdownItem>
-              </Dropdown>
-            </a>
-          </li> */}
+                <a
+                  href="#extra"
+                  className="!text-white transition duration-150 hover:!text-black"
+                >
+                  <Dropdown
+                    className="bg-black"
+                    trigger={<DropMenu>More Info</DropMenu>}
+                  >
+                    <DropdownItem>
+                      <Book size={20} />
+                      Our Blogs
+                    </DropdownItem>
+                    <DropdownItem>
+                      <BookOpen size={20} />
+                      Our Legal Insights
+                    </DropdownItem>
+                    <DropdownItem>
+                      <File size={20} />
+                      Our Case Studies
+                    </DropdownItem>
+                  </Dropdown>
+                </a>
+              </li> */}
             </ul>
           </section>
 

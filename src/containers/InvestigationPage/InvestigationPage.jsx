@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import { Container } from "../../components/shared";
 
-import { investigations, ServiceHeroImage } from "../../assets";
+import { investigations } from "../../assets";
 
 const InvestigationPage = () => {
   const ref = useRef(null);
@@ -18,7 +18,7 @@ const InvestigationPage = () => {
     <section>
       <div
         style={{
-          backgroundImage: `url(${ServiceHeroImage})`,
+          backgroundImage: `url(https://innerworkadvisorsllp.com/images/service-hero.png)`,
           backgroundSize: "cover",
           backgroundPosition: "left",
           backgroundRepeat: "no-repeat",
