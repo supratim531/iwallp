@@ -25,7 +25,7 @@ const MissionVisionValues = (props) => {
             <SubSection
               title={"Our Mission"}
               description={
-                "Our mission is to offer unparalleled legal guidance and representation, driven by our core values of integrity, professionalism, and unwavering commitment to serve our clients' utmost interests."
+                "Our mission is to offer unparalleled investigative and security service, driven by our core values of integrity, professionalism, and unwavering commitment to serve our clients' utmost interests."
               }
               className="[&>div>div]:px-10 [&>div>p]:text-[14px] [&>div>p]:text-white [&>div]:m-0 [&>div]:p-8"
             />
@@ -48,7 +48,7 @@ const MissionVisionValues = (props) => {
             <SubSection
               title={"Our Vision"}
               description={
-                "Our vision is to emerge as a prominent authority in the legal sphere, celebrated for our legal acumen, unwavering dedication to justice, and transformative influence on the well-being of our clients."
+                "Our vision is to emerge as a prominent authority in the investigative and security service, celebrated for our truth seekers, unwavering dedication to absolute truth, and transformative influence on the well-being of our clients."
               }
               className="[&>div>div]:px-10 [&>div>p]:text-[14px] [&>div>p]:text-white [&>div]:m-0 [&>div]:p-8"
             />
