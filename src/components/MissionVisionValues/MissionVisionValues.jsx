@@ -8,6 +8,22 @@ import css from "./MissionVisionValues.module.css";
 const MissionVisionValues = (props) => {
   return (
     <Container className="py-8 md:py-16">
+      {/* <iframe
+        src="https://widgets.sociablekit.com/google-reviews/iframe/25582355"
+        frameborder="0"
+        height="400"
+      ></iframe> */}
+
+      {/* <iframe
+        onload="iFrameResize(this)"
+        src="https://442ee0d83cf24f0e8c11412acc591fc7.elf.site"
+        width="100%"
+      ></iframe> */}
+      <div
+        class="elfsight-app-7a4a2f73-b779-4883-b3c1-9d7dcfb7133e"
+        data-elfsight-app-lazy
+      ></div>
+
       <div className={css.threeMoto}>
         <div
           className={classNames(
