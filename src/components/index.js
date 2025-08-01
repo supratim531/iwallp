@@ -10,3 +10,6 @@ export { default as Testimonials } from "./extra/Testimonials";
 export { default as WhatsAppPopup } from "./WhatsAppPopup/WhatsAppPopup";
 export { default as ScrollToTop } from "./ScrollToTop/ScrollToTop";
 export { default as JsonLdSchema } from "./JsonLdSchema";
+export { default as InvGR } from "./reviews/InvGoogleReviews";
+export { default as SecGR } from "./reviews/SecGoogleReviews";
+export { default as TrustPilot } from "./reviews/TrustPilotReview";

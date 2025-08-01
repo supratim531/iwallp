@@ -19,6 +19,8 @@ const imageMap = {
     "https://innerworkadvisorsllp.com/images/members/Mr-Asim-Ali-500x500.webp",
   "Mr-Sujit-Chakraborty-500x500.webp":
     "https://innerworkadvisorsllp.com/images/members/Mr-Sujit-Chakraborty-500x500.webp",
+  "Faiyaz-Ahmed-500x500.webp":
+    "https://innerworkadvisorsllp.com/images/members/Faiyaz-Ahmed-500x500.webp",
 };
 
 const services = [
@@ -127,7 +129,7 @@ const TeamSlider = () => {
                 key={index}
                 className="flex h-full flex-col items-center justify-center rounded-xl border-b-[8px] border-secondary bg-white"
               >
-                <div className="rounded-full p-6">
+                <div className="rounded-full border-black p-6">
                   {item.image && (
                     <img
                       src={item.image}

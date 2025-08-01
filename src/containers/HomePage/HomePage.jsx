@@ -7,6 +7,9 @@ import {
   TeamSlider,
   Testimonials,
   MissionVisionValues,
+  InvGR,
+  SecGR,
+  TrustPilot,
 } from "../../components";
 
 import { Modal } from "../../components/shared";
@@ -28,8 +31,10 @@ const HomePage = (props) => {
           Best Private Investigator & Security Service Provider in Kolkata -
           Innerwork Advisors LLP
         </title>
-        <meta content="Best Private Investigator in Kolkata & Best Security Service Provider in Kolkata, we are Innerwork Advisors LLP. Visit us for trusted, professional security and investigative services.
-        " />
+        <meta
+          content="Best Private Investigator in Kolkata & Best Security Service Provider in Kolkata, we are Innerwork Advisors LLP. Visit us for trusted, professional security and investigative services.
+        "
+        />
       </Helmet>
       <Header />
       <MissionVisionValues />
@@ -50,16 +55,14 @@ const HomePage = (props) => {
       ></iframe> */}
 
       <Testimonials />
+      <InvGR />
+      <SecGR />
+      <TrustPilot />
 
       <Modal
         title={"Disclaimer"}
         isOpen={isDisclaimer}
         onClose={() => setIsDisclaimer(false)}
-        // onClose={() => {
-        //   if (window) {
-        //     window.open("https://www.google.co.in", "_self");
-        //   }
-        // }}
       >
         <div className="flex flex-col gap-4">
           <p>
@@ -91,7 +94,7 @@ const HomePage = (props) => {
                 setIsDisclaimer(false);
                 localStorage.setItem("disclaimer", "true");
               }}
-              className="w-full px-4 py-2 text-white rounded-md bg-primary-light hover:bg-primary-dark sm:w-48"
+              className="w-full rounded-md bg-primary-light px-4 py-2 text-white hover:bg-primary-dark sm:w-48"
             >
               Proceed To Website
             </button>
@@ -99,7 +102,7 @@ const HomePage = (props) => {
             <a
               type="button"
               href="https://www.google.co.in"
-              className="w-full px-4 py-2 text-center text-white rounded-md bg-primary-light hover:bg-primary-dark sm:w-48"
+              className="w-full rounded-md bg-primary-light px-4 py-2 text-center text-white hover:bg-primary-dark sm:w-48"
             >
               Decline
             </a>
