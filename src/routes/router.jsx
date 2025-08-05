@@ -10,7 +10,7 @@ import {
   NotFoundPage,
   InvestigationPage,
   InvestigationDetailPage,
-  SecurityPage,
+  SecurityServicesPage,
 } from "../containers";
 import SecurityDetailPage from "../containers/SecurityDetailPage/SecurityDetailPage";
 
@@ -25,11 +25,8 @@ const router = createBrowserRouter(
         <Route path=":type" element={<InvestigationDetailPage />} />
       </Route>
       <Route path="security-guard-services-kolkata">
-        <Route index element={<SecurityPage />} />
-        <Route
-          path="security-guard-services-kolkata/:type"
-          element={<SecurityDetailPage />}
-        />
+        <Route index element={<SecurityServicesPage />} />
+        <Route path=":type" element={<SecurityDetailPage />} />
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </Route>,

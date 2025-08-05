@@ -5,9 +5,8 @@ import { Helmet } from "react-helmet-async";
 import { Section, Container } from "../../components/shared";
 
 import { securities } from "../../assets";
-import { JsonLdSchema } from "../../components";
 
-export default function SecurityDetail() {
+export default function SecurityDetailPage() {
   const { type } = useParams();
   const security = securities.find((item) => item.urlPath === type);
 
@@ -25,7 +24,6 @@ export default function SecurityDetail() {
       <Helmet>
         <title>{security.metaTitle}</title>
         <meta name="description" content={security.metaDesc} />
-        <JsonLdSchema />
       </Helmet>
       <div
         style={{
@@ -38,7 +36,7 @@ export default function SecurityDetail() {
       >
         <div className="text-center">
           <Link
-            to={"/securities-guard-services-kolkata"}
+            to={"/security-guard-services-kolkata"}
             className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
           >
             Security

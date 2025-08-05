@@ -27,7 +27,7 @@ const SecurityServicesPage = () => {
       </Helmet>
       <div
         style={{
-          backgroundImage: `url(https://innerworkadvisorsllp.com/images/securities-service.png)`,
+          backgroundImage: `url(https://innerworkadvisorsllp.com/images/service-hero.png)`,
           backgroundSize: "cover",
           backgroundPosition: "left",
           backgroundRepeat: "no-repeat",

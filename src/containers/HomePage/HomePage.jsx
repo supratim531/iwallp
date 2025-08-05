@@ -57,7 +57,7 @@ const HomePage = (props) => {
       <Testimonials />
       <InvGR />
       <SecGR />
-      <TrustPilot />
+      {/* <TrustPilot /> */}
 
       <Modal
         title={"Disclaimer"}
