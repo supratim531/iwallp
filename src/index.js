@@ -6,6 +6,7 @@ import { App } from "./App";
 import router from "./routes/router";
 
 import "./index.css";
+
 if (process.env.NODE_ENV === "development") {
   window.addEventListener("error", (e) => {
     if (
