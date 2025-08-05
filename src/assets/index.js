@@ -22,3 +22,4 @@ export { default as certificate1 } from "./certificates/certificate1.jpg";
 export { default as certificate2 } from "./certificates/certificate2.jpg";
 
 export { investigations } from "./investigations";
+export { securities } from "./securities";

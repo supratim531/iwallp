@@ -3,13 +3,14 @@ import React from "react";
 const JsonLdSchema = () => {
   const jsonLdData = {
     "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "SecurityService"],
+    "@type": ["ProfessionalInvestigativeService", "SecurityService"],
     name: "InnerWork Advisors LLP",
     url: "https://innerworkadvisorsllp.com/",
     telephone: "+91-9073672051",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor",
+      streetAddress:
+        "InnerWork Advisors LLP, Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor",
       addressLocality: "Kolkata",
       addressRegion: "West Bengal",
       postalCode: "700001",

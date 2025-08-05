@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NotFoundPage = (props) => {
   return (
@@ -13,12 +14,16 @@ const NotFoundPage = (props) => {
                 Oops! The page you are looking for does not exist. It might have
                 been moved or deleted.
               </p>
-              <button class="mr-6 rounded-md bg-gradient-to-r from-purple-400 to-blue-500 px-6 py-3 font-semibold text-white hover:from-pink-500 hover:to-orange-500">
-                HOME
-              </button>
-              <button class="rounded-md bg-gradient-to-r from-red-400 to-red-500 px-6 py-3 font-semibold text-white hover:from-red-500 hover:to-red-500">
-                Contact Us
-              </button>
+              <Link to="/">
+                <button class="mr-6 rounded-md bg-gradient-to-r from-purple-400 to-blue-500 px-6 py-3 font-semibold text-white hover:from-pink-500 hover:to-orange-500">
+                  HOME
+                </button>
+              </Link>
+              <Link to="/#contact">
+                <button class="rounded-md bg-gradient-to-r from-red-400 to-red-500 px-6 py-3 font-semibold text-white hover:from-red-500 hover:to-red-500">
+                  Contact Us
+                </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -28,7 +28,7 @@ const OurServicesPage = () => {
     <section>
       <Helmet>
         <title>
-          Our Services - Innerwork Advisors LLP - Best Private Investigator in
+          Our Services - Innerwork Advisors LLP - Best Private Investigator and Security Service in
           Kolkata
         </title>
         <meta
@@ -49,7 +49,7 @@ const OurServicesPage = () => {
         <div className="text-center">
           <Link
             to={"/"}
-            className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
+            className="underline duration-200 text-secondary underline-offset-4 hover:text-primary-dark"
           >
             Home
           </Link>{" "}
@@ -65,7 +65,7 @@ const OurServicesPage = () => {
             "Innerwork Advisors LLP is a leading provider of Private Detective & Investigation Services and Security Services (Corporate & Individual) based in Kolkata. Our Private Detective & Investigation Services are offered on a pan India basis. Security Services are provided in the State of West Bengal."
           }
         >
-          <div className="w-full bg-white py-10">
+          <div className="w-full py-10 bg-white">
             <div className="flex flex-col gap-6 md:flex-row">
               {services.map((service, idx) => (
                 <div
@@ -78,7 +78,7 @@ const OurServicesPage = () => {
                     backgroundPosition: "center",
                   }}
                 >
-                  <div className="absolute inset-0 bg-black/50 transition duration-300 group-hover:bg-black/60"></div>
+                  <div className="absolute inset-0 transition duration-300 bg-black/50 group-hover:bg-black/60"></div>
                   <div className="relative z-10 flex flex-col items-center justify-center px-6 text-center text-white">
                     <h3 className="mb-4 text-lg font-bold md:text-xl">
                       {service.title}
@@ -97,10 +97,10 @@ const OurServicesPage = () => {
               ))}
             </div>
           </div>
-          <div className="mt-5 flex items-center justify-center">
+          <div className="flex items-center justify-center mt-5">
             <Link
               to={"/#service"}
-              className="self-center rounded-md bg-secondary px-4 py-2 text-white"
+              className="self-center px-4 py-2 text-white rounded-md bg-secondary"
             >
               Back
             </Link>
