@@ -13,3 +13,4 @@ export { default as JsonLdSchema } from "./JsonLdSchema";
 export { default as InvGR } from "./reviews/InvGoogleReviews";
 export { default as SecGR } from "./reviews/SecGoogleReviews";
 export { default as TrustPilot } from "./reviews/TrustPilotReview";
+export { default as NRIAdModal } from "./NRIAdModal/NRIAdModal";

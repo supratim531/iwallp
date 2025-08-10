@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { Dialog } from "@headlessui/react";
 import { AnimatePresence } from "framer-motion";
 
-const Modal = (props) => {
-  const { title, isOpen, onClose, children } = props;
+import { NRIBannerImage } from "../../assets";
+
+const NRIAdModal = (props) => {
+  const { isOpen, onClose } = props;
 
   return (
     <AnimatePresence>
@@ -22,16 +24,15 @@ const Modal = (props) => {
             className="no-scrollbar relative mx-6 max-h-[90vh] w-[600px] max-w-2xl overflow-y-auto rounded-lg bg-white"
           >
             <div className="flex flex-col bg-white">
-              <div className="sticky top-0 z-10 flex h-[48px] items-center justify-between gap-4 bg-white p-8">
-                <span className="text-base font-bold text-primary-dark md:text-xl">
-                  {title ? title : null}
-                </span>
+              <div className="sticky top-0 z-10 flex h-[36px] items-center justify-end bg-white px-4">
                 <button onClick={onClose} className="text-primary-dark">
-                  <i className="fa-solid fa-xmark text-2xl md:text-4xl"></i>
+                  <i className="fa-solid fa-xmark text-2xl"></i>
                 </button>
               </div>
 
-              <div className="px-8 pb-8">{children}</div>
+              <div className="">
+                <img src={NRIBannerImage} alt="NRI" />
+              </div>
             </div>
           </motion.div>
         </Dialog>
@@ -40,4 +41,4 @@ const Modal = (props) => {
   );
 };
 
-export default Modal;
+export default NRIAdModal;
