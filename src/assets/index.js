@@ -23,3 +23,4 @@ export { default as certificate2 } from "./certificates/certificate2.jpg";
 
 export { investigations } from "./investigations";
 export { securities } from "./securities";
+export { securityCategory } from "./securitycategory";
