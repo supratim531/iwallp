@@ -11,6 +11,7 @@ import {
   InvestigationPage,
   InvestigationDetailPage,
   SecurityServicesPage,
+  NRIPage,
 } from "../containers";
 import SecurityDetailPage from "../containers/SecurityDetailPage/SecurityDetailPage";
 
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
         <Route index element={<SecurityServicesPage />} />
         <Route path=":type" element={<SecurityDetailPage />} />
       </Route>
+      <Route path="nri-advisors-llp" element={<NRIPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Route>,
   ),

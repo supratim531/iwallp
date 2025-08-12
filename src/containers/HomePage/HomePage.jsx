@@ -10,8 +10,9 @@ import {
   MissionVisionValues,
   InvGR,
   SecGR,
-  TrustPilot,
+  // TrustPilot,
   NRIAdModal,
+  NRI,
 } from "../../components";
 
 import { Modal } from "../../components/shared";
@@ -40,8 +41,8 @@ const NRIAdButton = (props) => {
           />
         </svg>
       </button>
-      {/* <button className="rounded-md bg-teal-700 px-4 py-3 duration-200 group-hover:rounded-none group-hover:rounded-br-md group-hover:rounded-tr-md group-hover:bg-green-600">
-        <i className="fa-brands fa-whatsapp text-3xl text-white"></i>
+      {/* <button className="px-4 py-3 duration-200 bg-teal-700 rounded-md group-hover:rounded-none group-hover:rounded-br-md group-hover:rounded-tr-md group-hover:bg-green-600">
+        <i className="text-3xl text-white fa-brands fa-whatsapp"></i>
       </button> */}
     </>
   );
@@ -72,6 +73,7 @@ const HomePage = (props) => {
       <Header />
       <MissionVisionValues />
       <Services />
+      <NRI />
       <TeamSlider />
       <Contact />
 
