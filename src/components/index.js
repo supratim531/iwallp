@@ -13,5 +13,9 @@ export { default as JsonLdSchema } from "./JsonLdSchema";
 export { default as InvGR } from "./reviews/InvGoogleReviews";
 export { default as SecGR } from "./reviews/SecGoogleReviews";
 export { default as TrustPilot } from "./reviews/TrustPilotReview";
+<<<<<<< HEAD
 export { default as NRIAdModal } from "./NRIAdModal/NRIAdModal";
 export { default as NRI } from "./NRIAdModal/NRI";
+=======
+export { default as AdSystem } from "./BannerPopup/AdSytem";
+>>>>>>> 4e583cb52f7a5cdc76106a46221cfe28877ed46e

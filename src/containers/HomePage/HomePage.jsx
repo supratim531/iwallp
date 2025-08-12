@@ -10,9 +10,12 @@ import {
   MissionVisionValues,
   InvGR,
   SecGR,
+<<<<<<< HEAD
   // TrustPilot,
   NRIAdModal,
   NRI,
+=======
+>>>>>>> 4e583cb52f7a5cdc76106a46221cfe28877ed46e
 } from "../../components";
 
 import { Modal } from "../../components/shared";
@@ -48,16 +51,28 @@ const NRIAdButton = (props) => {
   );
 };
 
+const DISCLAIMER_KEY = "iwas_disclaimer_accepted";
+
 const HomePage = (props) => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);
   const [showNRIAdModal, setShowNRIAdModal] = useState(true);
 
   useEffect(() => {
-    if (!localStorage.getItem("disclaimer")) {
+    const accepted = localStorage.getItem(DISCLAIMER_KEY) === "true";
+    if (!accepted) {
       setIsDisclaimer(true);
     }
-  }, [isDisclaimer]);
-
+  }, []);
+  const handleProceed = () => {
+    setIsDisclaimer(false);
+    try {
+      localStorage.setItem(DISCLAIMER_KEY, "true");
+    } catch {}
+    // optional cookie (helps across subdomains)
+    document.cookie = `${DISCLAIMER_KEY}=true; path=/; max-age=31536000`;
+    // notify AdSystem that disclaimer is accepted
+    window.dispatchEvent(new Event("disclaimer:accepted"));
+  };
   return (
     <main>
       <Helmet>
@@ -76,23 +91,9 @@ const HomePage = (props) => {
       <NRI />
       <TeamSlider />
       <Contact />
-
-      {/* <iframe
-        title="CRM Review Automation"
-        class="lc_reviews_widget"
-        src="https://reputationhub.site/reputation/widgets/review_widget/5A4qaPFdNsj88rnRxKHo?widgetId=68029f1083bb48e9bcb0ed58"
-        frameborder="0"
-        scrolling="no"
-        style={{
-          minWidth: "100%",
-          width: "100%",
-        }}
-      ></iframe> */}
-
       <Testimonials />
       <InvGR />
       <SecGR />
-      {/* <TrustPilot /> */}
 
       <NRIAdButton
         showNRIAdModal={showNRIAdModal}
@@ -153,6 +154,7 @@ const HomePage = (props) => {
           </div>
         </div>
       </Modal>
+      {/* <AdSystem /> */}
     </main>
   );
 };
