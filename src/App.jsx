@@ -10,7 +10,6 @@ import {
   ScrollToTop,
   WhatsAppPopup,
   JsonLdSchema,
-  AdSystem,
 } from "./components";
 
 import "./App.css";
@@ -54,13 +53,6 @@ export const App = (props) => {
         <Navbar />
         <Outlet />
         <Footer />
-        {/* <AdSystem /> */}
-        <AdSystem
-          bannerSrc="/banner.jpg"
-          landingHref="/contact"
-          disclaimerKey="iwas_disclaimer_accepted"
-          excludeOnPaths={["/404"]} // for a dedicated 404 route
-        />
       </HelmetProvider>
     </Configurations>
   );

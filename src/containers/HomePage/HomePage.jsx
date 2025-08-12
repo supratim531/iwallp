@@ -10,12 +10,8 @@ import {
   MissionVisionValues,
   InvGR,
   SecGR,
-<<<<<<< HEAD
-  // TrustPilot,
   NRIAdModal,
   NRI,
-=======
->>>>>>> 4e583cb52f7a5cdc76106a46221cfe28877ed46e
 } from "../../components";
 
 import { Modal } from "../../components/shared";
@@ -44,35 +40,20 @@ const NRIAdButton = (props) => {
           />
         </svg>
       </button>
-      {/* <button className="px-4 py-3 duration-200 bg-teal-700 rounded-md group-hover:rounded-none group-hover:rounded-br-md group-hover:rounded-tr-md group-hover:bg-green-600">
-        <i className="text-3xl text-white fa-brands fa-whatsapp"></i>
-      </button> */}
     </>
   );
 };
-
-const DISCLAIMER_KEY = "iwas_disclaimer_accepted";
 
 const HomePage = (props) => {
   const [isDisclaimer, setIsDisclaimer] = useState(false);
   const [showNRIAdModal, setShowNRIAdModal] = useState(true);
 
   useEffect(() => {
-    const accepted = localStorage.getItem(DISCLAIMER_KEY) === "true";
-    if (!accepted) {
+    if (!localStorage.getItem("disclaimer")) {
       setIsDisclaimer(true);
     }
-  }, []);
-  const handleProceed = () => {
-    setIsDisclaimer(false);
-    try {
-      localStorage.setItem(DISCLAIMER_KEY, "true");
-    } catch {}
-    // optional cookie (helps across subdomains)
-    document.cookie = `${DISCLAIMER_KEY}=true; path=/; max-age=31536000`;
-    // notify AdSystem that disclaimer is accepted
-    window.dispatchEvent(new Event("disclaimer:accepted"));
-  };
+  }, [isDisclaimer]);
+
   return (
     <main>
       <Helmet>
@@ -154,7 +135,6 @@ const HomePage = (props) => {
           </div>
         </div>
       </Modal>
-      {/* <AdSystem /> */}
     </main>
   );
 };
