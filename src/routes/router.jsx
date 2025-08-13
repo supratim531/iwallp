@@ -31,9 +31,9 @@ const router = createBrowserRouter(
           <Route index element={<SecurityServicesPage />} />
           <Route path=":type" element={<SecurityCategoryPage />} />
         </Route>
+        <Route path="nri-advisors-llp" element={<NRIPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
-      <Route path="nri-advisors-llp" element={<NRIPage />} />
-      <Route path="*" element={<NotFoundPage />} />
     </>,
   ),
 );

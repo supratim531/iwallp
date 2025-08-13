@@ -33,7 +33,7 @@ if (process.env.NODE_ENV === "development") {
     originalConsoleError(...args);
   };
 
-  // 🩹 Chrome/Elfsight-specific workaround
+  // Chrome/Elfsight-specific workaround
   requestAnimationFrame(() => {
     try {
       const ro = new ResizeObserver(() => {});

@@ -43,15 +43,28 @@ const NRIPage = (props) => {
       </div>
 
       <Container>
-        <Section data-aos="fade-up" title={"Title Poster for NRIs"}>
-          <p className="flex py-1">
-            We have opened new office in &nbsp; <strong>United Kingdom</strong>.
-            Kindly take a note of our new address provided in the below poster.
-          </p>
+        <Section
+          data-aos="fade-up"
+          title={"Title Poster for NRIs"}
+          description={
+            <p
+              lang="en"
+              className="max-w-prose hyphens-auto text-sm leading-relaxed text-gray-800 [text-wrap:balance] sm:text-base md:text-lg"
+            >
+              We have opened a new office in{" "}
+              <span className="whitespace-nowrap font-semibold">
+                United&nbsp;Kingdom
+              </span>
+              . Kindly take a note of our new address provided in the poster
+              below.
+            </p>
+          }
+        >
           <img
-            className="relative flex h-1/2 w-1/2 flex-wrap items-center justify-start object-contain"
+            className="relative mx-auto block h-1/2 w-1/2 flex-wrap items-center justify-start object-contain"
             src="https://innerworklegalservices.com/images/nri-banner.png"
-            alt=""
+            alt="Innerwork Advisors LLP — NRI Services Poster"
+            loading="lazy"
           />
         </Section>
         <Section data-aos="fade-up" title={"Issues Faced by NRIs"}>
