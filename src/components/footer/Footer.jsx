@@ -223,6 +223,18 @@ const Footer = () => {
               </div>
 
               <div className="flex items-center gap-4">
+                <i className="fa-solid fa-signs-post text-secondary"></i>
+                <a
+                  href={`https://www.google.com/maps?q=${"Clockwise Linley House, Dickinson Street, Manchester M1 4LF, United Kingdom"}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Clockwise Linley House, Dickinson Street, Manchester M1 4LF,
+                  United Kingdom
+                </a>
+              </div>
+
+              <div className="flex items-center gap-4">
                 <i className="fa-solid fa-phone text-secondary"></i>
                 <a href="tel:+919830232051">(+91) 98302 32051</a>
               </div>
