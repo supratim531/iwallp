@@ -5,13 +5,10 @@ import { Section, Container } from "../shared";
 
 const NRI = (props) => {
   const images = [
-    "https://innerworkadvisorsllp.com/images/UK/UK1.png",
     "https://innerworkadvisorsllp.com/images/UK/UK2.png",
     "https://innerworkadvisorsllp.com/images/UK/UK3.png",
-    "https://innerworkadvisorsllp.com/images/UK/UK4.png",
     "https://innerworkadvisorsllp.com/images/UK/UK5.png",
     "https://innerworkadvisorsllp.com/images/UK/UK6.png",
-    "https://innerworkadvisorsllp.com/images/UK/UK7.png",
   ];
 
   const ukRef = useRef(null);
@@ -94,7 +91,7 @@ const NRI = (props) => {
                 <img
                   src={src}
                   alt={`NRI Manchester Office visual ${i + 1}`}
-                  className="h-[260px] w-full object-cover sm:h-[320px] md:h-[360px]"
+                  className="h-1/2 w-full object-fill sm:h-[320px] md:h-[360px]"
                   draggable="false"
                   loading="lazy"
                 />

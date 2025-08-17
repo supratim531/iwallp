@@ -52,9 +52,9 @@ const SecurityDetailPage = (props) => {
       </div>
 
       <Container className="">
-        <div className="mt-8 flex h-[50vh] items-center justify-center shadow-md md:mt-16">
+        <div className="mt-8 flex h-[50vh] items-center justify-center md:mt-16">
           <img
-            className="h-full w-full object-cover"
+            className="h-full w-1/2 object-fill"
             src={service.image}
             alt=""
           />
