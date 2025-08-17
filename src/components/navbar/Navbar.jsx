@@ -21,6 +21,7 @@ const Navbar = () => {
   const navigation = [
     { link: "home", text: "Home" },
     { link: "service", text: "Our Services" },
+    { link: "nri", text: "NRI" },
     { link: "about", text: "About Us" },
     { link: "footer", text: "Contact Us" },
   ];
@@ -99,6 +100,15 @@ const Navbar = () => {
                 className="flex h-full w-full items-center justify-center"
               >
                 Services
+              </HashLink>
+            </li>
+            <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
+              <HashLink
+                smooth
+                to={`/#nri`}
+                className="flex h-full w-full items-center justify-center"
+              >
+                NRI
               </HashLink>
             </li>
             <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">

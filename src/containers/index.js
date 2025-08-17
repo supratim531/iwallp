@@ -4,5 +4,6 @@ export { default as InvestigationPage } from "./InvestigationPage/InvestigationP
 export { default as InvestigationDetailPage } from "./InvestigationDetailPage/InvestigationDetailPage";
 export { default as NotFoundPage } from "./NotFoundPage/NotFoundPage";
 export { default as SecurityServicesPage } from "./SecurityServicesPage/SecurityServicesPage";
+export { default as SecurityCategoryPage } from "./SecurityCategoryPage/SecurityCategoryPage";
 export { default as SecurityDetailPage } from "./SecurityDetailPage/SecurityDetailPage";
 export { default as NRIPage } from "./NRIPage/NRIPage";

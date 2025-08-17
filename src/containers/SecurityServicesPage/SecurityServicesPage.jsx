@@ -18,7 +18,8 @@ const SecurityServicesPage = () => {
     <section>
       <Helmet>
         <title>
-          Our Best Security Services in Kolkata- Innerwork Advisors LLP, Kolkata
+          Our Best Security Services in Kolkata - Innerwork Advisors LLP,
+          Kolkata
         </title>
         <meta
           name="description"
@@ -50,7 +51,7 @@ const SecurityServicesPage = () => {
           ref={ref}
           className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"
         >
-          {securities.map((securities, index) => (
+          {securities.map((security, index) => (
             <motion.div
               key={`${animationKey}-${index}`}
               initial={{ opacity: 0, y: 50 }}
@@ -60,8 +61,8 @@ const SecurityServicesPage = () => {
             >
               <div
                 style={{
-                  backgroundImage: securities.image
-                    ? `url(${securities.image})`
+                  backgroundImage: security.image
+                    ? `url(${security.image})`
                     : "none",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
@@ -69,9 +70,9 @@ const SecurityServicesPage = () => {
                 className="relative h-64 w-full bg-cover bg-center"
               >
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-[#343a4980] p-4 text-center font-roboto font-medium text-white transition-all hover:bg-[#343a49e0] md:text-lg">
-                  <h3 className="text-xl font-semibold">{securities.name}</h3>
+                  <h3 className="text-xl font-semibold">{security.name}</h3>
                   <Link
-                    to={`/security-guard-services-kolkata/${securities.urlPath}`}
+                    to={`/security-guard-services-kolkata/${security.urlPath}`}
                     className="mt-2 rounded-lg bg-[#C9A267] px-4 py-2 font-bold text-white"
                   >
                     Learn More
@@ -80,6 +81,14 @@ const SecurityServicesPage = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+        <div className="mt-16 flex items-center justify-center">
+          <Link
+            to={"/our-services-kolkata"}
+            className="self-center rounded-md bg-secondary px-4 py-2 text-white"
+          >
+            Back
+          </Link>
         </div>
       </Container>
     </section>

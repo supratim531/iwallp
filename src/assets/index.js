@@ -22,6 +22,5 @@ export { default as certificates } from "./json/certificate.json";
 export { default as certificate1 } from "./certificates/certificate1.jpg";
 export { default as certificate2 } from "./certificates/certificate2.jpg";
 
-export { investigations } from "./investigations";
 export { securities } from "./securities";
-export { securityCategory } from "./securitycategory";
+export { investigations } from "./investigations";

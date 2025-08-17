@@ -6,11 +6,17 @@ import { Section, Container } from "../../components/shared";
 
 import { securities } from "../../assets";
 
-export default function SecurityDetailPage() {
-  const { type } = useParams();
-  const security = securities.find((item) => item.urlPath === type);
+const SecurityDetailPage = (props) => {
+  const { type, subType } = useParams();
 
-  if (!security) {
+  const securityCategory = securities.find(
+    (security) => security.urlPath === type,
+  );
+  const service = securityCategory.subServices.find(
+    (service) => service.urlPath === subType,
+  );
+
+  if (!service) {
     return (
       <div className="p-6 text-center text-red-500">
         <h2 className="text-2xl font-semibold">404 - Not Found</h2>
@@ -22,8 +28,8 @@ export default function SecurityDetailPage() {
   return (
     <section>
       <Helmet>
-        <title>{security.metaTitle}</title>
-        <meta name="description" content={security.metaDesc} />
+        <title>{service.metaTitle}</title>
+        <meta name="description" content={service.metaDesc} />
       </Helmet>
       <div
         style={{
@@ -36,12 +42,12 @@ export default function SecurityDetailPage() {
       >
         <div className="text-center">
           <Link
-            to={"/security-guard-services-kolkata"}
+            to={`/security-guard-services-kolkata/${securityCategory.urlPath}`}
             className="text-secondary underline underline-offset-4 duration-200 hover:text-primary-dark"
           >
-            Security
+            {securityCategory.name}
           </Link>{" "}
-          {"/"} <span>{security.name}</span>
+          {"/"} <span>{service.name}</span>
         </div>
       </div>
 
@@ -49,25 +55,25 @@ export default function SecurityDetailPage() {
         <div className="mt-8 flex h-[50vh] items-center justify-center shadow-md md:mt-16">
           <img
             className="h-full w-full object-cover"
-            src={security.image}
+            src={service.image}
             alt=""
           />
         </div>
 
         <Section
-          label={security.name}
+          label={service.name}
           // className="relative flex flex-col items-center justify-between text-center [&>div>p]:text-center"
         >
-          <h1 className="mb-4 text-3xl font-bold">{security.heading}</h1>
+          <h1 className="mb-4 text-3xl font-bold">{service.heading}</h1>
           <h2 className="mb-2 text-center text-xl font-semibold text-gray-700">
-            {security.title}
+            {service.title}
           </h2>
           <p className="mb-4 leading-relaxed text-gray-600">
-            {security.description}
+            {service.description}
           </p>
           <div className="flex items-center justify-center">
             <Link
-              to={"/security-guard-services-kolkata"}
+              to={`/security-guard-services-kolkata/${securityCategory.urlPath}`}
               className="self-center rounded-md bg-secondary px-4 py-2 text-white"
             >
               Back
@@ -77,4 +83,6 @@ export default function SecurityDetailPage() {
       </Container>
     </section>
   );
-}
+};
+
+export default SecurityDetailPage;

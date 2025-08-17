@@ -37,7 +37,6 @@ const NRI = (props) => {
     if (card) linley.scrollTo({ left: card.offsetLeft, behavior: "smooth" });
   };
 
-  // Updated to loop
   const next = () =>
     setIndex((prev) => {
       const n = (prev + 1) % images.length;
