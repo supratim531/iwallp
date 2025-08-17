@@ -91,7 +91,7 @@ const NRI = (props) => {
                 <img
                   src={src}
                   alt={`NRI Manchester Office visual ${i + 1}`}
-                  className="h-1/2 w-full object-fill sm:h-[320px] md:h-[360px]"
+                  className="h-full w-full object-fill sm:h-[320px] md:h-[360px]"
                   draggable="false"
                   loading="lazy"
                 />
