@@ -5,7 +5,44 @@
     <loc>https://innerworkadvisorsllp.com/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://innerworkadvisorsllp.com/#home</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
+    <loc>https://innerworkadvisorsllp.com/#service</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
+    <loc>https://innerworkadvisorsllp.com/#nri</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+      <url>
+    <loc>https://innerworkadvisorsllp.com/#about</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.1</priority>
+  </url>
+   </url>
+      <url>
+    <loc>https://innerworkadvisorsllp.com/#contact</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+     <url>
+    <loc>https://innerworkadvisorsllp.com/#footer</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://innerworkadvisorsllp.com/our-services-kolkata</loc>
@@ -20,12 +57,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata</loc>
-    <lastmod>2025-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-    <url>
     <loc>https://innerworkadvisorsllp.com/private-investigation-kolkata/general-investigation-kolkata</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -165,6 +196,150 @@
   </url>
   <url>
     <loc>https://innerworkadvisorsllp.com/private-investigation-kolkata/white-collar-crime-investigation-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+<url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/personal-security-guard-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/personal-security-guard-kolkata/unarmed-security-guard-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/personal-security-guard-kolkata/bodyguard-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/personal-security-guard-kolkata/mixed-martial-arts-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>  
+  <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/asset-protection-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url> 
+   <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/asset-protection-kolkata/domestic-asset-protection-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/asset-protection-kolkata/armoured-vehicle-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/asset-protection-kolkata/armed-escort-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/asset-protection-kolkata/atm-security-guards-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/security-management-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+   <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/security-management-services-kolkata/cctv-surveillance-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+     <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/security-management-services-kolkata/biometric-installation-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+     <url>
+    <loc>hhttps://innerworkadvisorsllp.com/security-guard-services-kolkata/security-management-services-kolkata/construction-security-guards-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+     <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/security-management-services-kolkata/intrusion-alarm-systems-integration-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+     <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/security-management-services-kolkata/security-partol-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+     <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/security-management-services-kolkata/security-technology-integration-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+     <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/security-management-services-kolkata/security-systems-integration-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+     <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/specialized-security-guards-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/specialized-security-guards-kolkata/ballistic-protection-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/specialized-security-guards-kolkata/risk-management-security-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/specialized-security-guards-kolkata/disaster-management-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/security-guard-training-services-kolkata</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+      <url>
+    <loc>https://innerworkadvisorsllp.com/security-guard-services-kolkata/security-guard-training-services-kolkata/specialized-security-guard-training-kolkata</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
