@@ -23,7 +23,7 @@ code {
 }
 
 #slider-boxes {
-  display: flex !important;
+  /* display: flex !important; */
 }
 
 /* .slick-track {
@@ -45,7 +45,7 @@ code {
 } */
 
 .slick-track {
-  height: 680px;
+  height: 550px;
   gap: 1rem !important;
   display: flex !important;
   align-items: stretch !important;
@@ -53,7 +53,7 @@ code {
 
 .slick-track > div {
   flex: 1;
-  height: 680px;
+  height: 550px;
   display: flex !important;
   align-items: stretch !important;
 }
@@ -72,11 +72,11 @@ code {
 }
 
 .slick-prev {
-  left: -8px;
+  left: -30px;
   z-index: 20;
 }
 
 .slick-next {
-  right: 0px;
+  right: -10px;
   z-index: 20;
 }

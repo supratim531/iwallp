@@ -10,6 +10,13 @@ import { pillar } from "../../assets";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+function richText(text, maxLength) {
+  if (typeof text !== "string") return "";
+  if (text.length <= maxLength) return text;
+
+  return text.substring(0, maxLength) + "...";
+}
+
 const imageMap = {
   "Mr-Bibaswas-Mukherjee-500x500.webp":
     "https://innerworkadvisorsllp.com/images/members/Mr-Bibaswas-Mukherjee-500x500.webp",
@@ -120,35 +127,37 @@ const TeamSlider = () => {
         }
       ></Section>
 
-      <div className="fllex h-fit w-full flex-col items-center justify-center gap-6 bg-slate-200">
+      <div className="flex h-fit w-full flex-col items-center justify-center gap-6 bg-slate-200">
         <div className="h-fit w-full p-8">
           <Slider {...settings}>
             {teamMembers.map((item, index) => (
               <div
                 id="slider-boxes"
                 key={index}
-                className="flex h-full flex-col items-center justify-center rounded-xl border-b-[8px] border-secondary bg-white"
+                className="h-full rounded-xl border-b-[8px] border-secondary bg-white p-4"
               >
-                <div className="rounded-full border-black p-6">
-                  {item.image && (
-                    <img
-                      src={item.image}
-                      alt="team-images"
-                      className="rounded-full object-cover"
-                    />
-                  )}
-                </div>
-
-                <div className="flex flex-col items-center justify-center gap-2 p-4 pb-6">
-                  <h2 className="text-center text-2xl font-bold text-black">
+                <div className="h-[70%]">
+                  <div className="rounded-full border-black p-6">
+                    {item.image && (
+                      <img
+                        src={item.image}
+                        alt="team-images"
+                        className="rounded-full object-cover"
+                      />
+                    )}
+                  </div>
+                  <h2 className="text-center text-xl font-bold text-black">
                     {item.id}
                   </h2>
-                  <p className="text-center text-[17px]">{item.title}</p>
-                  <span className="text-md mb-2 mt-2 text-center">
-                    {item.description}
-                  </span>
+                </div>
+
+                <div className="text-md h-[20%] p-2 text-center">
+                  {richText(item.description, 100)}
+                </div>
+
+                <div className="flex h-[10%] items-center justify-center">
                   <button
-                    className="rounded-xl bg-secondary px-8 py-3 font-semibold text-white duration-200 hover:bg-black"
+                    className="rounded-xl bg-secondary px-6 py-2 font-semibold text-white duration-200 hover:bg-black"
                     onClick={() => {
                       setIsModalOpen(true);
                       setSelectedMember(item);

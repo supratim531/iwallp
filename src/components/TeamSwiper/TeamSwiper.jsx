@@ -23,7 +23,7 @@ const TeamSwiper = (props) => {
   }, []);
 
   return (
-    <div className="w-full slider-ud">
+    <div className="slider-ud w-full">
       <Swiper
         spaceBetween={6}
         slidesPerView={"auto"}
@@ -55,20 +55,20 @@ const TeamSwiper = (props) => {
               key={member.image}
               onMouseEnter={() => setMember(member)}
               onClick={() => setSelectedMember(member)}
-              className="overflow-hidden cursor-pointer rounded-xl"
+              className="cursor-pointer overflow-hidden rounded-xl"
             >
               <div
                 style={{ "--background-image": `url(${member.image})` }}
                 className={classNames(
                   css.slide,
-                  `h-[560px] w-full overflow-hidden rounded-xl before:hover:scale-125 xs:h-[600px] sm:h-[480px] lg:h-[360px]`
+                  `h-[560px] w-full overflow-hidden rounded-xl before:hover:scale-125 xs:h-[600px] sm:h-[480px] lg:h-[360px]`,
                 )}
               >
-                <div className="flex flex-col justify-between h-full">
+                <div className="flex h-full flex-col justify-between">
                   <div className="flex justify-end px-1.5 py-3"></div>
 
                   <div className="px-2">
-                    <div className="px-1 mb-3 text-white">
+                    <div className="mb-3 px-1 text-white">
                       <h3 className="w-[80%] truncate text-secondary">
                         {typeof member.experience === "number" ? (
                           <span>
