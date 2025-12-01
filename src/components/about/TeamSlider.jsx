@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Certificate from "./Certificate";
-import { Link } from "react-router-dom";
 
 import { Section, Container, Modal } from "../shared";
 import { FaSearch, FaShieldAlt } from "react-icons/fa";
@@ -149,6 +148,9 @@ const TeamSlider = () => {
                   <h2 className="text-center text-xl font-bold text-black">
                     {item.id}
                   </h2>
+                  <h3 className="text-center text-[15px] font-medium text-gray-500">
+                    {item.title}
+                  </h3>
                 </div>
 
                 <div className="text-md h-[20%] p-2 text-center">
