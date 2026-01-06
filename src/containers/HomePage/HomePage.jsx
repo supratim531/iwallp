@@ -76,14 +76,14 @@ const HomePage = (props) => {
       <InvGR />
       <SecGR />
 
-      <NRIAdButton
+      {/* <NRIAdButton
         showNRIAdModal={showNRIAdModal}
         setShowNRIAdModal={setShowNRIAdModal}
       />
       <NRIAdModal
         isOpen={showNRIAdModal}
         onClose={() => setShowNRIAdModal(false)}
-      />
+      /> */}
 
       <Modal
         title={"Disclaimer"}

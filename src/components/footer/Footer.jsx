@@ -24,6 +24,41 @@ const Footer = () => {
       className="relative h-[100%] w-[100%] overflow-hidden bg-primary-light px-10 py-5"
     >
       <Container>
+        <div className="flex h-full w-full flex-col gap-2 text-secondary">
+          <h3
+            onClick={(e) => {
+              e.stopPropagation();
+
+              if (window) {
+                window.open(
+                  `https://www.google.com/maps?q=${"BJ-74, Salt Lake City, Sector II, Kolkata 700091 (Near Araksha Bhawan)"}`,
+                  "_blank",
+                );
+              }
+            }}
+            className="flex cursor-pointer items-center justify-center gap-2"
+          >
+            <i className="fa-solid fa-location-dot mt-1"></i>
+            <span className="lg:truncate">
+              BJ-74, Salt Lake City, Sector II, Kolkata 700091 (Near Araksha
+              Bhawan)
+            </span>
+          </h3>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.653574200557!2d88.42199287475768!3d22.59205653225797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02756337d170af%3A0xc673d796705545b!2sInnerwork%20Advisors%20LLP!5e0!3m2!1sen!2sin!4v1767731897098!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            title="my-gmap-frame"
+            referrerpolicy="no-referrer-when-downgrade"
+            className="h-full w-full"
+          >
+            <a href="https://www.maps.ie/distance-area-calculator.html">
+              measure distance on map
+            </a>
+          </iframe>
+        </div>
+        
         <div className="map-container-2 flex w-full flex-col items-start gap-4 pt-8 lg:h-[280px] lg:flex-row">
           <div className="flex h-full w-full flex-col gap-2 text-secondary lg:w-[50%]">
             <h3
@@ -202,7 +237,18 @@ const Footer = () => {
               <div className="flex items-center gap-4">
                 <i className="fa-solid fa-signs-post text-secondary"></i>
                 <a
-                  href={`https://www.google.com/maps?q=${"Ground Floor, Martin Burn Building 1 No, RN Mukherjee Rd, Kolkata 700001"}`}
+                  href={`https://www.google.com/maps?q=${"Clockwise Linley House, Dickinson Street, Manchester M1 4LF, United Kingdom"}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Clockwise Linley House, Dickinson Street, Manchester M1 4LF,
+                  United Kingdom
+                </a>
+              </div>
+              <div className="flex items-center gap-4">
+                <i className="fa-solid fa-signs-post text-secondary"></i>
+                <a
+                  href={`https://www.google.com/maps/place/Innerwork+Advisors+LLP+%7C+Private+Investigator+%26+Detective+Agency+in+Kolkata/@22.5721656,88.3517182,17z/data=!3m1!4b1!4m6!3m5!1s0x3a0277920ecf8b47:0x52a0b302cf5e06d3!8m2!3d22.5721656!4d88.3517182!16s%2Fg%2F11w81r7t3l?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -210,27 +256,28 @@ const Footer = () => {
                   700001 (Working Office)
                 </a>
               </div>
+
+              <div className="flex items-center gap-4">
+                <i className="fa-solid fa-signs-post text-secondary"></i>
+                <a
+                  href={`https://www.google.com/maps/place/Innerwork+Advisors+LLP/@22.5920516,88.4245678,17z/data=!3m1!4b1!4m6!3m5!1s0x3a02756337d170af:0xc673d796705545b!8m2!3d22.5920516!4d88.4245678!16s%2Fg%2F11yv0w0tbx?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  BJ-74, Salt Lake City, Sector II, Kolkata 700091 (Near Araksha
+                  Bhawan)
+                </a>
+              </div>
+
               <div className="relative flex items-center justify-between gap-4">
                 <i className="fa-solid fa-signs-post text-secondary"></i>
                 <a
-                  href={`https://www.google.com/maps?q=${"Innerwork Advisors LLP, 5th Floor, 22, Sukeas Ln, Murgighata, B.B.D. Bagh, Kolkata, West Bengal 700001"}`}
+                  href={`https://www.google.com/maps/place/Innerwork+Advisors+LLP+%7C+Security+Guard+Company+%7C+Best+Security+Agency+in+Kolkata/@22.5770291,88.3490538,17z/data=!3m1!4b1!4m6!3m5!1s0x3a0277bac19f3641:0x165b6efe9eaeba59!8m2!3d22.5770242!4d88.3516287!16s%2Fg%2F11rglqpyvz?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   22, Sukeas Lane, 5th Floor, Kolkata 700001 (Registered Office
                   )
-                </a>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <i className="fa-solid fa-signs-post text-secondary"></i>
-                <a
-                  href={`https://www.google.com/maps?q=${"Clockwise Linley House, Dickinson Street, Manchester M1 4LF, United Kingdom"}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Clockwise Linley House, Dickinson Street, Manchester M1 4LF,
-                  United Kingdom
                 </a>
               </div>
 

@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import { Dialog } from "@headlessui/react";
 import { AnimatePresence } from "framer-motion";
 
-import { NRIBannerImage } from "../../assets";
+import { BannerImage } from "../../assets";
 
-const CTA_URL = "https://innerworkadvisors.co.uk/";
+const CTA_URL = "https://www.innerworkgroups.com/";
 
 const NRIAdModal = (props) => {
   const { isOpen, onClose } = props;
@@ -36,7 +36,7 @@ const NRIAdModal = (props) => {
 
               {/* Content */}
               <div className="">
-                <img src={NRIBannerImage} alt="NRI" />
+                <img src={BannerImage} alt="NRI" />
               </div>
               {/* Content */}
 

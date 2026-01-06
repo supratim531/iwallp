@@ -17,8 +17,6 @@ function richText(text, maxLength) {
 }
 
 const imageMap = {
-  "Mr-Bibaswas-Mukherjee-500x500.webp":
-    "https://innerworkadvisorsllp.com/images/members/Mr-Bibaswas-Mukherjee-500x500.webp",
   "Mr-Deepak-Kumar-Dutta-500x500.webp":
     "https://innerworkadvisorsllp.com/images/members/Mr-Deepak-Kumar-Dutta-500x500.webp",
   "Mr-Asim-Ali-500x500.webp":
@@ -79,14 +77,7 @@ const TeamSlider = () => {
           dots: false,
         },
       },
-      // {
-      //   breakpoint: 768,
-      //   settings: {
-      //     slidesToShow: 2,
-      //     slidesToScroll: 1,
-      //     initialSlide: 1,
-      //   },
-      // },
+
       {
         breakpoint: 768,
         settings: {
@@ -100,7 +91,7 @@ const TeamSlider = () => {
   return (
     <Container id="about">
       <Section
-        className="relative !my-0 flex flex-col items-center justify-between py-12 text-center md:py-16"
+        className="relative !my-0 flex flex-col items-center justify-between py-1 text-center"
         title={"Team"}
         label={"OUR TEAM"}
       >
@@ -133,31 +124,31 @@ const TeamSlider = () => {
               <div
                 id="slider-boxes"
                 key={index}
-                className="h-full rounded-xl border-b-[8px] border-secondary bg-white p-4"
+                className="flex h-[500px] flex-col rounded-xl border-b-[8px] border-secondary bg-white p-4"
               >
-                <div className="h-[70%]">
+                <div className="flex flex-col items-center">
                   <div className="rounded-full border-black p-6">
                     {item.image && (
                       <img
                         src={item.image}
                         alt="team-images"
-                        className="rounded-full object-cover"
+                        className="h-[180px] w-[180px] rounded-full object-cover"
                       />
                     )}
                   </div>
                   <h2 className="text-center text-xl font-bold text-black">
                     {item.id}
                   </h2>
-                  <h3 className="text-center text-[15px] font-medium text-gray-500">
+                  <h3 className="min-h-[22px] text-center text-[15px] font-medium text-gray-500">
                     {item.title}
                   </h3>
                 </div>
 
-                <div className="text-md h-[20%] p-2 text-center">
+                <div className="mt-2 min-h-[84px] px-2 text-center leading-relaxed">
                   {richText(item.description, 100)}
                 </div>
 
-                <div className="flex h-[10%] items-center justify-center">
+                <div className="mt-auto flex items-center justify-center pt-4">
                   <button
                     className="rounded-xl bg-secondary px-6 py-2 font-semibold text-white duration-200 hover:bg-black"
                     onClick={() => {
