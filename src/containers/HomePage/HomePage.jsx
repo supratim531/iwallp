@@ -122,7 +122,7 @@ const HomePage = (props) => {
               }}
               className="w-full rounded-md bg-primary-light px-4 py-2 text-white hover:bg-primary-dark sm:w-48"
             >
-              Proceed To Website
+              I accept
             </button>
 
             <a

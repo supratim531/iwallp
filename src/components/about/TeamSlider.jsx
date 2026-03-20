@@ -25,6 +25,7 @@ const imageMap = {
     "https://innerworkadvisorsllp.com/images/members/Mr-Sujit-Chakraborty-500x500.webp",
   "Faiyaz-Ahmed-500x500.webp":
     "https://innerworkadvisorsllp.com/images/members/Faiyaz-Ahmed-500x500.webp",
+    "Amiya-Kumar-Lahiri-500x500.webp":""
 };
 
 const services = [
@@ -94,6 +95,9 @@ const TeamSlider = () => {
         className="relative !my-0 flex flex-col items-center justify-between py-1 text-center"
         title={"Team"}
         label={"OUR TEAM"}
+        description={
+          "Innerwork Advisors LLP is powered by a multidisciplinary team of professionals, including directors, partners and experienced executives across advisory, compliance, operations and support functions. Our team brings together expertise, integrity and a shared commitment to delivering reliable and practical solutions for clients across sectors. We believe that strong outcomes are driven by strong people — working with accountability, collaboration and purpose."
+        }
       >
         <div>
           <img
