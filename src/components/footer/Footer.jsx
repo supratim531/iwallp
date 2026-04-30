@@ -234,17 +234,7 @@ const Footer = () => {
             </h3>
 
             <div className="flex flex-col gap-4">
-              <div className="flex items-center gap-4">
-                <i className="fa-solid fa-signs-post text-secondary"></i>
-                <a
-                  href={`https://www.google.com/maps?q=${"Clockwise Linley House, Dickinson Street, Manchester M1 4LF, United Kingdom"}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Clockwise Linley House, Dickinson Street, Manchester M1 4LF,
-                  United Kingdom
-                </a>
-              </div>
+              
               <div className="flex items-center gap-4">
                 <i className="fa-solid fa-signs-post text-secondary"></i>
                 <a
@@ -278,6 +268,17 @@ const Footer = () => {
                 >
                   22, Sukeas Lane, 5th Floor, Kolkata 700001 (Registered Office
                   )
+                </a>
+              </div>
+              <div className="flex items-center gap-4">
+                <i className="fa-solid fa-signs-post text-secondary"></i>
+                <a
+                  href={`https://www.google.com/maps?q=${"Clockwise Linley House, Dickinson Street, Manchester M1 4LF, United Kingdom"}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Clockwise Linley House, Dickinson Street, Manchester M1 4LF,
+                  United Kingdom
                 </a>
               </div>
 

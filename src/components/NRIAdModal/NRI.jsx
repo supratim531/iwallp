@@ -5,10 +5,25 @@ import { Section, Container } from "../shared";
 
 const NRI = (props) => {
   const images = [
-    "https://innerworkadvisorsllp.com/images/UK/UK2.png",
-    "https://innerworkadvisorsllp.com/images/UK/UK3.png",
-    "https://innerworkadvisorsllp.com/images/UK/UK5.png",
-    "https://innerworkadvisorsllp.com/images/UK/UK6.png",
+    "https://innerworkadvisorsllp.com/images/UK/UK1.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK2.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK3.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK4.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK5.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK6.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK7.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK8.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK9.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK10.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK11.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK12.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK13.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK14.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK15.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK16.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK17.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK18.webp",
+    "https://innerworkadvisorsllp.com/images/UK/UK19.webp",
   ];
 
   const ukRef = useRef(null);

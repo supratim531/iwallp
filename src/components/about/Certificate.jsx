@@ -7,10 +7,14 @@ import { certificates } from "../../assets";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const imageMap = {
-  "certificate1.jpg":
-    "https://innerworkadvisorsllp.com/images/certificates/certificate1.jpg",
+  "certificate1.webp":
+    "https://innerworkadvisorsllp.com/images/certificates/certificate1.webp",
   "certificate2.jpg":
-    "https://innerworkadvisorsllp.com/images/certificates/certificate2.jpg",
+    "https://innerworkadvisorsllp.com/images/certificates/certificate2.webp",
+    "certificate3.webp":
+    "https://innerworkadvisorsllp.com/images/certificates/certificate3.webp",
+    "certificate4.webp":
+    "https://innerworkadvisorsllp.com/images/certificates/certificate4.webp",
 };
 
 const Certificate = () => {
@@ -53,7 +57,7 @@ const Certificate = () => {
           label={"CERTIFICATES"}
           description={
             <p className="relative mt-1 flex max-w-lg items-center justify-between text-center text-lg font-normal text-white">
-              This is our certificate section for reliabilty
+              This is our certificate section for trust and reliabilty.
             </p>
           }
         ></Section>

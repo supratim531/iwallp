@@ -3,14 +3,28 @@
     "id": "Certificate-1",
     "title": "Certificate of Membership",
     "description": "The certificate recognises Innerwork Advisors LLP",
-    "image": "certificate1.jpg",
-    "extra": "as a company member, denoting commitment to the integrity and trust of the private security industry valid up to December 2025"
+    "image": "https://innerworkadvisorsllp.com/images/certificates/certificate1.webp",
+    "extra": "as a company member, denoting commitment to the integrity and trust of the private security industry valid up to December 2026"
   },
   {
     "id": "Certificate-2",
     "title": "Certificate of Membership",
-    "description": "The certificate recognises Sujit Chakraborty, Director of Innerwork Advisors LLP...",
-    "image": "certificate2.jpg",
-    "extra": "denoting commitment to the integrity and trust of the profession of private investigation valid till 31st December 2026"
+    "description": "The certificate recognises Sujit Chakraborty, Director of Innerwork Advisors LLP",
+    "image": "https://innerworkadvisorsllp.com/images/certificates/certificate2.webp",
+    "extra": "as a denoting commitment to the integrity and trust of the profession of private investigation valid till 31st December 2026"
+  },
+  {
+    "id": "Certificate-3",
+    "title": "Certificate of Real Estate Agent",
+    "description": "The certificate formally recognizes Innerwork Advisors LLP",
+    "image": "https://innerworkadvisorsllp.com/images/certificates/certificate3.webp",
+    "extra": "as a registered real estate agent under the West Bengal Real Estate Regulatory Authority, affirming its compliance with statutory standards and ethical practices in the real estate sector.This registration underscores the firm's commitment to transparency, accountability, and regulatory adherence, and remains valid until 30th January 2031, subject to continued compliance"
+  },
+  {
+    "id": "Certificate-4",
+    "title": "Certificate of Registration",
+    "description": "The certificate formally recognizes Innerwork Advisors LLP",
+    "image": "https://innerworkadvisorsllp.com/images/certificates/certificate4.webp",
+    "extra": "adherence to internationally recognized Quality Management System standards under ISO 9001:2015. It validates the organization's structured processes, risk-based approach, and commitment to continuous improvement in delivering private security and investigative services. The certification reflects operational excellence, client-centric service delivery, regulatory compliance, and robust internal controls aligned with global best practices. It remains valid until 16th April 2029, subject to successful surveillance audits and ongoing conformity with ISO requirements."
   }
 ]

@@ -48,11 +48,13 @@ export const App = (props) => {
   return (
     <Configurations>
       <HelmetProvider>
+      
         <WhatsAppPopup />
         <ScrollToTop />
         <Navbar />
         <Outlet />
         <Footer />
+      
       </HelmetProvider>
     </Configurations>
   );
