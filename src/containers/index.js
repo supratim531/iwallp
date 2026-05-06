@@ -7,3 +7,4 @@ export { default as SecurityServicesPage } from "./SecurityServicesPage/Security
 export { default as SecurityCategoryPage } from "./SecurityCategoryPage/SecurityCategoryPage";
 export { default as SecurityDetailPage } from "./SecurityDetailPage/SecurityDetailPage";
 export { default as NRIPage } from "./NRIPage/NRIPage";
+export { default as CareersPage } from "./CareersPage/CareersPage";

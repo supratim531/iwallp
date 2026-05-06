@@ -130,7 +130,7 @@ const Footer = () => {
 
         <div className="flex w-full flex-wrap py-8 text-white">
           <div className="w-full flex-auto md:w-[50%] lg:w-[25%]">
-            <HashLink smooth to={"/#home"}>
+            <HashLink to={"/#home"}>
               <img
                 src={"https://innerworkadvisorsllp.com/images/logo/logo.png"}
                 alt="INNERWORK LEGAL SERVICES"
@@ -192,17 +192,17 @@ const Footer = () => {
 
             <ul className={css.quickLinks}>
               <li>
-                <HashLink smooth to={"/#about"}>
+                <HashLink to={"/#about"}>
                   About Us
                 </HashLink>
               </li>
               <li>
-                <HashLink smooth to={"/#service"}>
+                <HashLink to={"/#service"}>
                   Our Services
                 </HashLink>
               </li>
               <li>
-                <HashLink smooth to={"/#contact"}>
+                <HashLink to={"/#contact"}>
                   Book Consultation
                 </HashLink>
               </li>

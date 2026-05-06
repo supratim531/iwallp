@@ -1,12 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
-import { Book, BookOpen, File } from "react-feather";
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import { Dropdown, DropMenu, Container } from "../shared";
+import { Container } from "../shared";
 
 import SidebarMaybe from "../SidebarMaybe/SidebarMaybe";
-
-import { DropdownItem } from "../shared/Dropdown/Dropdown";
 
 import css from "./Navbar.module.css";
 
@@ -17,27 +15,14 @@ const Navbar = () => {
     sidebarMaybeRef.current.toggle();
   };
 
-  const [scrolled, setScrolled] = useState(false);
   const navigation = [
     { link: "home", text: "Home" },
     { link: "service", text: "Our Services" },
     { link: "nri", text: "NRI" },
     { link: "about", text: "About Us" },
     { link: "footer", text: "Contact Us" },
+    { link: "/careers", text: "Careers" },
   ];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <header>
@@ -129,6 +114,14 @@ const Navbar = () => {
                 Contact Us
               </HashLink>
             </li>
+            <li className="hover:bg-white hover:text-secondary active:bg-white active:text-secondary">
+              <a
+                href="/careers"
+                className="flex h-full w-full items-center justify-center"
+              >
+                Careers
+              </a>
+            </li>
           </ul>
         </div>
       </SidebarMaybe>
@@ -159,17 +152,22 @@ const Navbar = () => {
             <ul className="flex gap-x-8 text-xl">
               {navigation.map((nav) => (
                 <li key={nav.text}>
-                  <HashLink
-                    smooth
-                    to={`/#${nav.link}`}
-                    className="!text-white transition duration-200 hover:!text-secondary"
-                    // onClick={() => {
-                    //   const section = document.getElementById(nav.link);
-                    //   section?.scrollIntoView({ behavior: "smooth" });
-                    // }}
-                  >
-                    {nav.text}
-                  </HashLink>
+                  {nav.link.startsWith("/") ? (
+                    <Link
+                      to={nav.link}
+                      className="!text-white transition duration-200 hover:!text-secondary"
+                    >
+                      {nav.text}
+                    </Link>
+                  ) : (
+                    <HashLink
+                      smooth
+                      to={`/#${nav.link}`}
+                      className="!text-white transition duration-200 hover:!text-secondary"
+                    >
+                      {nav.text}
+                    </HashLink>
+                  )}
                 </li>
               ))}
 
