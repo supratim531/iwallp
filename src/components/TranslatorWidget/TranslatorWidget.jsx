@@ -78,7 +78,7 @@ const TranslatorWidget = () => {
             display: "flex", alignItems: "center", gap: 7,
             background: "linear-gradient(135deg,#1a2744,#243a6e)",
             border: "1.5px solid rgba(201,162,103,0.6)",
-            borderRadius: 50, padding: "9px 16px",
+            borderRadius: 50, padding: "8px 12px",
             cursor: "pointer", color: "#C9A267",
             fontFamily: "'Lato',sans-serif", fontWeight: 700,
             fontSize: "clamp(0.72rem,2vw,0.82rem)", letterSpacing: "0.04em",
@@ -87,7 +87,11 @@ const TranslatorWidget = () => {
           }}
         >
           <span style={{ fontSize: "1rem" }}>🌐</span>
-          <span>{current.flag} {current.native}</span>
+          <span>
+            {current.flag}{" "}
+            {/* Language name hidden on phones so the widget stays compact */}
+            <span className="hidden sm:inline">{current.native}</span>
+          </span>
           <motion.span
             animate={{ rotate: open ? 180 : 0 }}
             transition={{ duration: 0.2 }}

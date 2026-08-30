@@ -40,8 +40,8 @@ const Footer = () => {
           >
             <i className="fa-solid fa-location-dot mt-1"></i>
             <span className="lg:truncate">
-              BJ-74, Salt Lake City, Sector II, Kolkata 700091 (Near Araksha
-              Bhawan)
+              BJ-74, Salt Lake City, Sector II, Kolkata &ndash; 700091, West
+              Bengal (Near Araksha Bhawan)
             </span>
           </h3>
 
@@ -75,9 +75,9 @@ const Footer = () => {
               className="flex cursor-pointer items-start gap-2"
             >
               <i className="fa-solid fa-location-dot mt-1"></i>
-              <span className="lg:truncate">
-                Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor, Kolkata 700001
-                ( Working Office )
+              <span>
+                Ground Floor, Martin Burn House, 1, R. N. Mukherjee Road,
+                Kolkata &ndash; 700001, West Bengal (Working Office)
               </span>
             </h3>
 
@@ -109,7 +109,7 @@ const Footer = () => {
             >
               <i className="fa-solid fa-location-dot mt-1"></i>
               <span className="lg:truncate">
-                22, Sukeas Lane, 5th Floor, Kolkata 700001 ( Registered Office )
+                22, Sukeas Lane, 5th Floor, Kolkata 700001 (Registered Office)
               </span>
             </h3>
 
@@ -203,7 +203,7 @@ const Footer = () => {
               </li>
               <li>
                 <HashLink to={"/#contact"}>
-                  Book Consultation
+                  Book a Consultation
                 </HashLink>
               </li>
             </ul>
@@ -242,8 +242,12 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor, Kolkata
-                  700001 (Working Office)
+                  <span className="block">
+                    Innerwork Advisors LLP (Working Office)
+                  </span>
+                  <span className="block">Ground Floor, Martin Burn House</span>
+                  <span className="block">1, R. N. Mukherjee Road</span>
+                  <span className="block">Kolkata &ndash; 700001, West Bengal</span>
                 </a>
               </div>
 
@@ -266,8 +270,8 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  22, Sukeas Lane, 5th Floor, Kolkata 700001 (Registered Office
-                  )
+                  22, Sukeas Lane, 5th Floor, Kolkata 700001 (Registered
+                  Office)
                 </a>
               </div>
 

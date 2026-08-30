@@ -75,10 +75,10 @@ const NRI = (props) => {
         id="nri"
         className="!my-0 py-8 md:py-16"
         title={"Innerwork for Non-Resident Indians (NRIs)"}
-        label={"Holding NRI's hand"}
+        label={"Supporting NRIs Every Step of the Way"}
         // label={"HOLDING THE HAND OF AN NRI…"}
         description={
-          "Innerwork Advisors LLP is a trusted legal and business consultancy dedicated to empowering Non-Resident Indians (NRIs) with expert, end-to-end solutions for their cross-border legal, financial, and investment needs. With our newly opened office in Manchester, United Kingdom, we bring our world-class advisory services closer to the global NRI community. From property disputes and family law matters in India to business setup, taxation, and compliance support across jurisdictions, our team ensures seamless assistance backed by deep legal expertise and cultural understanding. NRIs in the UK can now benefit from local access to our professionals while enjoying the convenience of coordinated services in India—bridging distances, safeguarding rights, and delivering justice without the barriers of time zones or geography..."
+          "Innerwork Advisors LLP is a trusted legal and business consultancy dedicated to providing Non-Resident Indians (NRIs) with comprehensive, end-to-end legal and business solutions for their cross-border legal, financial, and investment needs. With our newly established office in Manchester, United Kingdom, we bring our advisory services closer to the global NRI community. From property disputes and family law matters in India to business setup, taxation, and compliance support across jurisdictions, our team delivers seamless assistance backed by extensive legal expertise and a deep understanding of cross-border matters. NRIs in the UK can now benefit from local access to our professionals while enjoying the convenience of coordinated services in India—bridging geographical distances, safeguarding clients' rights, and simplifying cross-border legal processes."
         }
       >
         {/* Carousel */}

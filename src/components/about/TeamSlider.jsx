@@ -77,7 +77,7 @@ const TeamSlider = () => {
         title={"Team"}
         label={"OUR TEAM"}
         description={
-          "Innerwork Advisors LLP is powered by a multidisciplinary team of professionals, including directors, partners and experienced executives across advisory, compliance, operations and support functions. Our team brings together expertise, integrity and a shared commitment to delivering reliable and practical solutions for clients across sectors. We believe that strong outcomes are driven by strong people — working with accountability, collaboration and purpose."
+          "Innerwork Advisors LLP is supported by a multidisciplinary team of professionals, including directors, partners, and experienced professionals across advisory, compliance, operations, and support functions. Our team combines expertise, integrity, and a shared commitment to delivering reliable and practical solutions for clients across sectors. We believe that exceptional outcomes are driven by dedicated professionals — working with accountability, collaboration, and professionalism."
         }
       >
         <div className="w-full">
@@ -96,10 +96,11 @@ const TeamSlider = () => {
         label={"THE PILLARS"}
         description={
           <div className="relative mt-1 flex text-center text-lg font-normal">
-            For years, we have built a legacy of success based on integrity,
-            dedication, and relentless advocacy. Our proven track record is a
-            testament to our ability to navigate complex legal challenges and
-            achieve favourable results for our clients.
+            Over the years, we have built a legacy of success based on
+            integrity, dedication, and relentless advocacy. Our proven track
+            record reflects our ability to navigate complex legal challenges and
+            deliver favourable outcomes for our clients, while maintaining the
+            highest standards of professionalism and client service.
           </div>
         }
       ></Section>
@@ -170,7 +171,7 @@ const TeamSlider = () => {
             <p className="text-sm font-semibold text-[#C9A267]">
               {selectedMember?.title}
             </p>
-            <p className="mt-2 text-justify text-sm text-gray-700">
+            <p className="mt-2 text-left text-sm text-gray-700">
               {selectedMember?.extra}
             </p>
             <button

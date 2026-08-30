@@ -13,8 +13,11 @@ const WhatsAppPopup = () => {
       <div className="invisible flex items-center justify-center bg-green-600 px-6 text-white opacity-0 transition-all duration-200 group-hover:visible group-hover:flex group-hover:rounded-bl-md group-hover:rounded-tl-md group-hover:opacity-100">
         WhatsApp
       </div>
-      <button className="rounded-md bg-teal-700 px-4 py-3 duration-200 group-hover:rounded-none group-hover:rounded-br-md group-hover:rounded-tr-md group-hover:bg-green-600">
-        <i className="fa-brands fa-whatsapp text-3xl text-white"></i>
+      <button
+        aria-label="Chat with us on WhatsApp"
+        className="rounded-md bg-teal-700 px-3 py-2 duration-200 group-hover:rounded-none group-hover:rounded-br-md group-hover:rounded-tr-md group-hover:bg-green-600 md:px-4 md:py-3"
+      >
+        <i className="fa-brands fa-whatsapp text-2xl text-white md:text-3xl"></i>
       </button>
     </div>
   );
