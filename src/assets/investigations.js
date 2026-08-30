@@ -1,6 +1,6 @@
 export const investigations = [
   {
-    name: "General Investigations",
+    name: "General Investigation Services",
     metaTitle:
       "General Investigation Services - Innerwork Advisors LLP, Kolkata",
     metaDesc:
@@ -9,19 +9,19 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/general.png",
     urlPath: "general-investigation-kolkata",
     description:
-      "At the heart of informed decision-making lies accurate and comprehensive information. Our General Investigation services are designed to provide you with the factual insights you need, regardless of the situation's complexity. We employ a meticulous and discreet approach, utilizing a wide range of investigative techniques to gather evidence, verify information, and deliver clear, actionable intelligence. Whether you require due diligence, background checks, or assistance with unique circumstances, our experienced investigators are dedicated to uncovering the truth and providing you with the clarity you deserve.",
+      "At the heart of informed decision-making lies accurate and comprehensive information. Our General Investigation Services are designed to provide you with the factual insights you need, regardless of the situation's complexity. We employ a meticulous and discreet approach, utilizing a wide range of investigative techniques to gather evidence, verify information, and deliver clear, actionable intelligence. Whether you require due diligence, background checks, or assistance with unique circumstances, our experienced investigators are dedicated to uncovering the truth and providing you with the clarity you deserve.",
   },
   {
-    name: "Accidental Investigations",
+    name: "Accident Investigations",
     title: "Reconstructing Events, Understanding Causes",
     metaTitle:
-      "Accidental Investigation Services - Innerwork Advisors LLP, Kolkata",
+      "Accident Investigation Services - Innerwork Advisors LLP, Kolkata",
     metaDesc:
-      "Innerwork Advisors LLP offers expert accidental investigation services in Kolkata. Get professional, thorough analysis for accident claims and investigative support.",
+      "Innerwork Advisors LLP offers expert accident investigation services in Kolkata. Get professional, thorough analysis for accident claims and investigative support.",
     image: "https://innerworkadvisorsllp.com/images/services/accidental.png",
     urlPath: "accidental-investigation-kolkata",
     description:
-      "When accidents happen, understanding the sequence of events and identifying the root causes is crucial for legal, insurance, and safety purposes. Our Accidental Investigation services provide a thorough and objective analysis of incidents, meticulously examining evidence, interviewing witnesses, and reconstructing events to establish a clear understanding of what transpired. We provide comprehensive reports that can be instrumental in resolving disputes, implementing preventative measures, and ensuring accountability.",
+      "When accidents happen, understanding the sequence of events and identifying the root causes is crucial for legal, insurance, and safety purposes. Our Accident Investigation Services provide a thorough and objective analysis of incidents, meticulously examining evidence, interviewing witnesses, and reconstructing events to establish a clear understanding of what transpired. We provide comprehensive reports that can be instrumental in resolving disputes, implementing preventive measures, and ensuring accountability.",
   },
   {
     name: "Civil Investigation",
@@ -32,7 +32,7 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/civil.png",
     urlPath: "civil-investigation-kolkata",
     description:
-      "Civil litigation often hinges on the strength and accuracy of the evidence presented. Our Civil Investigation services are designed to support legal teams and individuals involved in civil disputes by gathering crucial information, identifying key witnesses, and uncovering evidence to build a strong case. From document retrieval to witness interviews and surveillance, we provide the investigative support needed to navigate the complexities of civil proceedings with confidence.",
+      "Civil litigation often hinges on the strength and accuracy of the evidence presented. Our Civil Investigation Services are designed to support legal teams and individuals involved in civil disputes by gathering crucial information, identifying key witnesses, and uncovering evidence to build a strong case. From document retrieval to witness interviews and surveillance, we provide the investigative support needed to navigate the complexities of civil proceedings with confidence.",
   },
   {
     name: "Commercial Investigations",
@@ -44,7 +44,7 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/commercial.png",
     urlPath: "commercial-investigation-kolkata",
     description:
-      "In today's competitive and often challenging business environment, protecting your company's interests is paramount. Our Commercial Investigation services are tailored to address a wide range of business-related concerns, including due diligence on potential partners, internal theft, intellectual property infringement, and competitive intelligence gathering. We provide discreet and professional investigations that help safeguard your assets, reputation, and bottom line.",
+      "In today's competitive and often challenging business environment, protecting your company's interests is paramount. Our Commercial Investigation Services are tailored to address a wide range of business-related concerns, including due diligence on potential partners, internal theft, intellectual property infringement, and competitive intelligence gathering. We provide discreet and professional investigations that help safeguard your assets, reputation, and bottom line.",
   },
   {
     name: "Criminal Investigation",
@@ -56,7 +56,7 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/criminal.png",
     urlPath: "criminal-investigation-kolkata",
     description:
-      "Our Criminal Investigation services provide crucial support to legal teams and individuals involved in criminal matters. We conduct thorough and ethical investigations to gather evidence, locate witnesses, and analyze information to assist in building a robust defense or prosecution. Our experienced investigators are adept at navigating the complexities of the criminal justice system and are committed to uncovering the truth.",
+      "Our Criminal Investigation Services provide crucial support to legal teams and individuals involved in criminal matters. We conduct thorough and ethical investigations to gather evidence, locate witnesses, and analyze information to support legal proceedings through objective evidence. Our experienced investigators are adept at navigating the complexities of the criminal justice system and are committed to uncovering the truth.",
   },
   {
     name: "Domestic / Marital Investigations",
@@ -68,7 +68,7 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/marital.png",
     urlPath: "marital-investigation-kolkata",
     description:
-      "Navigating domestic and marital issues often requires discretion, sensitivity, and factual information. Our Domestic / Marital Investigation services offer a confidential and professional approach to address concerns such as infidelity, asset discovery in divorce proceedings, and child welfare. We provide the objective evidence needed to make informed decisions and gain peace of mind during challenging times.",
+      "Navigating domestic and marital issues often requires discretion, sensitivity, and factual information. Our Domestic / Marital Investigation Services offer a confidential and professional approach to address concerns such as infidelity, asset discovery in divorce proceedings, and child welfare. We provide the objective evidence needed to make informed decisions and gain peace of mind during challenging times.",
   },
   {
     name: "Financial Investigations",
@@ -80,7 +80,7 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/financial.png",
     urlPath: "financial-investigation-kolkata",
     description:
-      "Financial irregularities can have significant consequences for individuals and organizations. Our Financial Investigation services specialize in tracing assets, identifying instances of fraud, embezzlement, and other forms of financial misconduct. We employ forensic accounting techniques and meticulous analysis to uncover the truth behind complex financial transactions, providing you with the evidence needed for legal action or recovery.",
+      "Financial irregularities can have significant consequences for individuals and organizations. Our Financial Investigation Services specialize in tracing assets, identifying instances of fraud, embezzlement, and other forms of financial misconduct. We employ forensic accounting techniques and meticulous analysis to uncover the truth behind complex financial transactions, providing you with the evidence needed for legal action or asset recovery.",
   },
   {
     name: "Fraud Investigations",
@@ -91,7 +91,7 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/fraud.png",
     urlPath: "fraud-investigation-kolkata",
     description:
-      "Fraudulent activities can impact businesses and individuals in numerous ways. Our Fraud Investigation services are designed to detect, investigate, and prevent various types of fraud, including insurance fraud, investment fraud, and corporate fraud. We utilize a proactive and reactive approach, employing cutting-edge techniques to uncover deceptive practices and protect your valuable assets.",
+      "Fraudulent activities can impact businesses and individuals in numerous ways. Our Fraud Investigation Services are designed to detect, investigate, and help prevent various types of fraud, including insurance fraud, investment fraud, and corporate fraud. We utilize a proactive and reactive approach, employing cutting-edge techniques to uncover deceptive practices and protect your valuable assets.",
   },
   {
     name: "Industrial Investigations",
@@ -103,7 +103,7 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/industrial.png",
     urlPath: "industrial-investigation-kolkata",
     description:
-      "Industrial environments present unique challenges related to safety, security, and regulatory compliance. Our Industrial Investigation services address concerns such as workplace accidents, theft of industrial property, and violations of safety protocols. We conduct thorough investigations to identify the root causes of incidents, ensure compliance with regulations, and help create a safer and more secure working environment.",
+      "Industrial environments present unique challenges related to safety, security, and regulatory compliance. Our Industrial Investigation Services address concerns such as workplace accidents, industrial property theft, and violations of safety protocols. We conduct thorough investigations to identify the root causes of incidents, help ensure compliance with regulations, and create a safer and more secure working environment.",
   },
   {
     name: "Insurance Investigations",
@@ -115,7 +115,7 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/insurance.png",
     urlPath: "insurance-investigation-kolkata",
     description:
-      "Insurance fraud costs the industry billions of dollars annually, ultimately impacting premiums for everyone. Our Insurance Investigation services assist insurance companies in verifying the legitimacy of claims, detecting fraudulent activities, and mitigating financial losses. We employ a range of investigative techniques to gather evidence and provide comprehensive reports that support informed claim decisions.",
+      "Insurance fraud costs the industry billions of dollars annually, ultimately impacting premiums for everyone. Our Insurance Investigation Services assist insurance companies in verifying the legitimacy of claims, detecting fraudulent activities, and mitigating financial losses. We employ a wide range of investigative techniques to gather evidence and provide comprehensive reports that support informed claims decisions and reduce financial risk.",
   },
   {
     name: "Missing Persons",
@@ -127,7 +127,7 @@ export const investigations = [
       "https://innerworkadvisorsllp.com/images/services/missing-persons.png",
     urlPath: "missing-person-tracing-kolkata",
     description:
-      "The disappearance of a loved one can be a deeply distressing experience. Our Missing Persons investigation services are dedicated to locating individuals who have gone missing. We work diligently, utilizing various resources and investigative techniques to gather information, follow leads, and collaborate with law enforcement to bring missing persons home safely.",
+      "The disappearance of a loved one can be a deeply distressing experience. Our Missing Persons Investigation Services are dedicated to locating individuals who have gone missing. We work diligently, utilizing various resources and investigative techniques to gather information, follow leads, and collaborate with law enforcement to help locate missing persons and reunite families whenever possible.",
   },
   {
     name: "Missing Heirs",
@@ -138,32 +138,33 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/missing-heirs.png",
     urlPath: "missing-heirs-investigation-kolkata",
     description:
-      "Locating missing or unknown heirs is often a necessary step in estate administration. Our Missing Heirs investigation services specialize in tracing and identifying individuals who are entitled to inherit assets. We employ genealogical research, public record searches, and other investigative methods to connect the present with the past and ensure that estates are properly distributed.",
+      "Locating missing or unknown heirs is often a necessary step in estate administration. Our Missing Heirs Investigation Services specialize in tracing and identifying individuals legally entitled to inherit assets. We employ genealogical research, public record searches, and other investigative methods to connect the present with the past and support the proper administration and distribution of estates.",
   },
   {
-    name: "Patent Violations",
-    title: "Protecting Your Intellectual Property Innovations",
-    metaTitle: "Parent Violation Services - Innerwork Advisors LLP, Kolkata",
+    name: "Patent Infringement",
+    title: "Protecting Your Intellectual Property",
+    metaTitle:
+      "Patent Infringement Investigation Services - Innerwork Advisors LLP, Kolkata",
     metaDesc:
-      "Parent violation services in Kolkata by Innerwork Advisors LLP. Expertly handle cases of child custody, neglect, and parental rights violations with care and discretion.",
+      "Patent infringement investigation services in Kolkata by Innerwork Advisors LLP. Identify and document the unauthorized use of your patented inventions with discreet, evidence-led support.",
     image:
       "https://innerworkadvisorsllp.com/images/services/patent-violations.png",
     urlPath: "patent-violation-investigation-kolkata",
     description:
-      "Your patents represent significant investments in innovation and development. Our Patent Violation investigation services help protect your intellectual property rights by identifying and investigating instances of patent infringement. We gather evidence of unauthorized use or reproduction of your patented inventions, providing you with the information needed to take appropriate legal action.",
+      "Your patents represent significant investments in innovation and development. Our Patent Infringement Investigation Services help protect your intellectual property rights by identifying and investigating instances of patent infringement. We gather evidence of unauthorized use, manufacture, sale, or distribution of your patented inventions, providing you with the information needed to take appropriate legal action.",
   },
   {
-    name: "Trademark Violation",
+    name: "Trademark Infringement",
     title: "Safeguarding Your Brand Identity and Reputation",
     metaTitle:
-      "Trademark Violation Investigation - Innerwork Advisors LLP, Kolkata",
+      "Trademark Infringement Investigation - Innerwork Advisors LLP, Kolkata",
     metaDesc:
-      "Trademark violation investigation in Kolkata by Innerwork Advisors LLP. Protect your brand by uncovering counterfeit products and stopping unauthorized use efficiently.",
+      "Trademark infringement investigation in Kolkata by Innerwork Advisors LLP. Protect your brand by uncovering counterfeit products and stopping unauthorized use efficiently.",
     image:
       "https://innerworkadvisorsllp.com/images/services/trademark-violation.png",
     urlPath: "trademark-violation-investigation-kolkata",
     description:
-      "Your trademarks are vital assets that represent your brand and its reputation. Our Trademark Violation investigation services are designed to identify and investigate instances of trademark infringement, such as the unauthorized use of your logos, brand names, or other protected marks. We gather evidence to help you protect your brand identity and prevent consumer confusion.",
+      "Your trademarks are vital assets that protect your brand identity and reputation. Our Trademark Infringement Investigation Services are designed to identify and investigate instances of trademark infringement, such as the unauthorized use of your logos, brand names, or other protected trademarks. We gather evidence to help you protect your brand identity and prevent consumer confusion.",
   },
   {
     name: "Personal Injury",
@@ -176,7 +177,7 @@ export const investigations = [
       "https://innerworkadvisorsllp.com/images/services/personal-injury.png",
     urlPath: "personal-injury-investigation-kolkata",
     description:
-      "If you have suffered an injury due to the negligence of another party, our Personal Injury investigation services can help establish the facts and build a strong case for your claim. We gather evidence, interview witnesses, and document the circumstances surrounding your injury to support your pursuit of fair compensation.",
+      "If you have suffered an injury as a result of another party's negligence, our Personal Injury Investigation Services can help establish the facts and support your claim with reliable evidence. We gather evidence, interview witnesses, and document the circumstances surrounding your injury to support your pursuit of fair compensation.",
   },
   {
     name: "Product Liability",
@@ -189,7 +190,7 @@ export const investigations = [
       "https://innerworkadvisorsllp.com/images/services/product-liability.png",
     urlPath: "product-liability-investigation-kolkata",
     description:
-      "When defective products cause harm, it's crucial to understand the nature of the defect and hold responsible parties accountable. Our Product Liability investigation services delve into the design, manufacturing, and marketing of products to identify potential defects and establish a link between the product and the resulting injury or damage.",
+      "When defective products cause harm, it's crucial to understand the nature of the defect and hold responsible parties accountable. Our Product Liability Investigation Services examine the design, manufacturing, and marketing of products to identify potential defects and help establish a link between the product and the resulting injury or damage.",
   },
   {
     name: "Professional Negligence",
@@ -202,7 +203,7 @@ export const investigations = [
       "https://innerworkadvisorsllp.com/images/services/professional-negligence.png",
     urlPath: "professional-negligence-investigation-kolkata",
     description:
-      "Professionals in various fields have a duty to provide services that meet accepted standards of care. When negligence occurs, it can lead to significant harm. Our Professional Negligence investigation services examine the actions of professionals, such as doctors, lawyers, and engineers, to determine if they breached their duty of care and caused harm.",
+      "Professionals across various fields have a duty to provide services that meet accepted standards of care. When negligence occurs, it can lead to significant harm. Our Professional Negligence Investigation Services examine the actions of professionals, such as doctors, lawyers, and engineers, to determine whether they breached their duty of care and caused harm.",
   },
   {
     name: "Workplace Violence",
@@ -215,10 +216,10 @@ export const investigations = [
       "https://innerworkadvisorsllp.com/images/services/workplace-violence.png",
     urlPath: "workplace-violence-investigation",
     description:
-      "Workplace violence is a serious concern that can have devastating consequences. Our Workplace Violence investigation services help organizations assess and address threats, investigate incidents of violence or harassment, and develop strategies to create a safer and more secure working environment for employees.",
+      "Workplace violence is a serious concern that can have devastating consequences. Our Workplace Violence Investigation Services help organizations assess and address threats, investigate incidents of violence or harassment, and develop strategies to foster a safer and more secure workplace for employees.",
   },
   {
-    name: "Workers Compensation",
+    name: "Workers' Compensation",
     title: "Verifying Claims, Preventing Fraudulent Activity",
     metaTitle:
       "Worker Compensation Verification - Innerwork Advisors LLP, Kolkata",
@@ -228,7 +229,7 @@ export const investigations = [
       "https://innerworkadvisorsllp.com/images/services/workers-compensation.png",
     urlPath: "worker-compensation-verification-kolkata",
     description:
-      "Workers' compensation systems are designed to protect employees who are injured on the job. Our Workers Compensation investigation services assist employers and insurance providers in verifying the legitimacy of claims and identifying potential instances of fraud, ensuring the integrity of the system.",
+      "Workers' compensation systems are designed to protect employees who are injured on the job. Our Workers' Compensation Investigation Services assist employers and insurance providers in verifying the legitimacy of claims and detecting potential fraud, helping maintain the integrity of the system.",
   },
 
   {
@@ -240,7 +241,7 @@ export const investigations = [
     image: "https://innerworkadvisorsllp.com/images/services/elder-abuse.png",
     urlPath: "elder-abuse-investigation",
     description:
-      "Elder abuse is a serious societal issue that requires immediate attention. Our Elder Abuse investigation services are dedicated to protecting vulnerable seniors from physical, emotional, and financial exploitation. We conduct sensitive and thorough investigations to uncover instances of abuse and neglect, working to ensure the safety and well-being of elderly individuals.",
+      "Elder abuse is a serious societal issue that requires immediate attention. Our Elder Abuse Investigation Services are dedicated to protecting vulnerable seniors from physical, emotional, and financial exploitation. We conduct sensitive and thorough investigations to uncover instances of abuse and neglect, helping safeguard the safety and well-being of older adults.",
   },
   {
     name: "Child Retrieval",
@@ -253,7 +254,7 @@ export const investigations = [
       "https://innerworkadvisorsllp.com/images/services/child-retrieval.png",
     urlPath: "child-retrieval-investigation-kolkata",
     description:
-      "When parental disputes or other circumstances lead to the unlawful removal or retention of a child, swift and decisive action is often required. Our Child Retrieval investigation services work to locate and facilitate the safe return of children to their rightful guardians, adhering to legal protocols and prioritizing the child's well-being.",
+      "When parental disputes or other circumstances lead to the unlawful removal or retention of a child, swift and decisive action is often required. Our Child Retrieval Investigation Services assist in locating children and supporting their lawful reunification with their legal guardians, adhering to legal protocols and prioritizing the child's well-being.",
   },
   {
     name: "Internet Fraud",
@@ -265,7 +266,7 @@ export const investigations = [
       "https://innerworkadvisorsllp.com/images/services/internet-fraud.png",
     urlPath: "cyber-fraud-investigation",
     description:
-      "The internet has created new avenues for fraudulent activities. Our Internet Fraud investigation services address a wide range of online scams, including phishing schemes, online auction fraud, and investment scams. We employ digital forensics and investigative techniques to track down perpetrators and help protect your digital assets and personal information.",
+      "The internet has created new avenues for fraudulent activities. Our Internet Fraud Investigation Services address a wide range of online scams, including phishing schemes, online auction fraud, and investment scams. We employ digital forensics and investigative techniques to help identify perpetrators and help protect your digital assets and personal information.",
   },
   {
     name: "Identity Theft",
@@ -278,32 +279,32 @@ export const investigations = [
       "https://innerworkadvisorsllp.com/images/services/identity-theft.png",
     urlPath: "theft-identification-investigation",
     description:
-      "Identity theft can have severe financial and personal consequences. Our Identity Theft investigation services assist victims in identifying how their information was compromised, recovering their identity, and taking steps to prevent future harm. We work diligently to track down perpetrators and help restore your peace of mind.",
+      "Identity theft can have severe financial and personal consequences. Our Identity Theft Investigation Services assist victims in identifying how their information was compromised, assisting in identity recovery, and taking steps to prevent future harm. We work diligently to help identify those responsible and help restore your peace of mind.",
   },
   {
-    name: "White Collar Crime",
+    name: "White-Collar Crime",
     title: "Unraveling Complex Financial Crimes",
     metaTitle:
-      "White Collar Crime Investigation - Innerwork Advisors LLP, Kolkata",
+      "White-Collar Crime Investigation - Innerwork Advisors LLP, Kolkata",
     metaDesc:
-      "White collar crime investigation services in Kolkata by Innerwork Advisors LLP. Uncover fraud, embezzlement, and corporate misconduct with expert analysis and support.",
+      "White-collar crime investigation services in Kolkata by Innerwork Advisors LLP. Uncover fraud, embezzlement, and corporate misconduct with expert analysis and support.",
     image:
       "https://innerworkadvisorsllp.com/images/services/white-collar-crime.png",
     urlPath: "white-collar-crime-investigation-kolkata",
     description:
-      "White-collar crimes, such as embezzlement, securities fraud, and money laundering, often involve complex financial transactions and sophisticated schemes. Our White Collar Crime investigation services bring expertise in forensic accounting and financial analysis to unravel these intricate crimes, gather evidence, and assist in bringing perpetrators to justice.",
+      "White-collar crimes, such as embezzlement, securities fraud, and money laundering, often involve complex financial transactions and sophisticated schemes. Our White-Collar Crime Investigation Services bring expertise in forensic accounting and financial analysis to unravel these intricate crimes, gather evidence, and assist in bringing perpetrators to justice.",
   },
   {
-  name: "Forensic Document Examination & Forgery Detection",
+  name: "Forensic Document Examination and Forgery Detection",
   title: "Uncover the Truth Behind Every Document",
   metaTitle:
-    "Forensic Document Examination & Forgery Detection Services - Innerwork Advisors LLP, Kolkata",
+    "Forensic Document Examination and Forgery Detection Services - Innerwork Advisors LLP, Kolkata",
   metaDesc:
     "Expert forensic document examination and forgery detection services in Kolkata. Verify signatures, detect alterations, uncover fraud, authenticate documents, and obtain court-admissible evidence with Innerwork Advisors LLP.",
   image:
     "https://innerworkadvisorsllp.com/images/services/Forensic_Document_Examination.webp",
   urlPath: "forensic-document-examination-kolkata",
   description:
-    "Innerwork Advisors LLP provides scientifically backed forensic document examination and forgery detection services to individuals, corporations, financial institutions, legal professionals, and government agencies. Our experts analyze disputed documents to identify forged signatures, handwriting manipulation, authorship, alterations, counterfeit documents, examination fraud, and digital tampering. Using advanced forensic techniques and evidence-based methodologies, we help clients establish authenticity, uncover fraud, strengthen legal proceedings, and protect their interests through accurate and court-admissible findings."
+    "Innerwork Advisors LLP provides scientifically-backed forensic document examination and forgery detection services to individuals, corporations, financial institutions, legal professionals, and government agencies. Our experts analyze disputed documents to identify forged signatures, handwriting manipulation, authorship verification, alterations, counterfeit documents, examination fraud, and digital tampering. Using advanced forensic techniques and evidence-based methodologies, we help clients establish authenticity, uncover fraud, support legal proceedings, and protect their interests through accurate and court-admissible findings."
 },
 ];

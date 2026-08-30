@@ -43,7 +43,8 @@ const schemas = [
       {
         "@type": "PropertyValue",
         name: "Working Office",
-        value: "Martin Burn House, 1 R.N. Mukherjee Rd, Gr Floor, Kolkata 700001",
+        value:
+          "Ground Floor, Martin Burn House, 1, R. N. Mukherjee Road, Kolkata 700001, West Bengal",
       },
       {
         "@type": "PropertyValue",

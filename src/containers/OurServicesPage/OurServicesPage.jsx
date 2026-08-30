@@ -8,7 +8,7 @@ const services = [
   {
     title: "INVESTIGATION",
     description:
-      "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
+      "Uncovering the truth, gathering evidence, resolving complex cases, ensuring accountability, and delivering justice.",
     bg: "https://innerworkadvisorsllp.com/images/investigation.png",
     url: "private-investigation-kolkata",
     btnColor: "bg-primary-light text-white",
@@ -62,7 +62,7 @@ const OurServicesPage = () => {
           className="relative flex flex-col items-center justify-between text-center"
           label={"Our Services"}
           description={
-            "Innerwork Advisors LLP is a leading provider of Private Detective & Investigation Services and Security Services (Corporate & Individual) based in Kolkata. Our Private Detective & Investigation Services are offered on a pan India basis. Security Services are provided in the State of West Bengal."
+            "Innerwork Advisors LLP is a leading provider of Private Detective and Investigation Services and Security Services for Corporate and Individual Clients, based in Kolkata. Our Private Detective and Investigation Services are offered on a pan-India basis. Security Services are provided across West Bengal."
           }
         >
           <div className="w-full py-10 bg-white">

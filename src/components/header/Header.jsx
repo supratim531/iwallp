@@ -146,58 +146,44 @@ const Header = () => {
               </div>
 
               {/*END - Social media icons */}
-              <div className="absolute inset-0 flex flex-col items-center justify-end bg-opacity-50 px-3 py-2 text-center text-white">
-                {/* Headings on Images with slicing*/}
-                <span className="mb-4 text-2xl md:text-4xl">
-                  <strong>
-                    {content[index].title.length === 33
-                      ? content[index].title.substring(
-                          0,
-                          Math.floor(content[index].title.length / 2),
-                        )
-                      : content[index].title.substring(
-                          0,
-                          Math.floor(content[index].title.length / 2 + 1.5),
-                        )}
-                  </strong>
-                </span>
 
-                <span className="mb-4 text-2xl md:text-4xl">
-                  <strong>
-                    {content[index].title.length === 33
-                      ? content[index].title.substring(
-                          Math.floor(content[index].title.length / 2),
-                        )
-                      : content[index].title.substring(
-                          Math.floor(content[index].title.length / 2 + 1.5),
-                        )}
-                  </strong>
-                </span>
+              {/* Dark overlay - improves contrast of the white text over the
+                  busy background photograph (readability fix) */}
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/65 to-black/40"
+              />
 
-                {/* Description with slicing */}
-                <span className="relative mb-2 items-center justify-between text-center text-lg">
-                  <em>
-                    {content[index]?.description
-                      .split(" ")
-                      .slice(0, 10)
-                      .join(" ")}
-                  </em>
-                </span>
+              <div className="absolute inset-0 z-10 flex flex-col items-center justify-end px-3 py-2 text-center text-white">
+                {/* Headings on Images */}
+                {(content[index].titleLines || [content[index].title]).map(
+                  (line, lineIndex) => (
+                    <span
+                      key={lineIndex}
+                      className="mb-4 text-2xl md:text-4xl"
+                      style={{ textShadow: "0 2px 8px rgba(0,0,0,0.75)" }}
+                    >
+                      <strong>{line}</strong>
+                    </span>
+                  ),
+                )}
 
-                <span className="relative mb-6 items-center justify-between text-center text-lg">
-                  <em>
-                    {content[index]?.description.split(" ").slice(10).join(" ")}
-                  </em>
-                </span>
+                {/* Description - upright (not italic) and bolder for legibility */}
+                <p
+                  className="relative mb-6 max-w-3xl text-center text-lg font-semibold leading-relaxed"
+                  style={{ textShadow: "0 2px 6px rgba(0,0,0,0.8)" }}
+                >
+                  {content[index]?.description}
+                </p>
 
                 {/* CTA Buttons */}
-                <div className="z-20 mb-8 flex flex-wrap gap-4 px-6 py-3">
+                <div className="z-20 mb-6 flex flex-wrap justify-center gap-4 px-6 py-3">
                   {/* Know More Button */}
                   <button
                     className="w-full !rounded-lg !border-2 !border-black !bg-primary-light px-6 py-3 !text-lg !font-semibold text-white !shadow-md transition-all duration-300 hover:!bg-primary-dark sm:w-auto"
                     onClick={bookCTA}
                   >
-                    Book Consultation
+                    Book a Consultation
                   </button>
 
                   {/* Contact Us Button */}
@@ -209,6 +195,26 @@ const Header = () => {
                   </button>
                 </div>
                 {/*End - CTA Buttons */}
+
+                {/* Slide indicators - the primary way to change slides on
+                    mobile, where the side arrows are hidden */}
+                <div className="z-20 mb-8 flex items-center justify-center gap-2">
+                  {images.map((_, dotIndex) => (
+                    <button
+                      key={dotIndex}
+                      type="button"
+                      onClick={() => setCurrentIndex(dotIndex)}
+                      aria-label={`Go to slide ${dotIndex + 1}`}
+                      aria-current={dotIndex === currentIndex}
+                      className={`h-2.5 rounded-full transition-all duration-300 ${
+                        dotIndex === currentIndex
+                          ? "w-6 bg-[#C9A267]"
+                          : "w-2.5 bg-white/60 hover:bg-white"
+                      }`}
+                    />
+                  ))}
+                </div>
+                {/*End - Slide indicators */}
               </div>
             </Container>
             {/* End - Overlay container*/}
@@ -217,9 +223,12 @@ const Header = () => {
       </div>
       {/* End - Image Container */}
 
-      {/* Navigation Arrows - left*/}
+      {/* Navigation Arrows - left.
+          Hidden below md so they no longer overlap the headline on mobile;
+          slide dots above are used instead. */}
       <button
-        className="absolute left-6 top-1/2 rounded-full bg-white bg-opacity-50 p-3 text-black transition-all duration-100 hover:bg-opacity-70"
+        aria-label="Previous slide"
+        className="absolute left-6 top-1/2 z-20 hidden -translate-y-1/2 rounded-full bg-white bg-opacity-50 p-3 text-black transition-all duration-100 hover:bg-opacity-70 md:block"
         onClick={prevSlide}
       >
         <FaChevronLeft size={30} />
@@ -227,7 +236,8 @@ const Header = () => {
 
       {/* Navigation Arrows - Right*/}
       <button
-        className="absolute right-6 top-1/2 rounded-full bg-white bg-opacity-50 p-3 text-black transition-all duration-100 hover:bg-opacity-70"
+        aria-label="Next slide"
+        className="absolute right-6 top-1/2 z-20 hidden -translate-y-1/2 rounded-full bg-white bg-opacity-50 p-3 text-black transition-all duration-100 hover:bg-opacity-70 md:block"
         onClick={nextSlide}
       >
         <FaChevronRight size={30} />

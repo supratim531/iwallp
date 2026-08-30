@@ -22,9 +22,9 @@ const BannerPopup = () => {
         type="button"
         onClick={() => setIsOpen(true)}
         aria-label="Open announcement"
-        className="fixed bottom-24 right-4 z-30 flex h-12 w-12 items-center justify-center rounded-full bg-primary-dark text-white shadow-lg transition-transform hover:scale-110"
+        className="fixed bottom-[4.5rem] right-4 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-primary-dark text-white shadow-lg transition-transform hover:scale-110 md:bottom-24 md:h-12 md:w-12"
       >
-        <i className="fa-solid fa-bullhorn text-xl"></i>
+        <i className="fa-solid fa-bullhorn text-base md:text-xl"></i>
       </button>
 
       <Modal

@@ -72,16 +72,16 @@ const NRIPage = (props) => {
             <li>
               <strong>Will and Succession Issues:</strong> NRIs often face
               challenges in executing or contesting wills, especially when legal
-              heirs are scattered or documents are unclear.
+              heirs are scattered or legal documentation is incomplete or unclear.
             </li>
             <li>
-              <strong>Legal System Delays:</strong> Navigating the Indian legal
-              system from abroad can be time-consuming and complex due to
-              backlog and procedural delays.
+              <strong>Legal System Delays:</strong> Navigating India's legal
+              system from abroad can be time-consuming and complex due to case
+              backlogs and procedural delays.
             </li>
             <li>
               <strong>Power of Attorney Misuse:</strong> Misuse of POA by
-              trusted persons is a common issue that can result in fraudulent
+              trusted individuals is a common issue that can result in fraudulent
               property transfers or financial loss.
             </li>
             <li>
@@ -90,13 +90,13 @@ const NRIPage = (props) => {
               documentation or encroachments.
             </li>
             <li>
-              <strong>Property Disputes & Inheritance:</strong> Partition of
+              <strong>Property Disputes and Inheritance:</strong> Partition of
               ancestral property, unclear titles, or disputes among co-owners
               can delay or obstruct rightful claims.
             </li>
             <li>
               <strong>Property Management Issues:</strong> Managing property
-              from abroad is challenging without reliable local assistance and
+              remotely is challenging without reliable local assistance and
               often results in poor maintenance or disputes.
             </li>
             <li>
@@ -116,8 +116,9 @@ const NRIPage = (props) => {
             </li>
             <li>
               <strong>Agricultural Land Restrictions:</strong> Certain Indian
-              states restrict non-agriculturists (including NRIs) from
-              purchasing agricultural land, leading to legal complications.
+              states restrict the purchase of agricultural land by
+              non-agriculturists, including NRIs, leading to legal
+              complications.
             </li>
           </ul>
         </Section>
@@ -127,22 +128,24 @@ const NRIPage = (props) => {
             <li>
               <strong>Managing Time Zones and Physical Distance:</strong> Legal
               proceedings and documentation require frequent coordination, which
-              is tough due to time zone differences and travel limitations.
+              can be challenging due to time zone differences and travel
+              constraints.
             </li>
             <li>
-              <strong>Understanding Complex Laws:</strong> Laws like FEMA, the
+              <strong>Understanding Complex Laws:</strong> Laws such as FEMA, the
               Benami Act, and real estate regulations require professional
               guidance for compliance and interpretation.
             </li>
             <li>
               <strong>Handling Extensive Legal Documentation:</strong> NRIs
               often struggle with notarization, attestation, and document
-              submission required in Indian legal processes.
+              submission required for Indian legal proceedings.
             </li>
             <li>
-              <strong>Risk of Unreliable Local Contacts:</strong> Many NRIs
-              depend on relatives or local agents who may not act in their best
-              interests, leading to delays or fraud.
+              <strong>Risk of Unreliable Local Contacts:</strong> Many NRIs rely
+              on relatives or local representatives who may not act in their
+              best interests, potentially resulting in delays, disputes, or
+              fraud.
             </li>
           </ul>
         </Section>

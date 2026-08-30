@@ -28,7 +28,7 @@ const Testimonials = () => {
     <Container>
       <Section
         className="relative flex flex-col items-center justify-between text-center"
-        title={"What they say"}
+        title={"What Our Clients Say"}
         label={"TESTIMONIALS"}
         description={
           "With numerous successful outcomes and satisfied clients, we have established ourselves as a beacon of excellence in Kolkata's legal and investigative communities."

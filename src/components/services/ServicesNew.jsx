@@ -9,14 +9,14 @@ const services = [
     title: "INVESTIGATION",
     urlPath: "/private-investigation-kolkata",
     description:
-      "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
+      "Uncovering the truth, gathering evidence, resolving complex cases, ensuring accountability, and delivering justice.",
   },
   {
     icon: <FaShieldAlt className="text-3xl text-secondary" />,
     title: "PERSONAL SECURITY",
     urlPath: "/security-guard-services-kolkata",
     description:
-      "Protecting lives, securing assets, ensuring safety, providing peace of mind and confidence.",
+      "Protecting lives, securing assets, ensuring safety, and providing peace of mind and confidence.",
   },
 ];
 
@@ -63,7 +63,7 @@ const ServiceNew = () => {
 
         {/* <div className="flex flex-1 flex-col justify-center py-12 pt-[30rem] sm:pt-[26rem] md:pt-[20rem] lg:pt-[16rem]"> */}
         <div className="flex flex-1 flex-col justify-center py-12 md:py-16">
-          <span className="mb-2 text-sm text-secondary">Our Service</span>
+          <span className="mb-2 text-sm text-secondary">Our Services</span>
           <h2 className="mb-6 text-3xl font-extrabold md:text-5xl">
             WHAT WE DO
           </h2>
@@ -72,9 +72,9 @@ const ServiceNew = () => {
             <strong>personal safety or peace of mind is at risk</strong>, you
             need a <strong>trusted security and investigative team</strong> that
             will work relentlessly on your behalf. Our firm specializes in
-            protecting the personal safety of our clients, ensuring the delivery
-            of <strong>clarity, confidence and discreet support</strong> when
-            you need the most.
+            safeguarding our clients, providing{" "}
+            <strong>clarity, confidence and discreet support</strong> when you
+            need it most.
           </p>
           <Link
             to={"/our-services-kolkata"}

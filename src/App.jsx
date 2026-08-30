@@ -54,7 +54,10 @@ export const App = (props) => {
         <WhatsAppPopup />
         <BannerPopup />
         <ScrollToTop />
-        <div style={{ position: "fixed", bottom: 24, left: 16, zIndex: 999 }}>
+        {/* Language selector: z-index kept below the modal layer (z-110) so it
+            can no longer overlap open dialogs, and pinned tighter to the corner
+            to reduce its footprint on small screens. */}
+        <div className="fixed bottom-4 left-3 z-40 md:bottom-6 md:left-4">
           <TranslatorWidget />
         </div>
         <Navbar />
