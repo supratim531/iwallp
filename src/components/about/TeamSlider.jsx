@@ -3,8 +3,7 @@ import Slider from "react-slick";
 import Certificate from "./Certificate";
 
 import { Section, Container, Modal } from "../shared";
-import { FaSearch, FaShieldAlt } from "react-icons/fa";
-import { pillar } from "../../assets";
+import { pillar, TeamGroupPhoto } from "../../assets";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,28 +27,10 @@ const imageMap = {
     "Amiya-Kumar-Lahiri-500x500.webp":""
 };
 
-const services = [
-  {
-    icon: <FaSearch className="text-3xl text-secondary" />,
-    title: "INVESTIGATION",
-    urlPath: "/private-investigation-kolkata",
-    description:
-      "Uncovering truth, gathering evidence, solving mysteries, ensuring accountability, delivering justice.",
-  },
-  {
-    icon: <FaShieldAlt className="text-3xl text-secondary" />,
-    title: "PERSONAL SECURITY",
-    urlPath: "/security-guard-services-kolkata",
-    description:
-      "Protecting lives, securing assets, ensuring safety, providing peace of mind and confidence.",
-  },
-];
-
 const TeamSlider = () => {
   const [teamMembers, setTeamMembers] = useState([]);
   const [selectedMember, setSelectedMember] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const updatedData = pillar.map((selectedMember) => ({
@@ -99,10 +80,12 @@ const TeamSlider = () => {
           "Innerwork Advisors LLP is powered by a multidisciplinary team of professionals, including directors, partners and experienced executives across advisory, compliance, operations and support functions. Our team brings together expertise, integrity and a shared commitment to delivering reliable and practical solutions for clients across sectors. We believe that strong outcomes are driven by strong people — working with accountability, collaboration and purpose."
         }
       >
-        <div>
+        <div className="w-full">
           <img
-            src={"https://innerworkadvisorsllp.com/images/team.webp"}
-            alt="our-team.webp"
+            src={TeamGroupPhoto}
+            alt="Innerwork Advisors LLP team"
+            loading="lazy"
+            className="mx-auto h-auto w-full max-w-5xl rounded-xl object-cover shadow-md"
           />
         </div>
       </Section>

@@ -14,13 +14,6 @@
     "extra": "Mr. Md Asim Ali, a distinguished individual, holds B.Sc and LLB degrees. With an illustrious career spanning 37 years in the Kolkata Police Force, he investigated various criminal cases and held charges at different Police Stations as Officer in Charge. Mr. Ali possesses a sound understanding of court proceedings. Additionally, he served for one year as a Police Officer in Kosovo on behalf of the United Nations Peacekeeping Force, demonstrating his commitment to global peace and security."
   },
   {
-    "id": "DEEPAK KUMAR DUTTA",
-    "title": "38+ years of Experience",
-    "description": "Served as an officer in the Detective Department for more than 12 years.",
-    "image": "https://innerworkadvisorsllp.com/images/members/Mr-Deepak-Kumar-Dutta-500x500.webp",
-    "extra": "Mr. Deepak Kumar Dutta, a graduate with honors from the University of Calcutta with a B.Com degree, boasts an impressive career spanning over 38 years in the Kolkata Police Force. During his tenure, he served as an officer in the Detective Department for more than 12 years, showcasing his expertise in investigative work. Mr. Dutta's leadership skills were evident as he held the position of Officer-in-Charge in 8 different Police Stations across Kolkata. Throughout his distinguished career, he earned numerous accolades and awards, reflecting his dedication and contributions to law enforcement."
-  },
-  {
     "id": "FAIYAZ AHMED",
     "title": "37+ years of Experience",
     "description": "Served as an officer in Kolkata Police for more than 37 years and retired as a DCP.",
@@ -32,20 +25,34 @@
     "title": "37+ years of Experience",
     "description": "Served over 37 years with Kolkata Police and retired as Assistant Commissioner of Police.",
     "image": "https://innerworkadvisorsllp.com/images/members/Amiya-Kumar-Lahiri-500x500.webp",
-    "extra": "Mr. Amiya Kumar Lahiri is a highly accomplished legal consultant with an illustrious career spanning over 37 years in the Kolkata Police, where he retired with distinction as Assistant Commissioner of Police. He holds academic credentials in both Law and Science from the University of Calcutta, equipping him with a strong multidisciplinary foundation.\nThroughout his tenure, he demonstrated exceptional expertise in criminal justice administration, forensic investigation, and legal advisory. His professional journey is marked by leadership across multiple police divisions, where he successfully managed complex criminal investigations, including high-stakes economic offence cases. His deep involvement in intelligence oversight, crisis management, and litigation support underscores his strategic and operational proficiency.\nMr. Lahiri has played a pivotal role in strengthening judicial coordination and streamlining case management processes, ensuring alignment between investigative frameworks and legal compliance. His ability to seamlessly integrate policing operations with legal strategy positions him as a trusted authority in handling intricate investigative and corporate risk matters.\nWith a rare blend of field experience and legal acumen, Mr. Lahiri continues to add substantial value in advisory roles, particularly in areas involving regulatory compliance, risk mitigation, and complex dispute resolution."
+    "extra": "Mr. Amiya Kumar Lahiri is a distinguished legal consultant and former Assistant Commissioner of Police with over 37 years of exemplary service in the Kolkata Police. Holding academic qualifications in both Law and Science from the University of Calcutta, he brings extensive expertise in criminal investigations, forensic analysis, legal advisory, and economic offence cases. Throughout his career, he led complex investigations, managed intelligence and crisis response operations, and played a key role in strengthening coordination between investigative and judicial processes. His unique combination of law enforcement experience and legal acumen makes him a trusted advisor in regulatory compliance, risk management, and complex dispute resolution."
   },
   {
     "id": "Bhaktipad Mishra",
     "title": "39+ years of Experience",
     "description": "Served over 39 years with the Government of India in forensic science.",
     "image": "https://innerworkadvisorsllp.com/images/members/Bhakti-Pad-Mishra-500x500.webp",
-    "extra": "Mr. Bhakti Pad Mishra is a distinguished forensic science expert with a Master's degree in Chemistry and over 39 years of extensive experience with the Government of India. He retired as Deputy Director & Scientist 'D' (Documents) from the Central Forensic Science Laboratory (CFSL), Kolkata, marking a highly accomplished career in forensic investigations.\nHe possesses deep domain expertise in forensic document examination, including handwriting and signature analysis, detection of forgery, and authentication of complex and disputed documents. Over the course of his career, he has examined thousands of cases for premier investigative agencies such as the CBI, NIA, various banks, and law enforcement departments.\nIn addition to his investigative contributions, Mr. Mishra has served as an expert witness in numerous judicial proceedings, providing critical forensic opinions that have supported legal outcomes. His strong technical proficiency, coupled with vast field experience, positions him as a trusted authority in handling complex investigative, forensic, and legal matters."
+    "extra": "Mr. Bhakti Pad Mishra is a highly respected forensic science expert with a Master's degree in Chemistry and over 39 years of distinguished service with the Government of India. He retired as Deputy Director & Scientist 'D' (Documents) from the Central Forensic Science Laboratory (CFSL), Kolkata. Renowned for his expertise in forensic document examination, handwriting and signature analysis, forgery detection, and document authentication, he has handled thousands of cases for agencies including the CBI, NIA, banks, and law enforcement authorities. As an experienced expert witness, he has provided crucial forensic opinions in numerous judicial proceedings, making him a trusted authority in forensic investigations and legal matters."
   },
   {
     "id": "Asish Mittal",
     "title": "30+ years of Experience",
     "description": "Seasoned entrepreneur with over 30 years of experience in hospitality, real estate, and multi-sector business development.",
     "image": "https://innerworkadvisorsllp.com/images/members/Ashish-Mittal-500x500.webp",
-    "extra": "Mr. Ashish Mittal is a seasoned business leader and visionary entrepreneur with over three decades of diversified experience spanning hospitality, real estate development, project management, event management, and business networking. As the Founder & Managing Director of the MAP5 Group, he has successfully established and scaled multiple ventures across India, building a strong footprint in hotel management, infrastructure, and corporate events. He has played a pivotal role in managing premium hospitality assets and driving strategic growth across sectors. In addition to his entrepreneurial achievements, Mr. Mittal actively contributes to industry and social initiatives through leadership roles in various organizations, demonstrating a strong commitment to business excellence, community development, and social impact."
+    "extra": "Mr. Ashish Mittal is a seasoned entrepreneur and business leader with over 30 years of experience across hospitality, real estate, project management, event management, and business networking. As the Founder & Managing Director of the MAP5 Group, he has successfully built and expanded multiple ventures, establishing a strong presence in hotel management, infrastructure development, and corporate events. Known for his strategic vision and leadership, he has played a key role in driving business growth while actively contributing to industry and social initiatives focused on community development and positive social impact."
+  },
+  {
+    "id": "Susanta Dhar",
+    "title": "40+ Years of Experience",
+    "description": "Former Assistant Commissioner of Police with extensive expertise in criminal investigations, anti-terror operations, organized crime, and intelligence-led policing.",
+    "image": "https://innerworkadvisorsllp.com/images/members/Susanta_Dhar.webp",
+    "extra": "Mr. Susanta Dhar is a highly decorated former Assistant Commissioner of Police with over four decades of distinguished service in the Kolkata Police. Having served in the Detective Department and Special Task Force, he possesses extensive expertise in homicide investigations, anti-terror operations, organized crime, counterfeit currency cases, and court proceedings. Throughout his career, he played a key role in investigating several high-profile criminal cases and received multiple commendations for his integrity, professionalism, and dedication to law enforcement. His vast investigative experience and strategic insights make him a valuable advisor in complex security, intelligence, and investigative matters."
+  },
+  {
+    "id": "Samrat Dutta",
+    "title": "35+ Years of Experience",
+    "description": "Former Assistant Commissioner of Police with extensive expertise in crime administration, investigations, and law enforcement leadership.",
+    "image": "https://innerworkadvisorsllp.com/images/members/Samrat_Dutta.webp",
+    "extra": "Mr. Samrat Dutta is a retired Assistant Commissioner of Police with over 35 years of distinguished service in the Kolkata Police. Beginning his career as a Sub-Inspector, he rose through the ranks on merit and held several key administrative and investigative responsibilities throughout his tenure. He served in leadership roles within major administrative divisions of the Kolkata Police and developed extensive expertise in crime management and police administration. In recognition of his exemplary service, he was awarded the President's Police Medal for Meritorious Service and the Kolkata Police Prashansha Padak. His integrity, professionalism, and dedication to public service continue to make him a valued advisor in investigative and security matters."
   }
 ]

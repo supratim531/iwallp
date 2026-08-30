@@ -41,11 +41,18 @@ const ServiceNew = () => {
                   key={index}
                   className="px-6 text-justify text-white last:border-none md:w-1/2 md:border-r md:border-slate-400"
                 >
-                  <div className="mb-4 flex justify-center">{service.icon}</div>
-                  <h3 className="mb-2 text-center text-lg font-bold duration-200 hover:text-secondary">
-                    <Link to={service.urlPath}>{service.title}</Link>
-                  </h3>
-                  <p className="text-center text-sm leading-relaxed">
+                  <div className="mb-6 flex justify-center">{service.icon}</div>
+                  <div className="flex justify-center">
+                    <Link
+                      to={service.urlPath}
+                      className="w-fit bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-secondary"
+                    >
+                      {service.title}
+                    </Link>
+                  </div>
+                    
+                  
+                  <p className=" relative justify-center py-4 text-center text-sm leading-relaxed">
                     {service.description}
                   </p>
                 </div>
@@ -71,7 +78,7 @@ const ServiceNew = () => {
           </p>
           <Link
             to={"/our-services-kolkata"}
-            className="w-fit bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-gray-200"
+            className="w-fit bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-secondary"
           >
             KNOW MORE
           </Link>

@@ -293,4 +293,17 @@ export const investigations = [
     description:
       "White-collar crimes, such as embezzlement, securities fraud, and money laundering, often involve complex financial transactions and sophisticated schemes. Our White Collar Crime investigation services bring expertise in forensic accounting and financial analysis to unravel these intricate crimes, gather evidence, and assist in bringing perpetrators to justice.",
   },
+  {
+  name: "Forensic Document Examination & Forgery Detection",
+  title: "Uncover the Truth Behind Every Document",
+  metaTitle:
+    "Forensic Document Examination & Forgery Detection Services - Innerwork Advisors LLP, Kolkata",
+  metaDesc:
+    "Expert forensic document examination and forgery detection services in Kolkata. Verify signatures, detect alterations, uncover fraud, authenticate documents, and obtain court-admissible evidence with Innerwork Advisors LLP.",
+  image:
+    "https://innerworkadvisorsllp.com/images/services/Forensic_Document_Examination.webp",
+  urlPath: "forensic-document-examination-kolkata",
+  description:
+    "Innerwork Advisors LLP provides scientifically backed forensic document examination and forgery detection services to individuals, corporations, financial institutions, legal professionals, and government agencies. Our experts analyze disputed documents to identify forged signatures, handwriting manipulation, authorship, alterations, counterfeit documents, examination fraud, and digital tampering. Using advanced forensic techniques and evidence-based methodologies, we help clients establish authenticity, uncover fraud, strengthen legal proceedings, and protect their interests through accurate and court-admissible findings."
+},
 ];

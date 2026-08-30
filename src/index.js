@@ -8,6 +8,17 @@ import router from "./routes/router";
 import "./index.css";
 
 if (process.env.NODE_ENV === "development") {
+  const OriginalResizeObserver = window.ResizeObserver;
+  if (OriginalResizeObserver) {
+    window.ResizeObserver = class extends OriginalResizeObserver {
+      constructor(callback) {
+        super((entries, observer) => {
+          window.requestAnimationFrame(() => callback(entries, observer));
+        });
+      }
+    };
+  }
+
   window.addEventListener("error", (e) => {
     if (
       e.message &&

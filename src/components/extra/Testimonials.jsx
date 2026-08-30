@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { TestimonialData } from "../../assets";
 import { Section, Container } from "../shared";
+import { InvGR, SecGR } from "../index";
+
 import "./Testimonials.css";
 
 const Testimonials = () => {
@@ -57,6 +59,8 @@ const Testimonials = () => {
           </div>
         </div>
       </Section>
+      <InvGR />
+      <SecGR />
     </Container>
   );
 };

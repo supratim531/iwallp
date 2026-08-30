@@ -13,6 +13,6 @@ export default function useClickOutside(callbackFn) {
         return () => {
             document.removeEventListener("mousedown", handler)
         }
-    }, [])
+    })
     return domNodeRef
 }
