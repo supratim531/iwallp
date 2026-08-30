@@ -14,7 +14,7 @@ const TrustPilotReview = () => {
       <a
         href="https://www.trustpilot.com/review/www.innerworkadvisorsllp.com"
         target="_blank"
-        rel="noopener"
+        rel="noreferrer"
       >
         Trustpilot
       </a>

@@ -50,6 +50,12 @@ const schemas = [
         name: "Registered Office",
         value: "22, Sukeas Lane, 5th Floor, Kolkata 700001",
       },
+      {
+        "@type": "PropertyValue",
+        name: "New Town Office",
+        value:
+          "CC-165, Street No. 197, New Town, Kolkata 700156 (Near Fairfield & Biswa Bangla Gate)",
+      },
     ],
   },
   {

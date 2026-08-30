@@ -2,6 +2,7 @@ export { default as PreloaderSmall } from "./gif/preloader-small.gif";
 export { default as Brandlogo } from "./logo/logo.png";
 export { default as BannerImage } from "./image/banner.webp";
 export { default as ContactUsImage } from "./image/contact-us.png";
+export { default as TeamGroupPhoto } from "./image/team-group-photo.jpg";
 export { default as Image1 } from "./caraousel/caraousel1.webp";
 export { default as Image2 } from "./caraousel/caraousel2.webp";
 export { default as Image3 } from "./caraousel/caraousel3.webp";

@@ -270,6 +270,15 @@ const Footer = () => {
                   )
                 </a>
               </div>
+
+              <div className="flex items-center gap-4">
+                <i className="fa-solid fa-signs-post text-secondary"></i>
+                <span>
+                  CC-165, Street No. 197, New Town, Kolkata – 700156 (Near
+                  Fairfield & Biswa Bangla Gate)
+                </span>
+              </div>
+
               <div className="flex items-center gap-4">
                 <i className="fa-solid fa-signs-post text-secondary"></i>
                 <a
