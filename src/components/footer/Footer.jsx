@@ -286,12 +286,11 @@ const Footer = () => {
               <div className="flex items-center gap-4">
                 <i className="fa-solid fa-signs-post text-secondary"></i>
                 <a
-                  href={`https://www.google.com/maps?q=${"Clockwise Linley House, Dickinson Street, Manchester M1 4LF, United Kingdom"}`}
+                  href={`https://www.google.com/maps/place/Innerwork+Advisors+Limited/@53.4403866,-2.2365731,13.37z/data=!4m15!1m8!3m7!1s0x487bb23d1b061ecd:0x601dafcb617b92db!2s139+Wilbraham+Rd,+Fallowfield,+Manchester+M14+7DS,+UK!3b1!8m2!3d53.4435365!4d-2.2326841!16s%2Fg%2F11bzznpd61!3m5!1s0x487bb1d6def91729:0xf5d3bff6d903b4bc!8m2!3d53.4435365!4d-2.2326841!16s%2Fg%2F11myzncdgy?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Clockwise Linley House, Dickinson Street, Manchester M1 4LF,
-                  United Kingdom
+                  139 Wilbraham Road, Manchester, England M14 7DS, United Kingdom
                 </a>
               </div>
 
